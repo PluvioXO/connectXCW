@@ -1,0 +1,32 @@
+# batched_test.yaml — validates BatchedSelfPlay correctness and measures speedup.
+# Architecture identical to medium.yaml; 2 iterations so it completes quickly.
+# Run locally (CPU, slow) to confirm no errors; run on GCP T4/V100 to measure
+# the games/min improvement vs serial baseline (~8-9 games/min on Kaggle P100).
+
+model:
+  num_residual_blocks: 4
+  num_filters: 64
+  input_planes: 3
+
+mcts:
+  num_simulations: 200
+  c_puct: 1.5
+  dirichlet_alpha: 1.0
+  dirichlet_epsilon: 0.25
+  temperature_threshold: 20
+  temperature_high: 1.0
+  temperature_low: 0.3
+
+training:
+  num_iterations: 2
+  self_play_games_per_iteration: 800
+  training_epochs: 8
+  batch_size: 512
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  replay_buffer_max_size: 100000
+  arena_num_games: 30
+  arena_num_simulations: 200
+  update_threshold: 0.55
+  checkpoint_dir: checkpoints/batched_test
+  mcts_batch_size: 32

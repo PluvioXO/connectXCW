@@ -1,0 +1,46 @@
+{
+  "source": "Self-play generated from models/large.pt during iteration 2",
+  "games_per_shard": 64,
+  "mcts_simulations": 512,
+  "dirichlet_epsilon": 0.15,
+  "temperature_threshold": 12,
+  "shards": [
+    {
+      "file": "selfplay_100_0.npz",
+      "augmented_samples": 3812,
+      "sha256": "88277872d0e806b72e697d45d1725cbd6960a4324dc065de361ab953e87393c5"
+    },
+    {
+      "file": "selfplay_100_1.npz",
+      "augmented_samples": 3878,
+      "sha256": "249e1aacd41a924deec96c47541ef1eae0661cd4c8758473b59f15b28a00df14"
+    },
+    {
+      "file": "selfplay_101_0.npz",
+      "augmented_samples": 3512,
+      "sha256": "d094a11261a8818ac4645712ad1c780b23bcc68ea1a0d9178ec785d68540d615"
+    },
+    {
+      "file": "selfplay_102_0.npz",
+      "augmented_samples": 3650,
+      "sha256": "eddaa81d72fbda72e4cdb4c737653a1a62bce9dd4d882374bf91609990c06a7f"
+    },
+    {
+      "file": "selfplay_102_1.npz",
+      "augmented_samples": 3454,
+      "sha256": "45c4243c767a794621055253fa382a2dfbfdff854fd93e3d844e3edf87f284aa"
+    },
+    {
+      "file": "selfplay_103_0.npz",
+      "augmented_samples": 3962,
+      "sha256": "c3a826e657594bc683bded5551b6e4daaf0556f6d973caffaf58f24753de2eb4"
+    },
+    {
+      "file": "selfplay_104_0.npz",
+      "augmented_samples": 3684,
+      "sha256": "606a4f9f03a016f4d4a85185180de17dc200e76c75628be6a6f8f5b944627194"
+    }
+  ],
+  "total_games": 448,
+  "augmented_samples": 25952
+}

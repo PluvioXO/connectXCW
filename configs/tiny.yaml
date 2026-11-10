@@ -1,0 +1,25 @@
+model:
+  num_residual_blocks: 2
+  num_filters: 32
+  input_planes: 3
+
+mcts:
+  num_simulations: 50
+  c_puct: 2.0
+  dirichlet_alpha: 1.0
+  dirichlet_epsilon: 0.25
+  temperature_threshold: 20
+  temperature_high: 1.0
+  temperature_low: 0.3
+
+training:
+  num_iterations: 10
+  self_play_games_per_iteration: 100
+  training_epochs: 5
+  batch_size: 256
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  replay_buffer_max_size: 50000
+  arena_num_games: 20
+  update_threshold: 0.55
+  checkpoint_dir: checkpoints

@@ -1,0 +1,17 @@
+.venv/
+venv/
+checkpoints/
+experiments/
+submissions/
+logs/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.onnx
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.DS_Store
+.env

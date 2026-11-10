@@ -1,0 +1,36 @@
+{
+  "games": 48,
+  "paired_openings": 24,
+  "candidate_wins": 21,
+  "reference_wins": 18,
+  "draws": 9,
+  "candidate_score_including_half_draws": 0.53125,
+  "paired_bootstrap_95_percent_interval": [
+    0.4479166666666667,
+    0.625
+  ],
+  "failures": [],
+  "max_move_seconds": {
+    "reference": 1.682810315862298,
+    "candidate": 1.6813566405326128
+  },
+  "moves_over_two_seconds": {
+    "reference": 0,
+    "candidate": 0
+  },
+  "candidate_results_by_player": {
+    "1": {
+      "wins": 13,
+      "losses": 7,
+      "draws": 4
+    },
+    "2": {
+      "wins": 8,
+      "losses": 11,
+      "draws": 5
+    }
+  },
+  "reference_sha256": "734edb8ee5f605f8fe952da39f9d90113b4c7473f7672ef61eba8dbccd86d557",
+  "candidate_sha256": "316ae3f8de0ce2acb2dc929aac1fab2e4a9e8d73d0b2af3895d1970aefcf5f10",
+  "method": "Actual archived my_agent functions; unchanged 1.9-second configured budgets; same Kaggle local engine; both sides of every opening; four workers pinned to separate physical CPU cores; each game cold-loads weights. Only weight-file paths are adapted."
+}

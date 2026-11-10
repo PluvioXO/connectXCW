@@ -1,0 +1,11 @@
+Based on connect4-alphazero by Eugene Peng:
+https://github.com/eugeneyp/connect4-alphazero
+Source snapshot: a936aadd74a6a6dd9035e576b89aeb5a3ea7ef73
+
+The inherited game engine, neural network, MCTS, training framework,
+configuration, agents, and supporting scripts retain the upstream MIT license.
+The pretrained reference checkpoint models/large.pt also comes from that project.
+
+This repository adds the bounded fine-tuning experiments, saved iteration-2
+self-play data and checkpoint, training and export checks, standalone inference
+improvements, actual-archive comparisons, and their recorded results.

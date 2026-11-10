@@ -1,0 +1,16 @@
+{
+  "checkpoints": [
+    {
+      "file": "large.pt",
+      "description": "Upstream pretrained reference; user-reported Kaggle rating 1154",
+      "bytes": 22196396,
+      "sha256": "9ab60064e3d6d2f80eb2ecd4f47dd99b497f1f525ae83abbb22d1d82ff295ad9"
+    },
+    {
+      "file": "iteration2.pt",
+      "description": "Experimental fine-tune; no demonstrated reliable advantage",
+      "bytes": 22193272,
+      "sha256": "ce63a1acae9901b542fac056d0130abd6ab64cf6ed22ef87e55127a0f04e9a4a"
+    }
+  ]
+}

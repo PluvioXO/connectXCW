@@ -1,0 +1,92 @@
+{
+  "selfplay_games_completed": 448,
+  "augmented_training_samples": 25952,
+  "selfplay_simulations_per_move": 512,
+  "training": {
+    "policy_target": "80% deeper-search policy + 20% original-model legal policy",
+    "value_target": "50% final outcome + 50% original-model value",
+    "batchnorm_statistics": "frozen",
+    "learning_rates": [
+      1e-05,
+      3e-05,
+      8e-05
+    ],
+    "epochs": 6,
+    "batch_size": 512
+  },
+  "limits": [
+    "Generation stopped at its time limit with seven complete shards; incomplete games were not used.",
+    "The larger 96-game confirmation exceeded its evaluation budget and has no scored result.",
+    "The independent completed confirmation contains 48 games at 128 simulations per move.",
+    "Kaggle rating of the new archive is untested."
+  ],
+  "reference_checkpoint": "models/large.pt",
+  "experimental_checkpoint": "models/iteration2.pt",
+  "selected_learning_rate": 8e-05,
+  "selected_epoch": 6,
+  "independent_fixed_simulation_comparison": {
+    "wins": 22,
+    "losses": 21,
+    "draws": 5,
+    "score": 0.5104166666666666,
+    "games": 48,
+    "simulations": 128,
+    "baseline_simulations": 128,
+    "opening_seed": 50505
+  },
+  "initial_screen": {
+    "wins": 21,
+    "losses": 19,
+    "draws": 8,
+    "score": 0.5208333333333334,
+    "games": 48,
+    "simulations": 128,
+    "baseline_simulations": 128,
+    "opening_seed": 30303
+  },
+  "runtime_verification": {
+    "archive_sha256": "316ae3f8de0ce2acb2dc929aac1fab2e4a9e8d73d0b2af3895d1970aefcf5f10",
+    "checkpoint": "models/iteration2.pt",
+    "matches": [
+      {
+        "opponent": "random",
+        "player": 1,
+        "reward": 1,
+        "agent_moves": 4,
+        "max_move_seconds": 1.6716478802263737,
+        "average_move_seconds": 1.2071864400058985
+      },
+      {
+        "opponent": "random",
+        "player": 2,
+        "reward": 1,
+        "agent_moves": 5,
+        "max_move_seconds": 1.6744072642177343,
+        "average_move_seconds": 1.2703544780611993
+      },
+      {
+        "opponent": "negamax",
+        "player": 1,
+        "reward": 1,
+        "agent_moves": 16,
+        "max_move_seconds": 1.650824248790741,
+        "average_move_seconds": 1.5055159875191748
+      },
+      {
+        "opponent": "negamax",
+        "player": 2,
+        "reward": 1,
+        "agent_moves": 18,
+        "max_move_seconds": 1.6460469644516706,
+        "average_move_seconds": 1.3381231691067417
+      }
+    ],
+    "parity": {
+      "positions": 40,
+      "max_logit_error": 4.76837158203125e-06,
+      "max_value_error": 1.5497207641601562e-06
+    }
+  },
+  "runtime_note": "Four local Kaggle games against random and negamax; not a leaderboard-strength estimate.",
+  "actual_archive_comparison": "headtohead/summary.json"
+}

@@ -1,0 +1,39 @@
+# Parallel self-play validation config.
+# Identical to medium.yaml but with 2 iterations and 4 workers.
+# Use this to verify parallel self-play correctness and measure speedup.
+#
+# Baseline (serial, medium.yaml on Kaggle P100): ~8-9 games/min
+# Expected with 4 workers on GCP n1-standard-8: ~25-35 games/min
+#
+# Run:
+#   python scripts/train.py --config configs/parallel_test.yaml
+#
+# Compare the "Self-play done: ... games/min" log line to the serial baseline.
+
+model:
+  num_residual_blocks: 4
+  num_filters: 64
+  input_planes: 3
+
+mcts:
+  num_simulations: 200
+  c_puct: 1.5
+  dirichlet_alpha: 1.0
+  dirichlet_epsilon: 0.25
+  temperature_threshold: 20
+  temperature_high: 1.0
+  temperature_low: 0.3
+
+training:
+  num_iterations: 2
+  self_play_games_per_iteration: 800
+  training_epochs: 8
+  batch_size: 512
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-4
+  replay_buffer_max_size: 100000
+  arena_num_games: 30
+  arena_num_simulations: 200
+  update_threshold: 0.55
+  checkpoint_dir: checkpoints/parallel_test
+  num_self_play_workers: 4

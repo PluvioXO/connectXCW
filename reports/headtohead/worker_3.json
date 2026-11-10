@@ -1,0 +1,716 @@
+{
+  "reference_sha256": "734edb8ee5f605f8fe952da39f9d90113b4c7473f7672ef61eba8dbccd86d557",
+  "candidate_sha256": "316ae3f8de0ce2acb2dc929aac1fab2e4a9e8d73d0b2af3895d1970aefcf5f10",
+  "worker": 3,
+  "pairs_total": 24,
+  "opening_seed": 82026,
+  "games": [
+    {
+      "opening": [
+        4,
+        4,
+        6,
+        5,
+        2,
+        5,
+        5,
+        6,
+        2,
+        2
+      ],
+      "candidate_player": 1,
+      "candidate_reward": 0,
+      "actions": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        5,
+        3,
+        6,
+        3,
+        3,
+        3,
+        5,
+        0,
+        0,
+        5,
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 16,
+          "max_seconds": 1.666900172829628,
+          "mean_seconds": 1.1062210666714236,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 16,
+          "max_seconds": 1.6697211544960737,
+          "mean_seconds": 1.116102302330546,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 35.846485536545515,
+      "pair": 3
+    },
+    {
+      "opening": [
+        4,
+        4,
+        6,
+        5,
+        2,
+        5,
+        5,
+        6,
+        2,
+        2
+      ],
+      "candidate_player": 2,
+      "candidate_reward": 0,
+      "actions": [
+        2,
+        2,
+        1,
+        3,
+        3,
+        5,
+        3,
+        6,
+        3,
+        3,
+        3,
+        5,
+        0,
+        0,
+        6,
+        5,
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        6,
+        6,
+        0,
+        0
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 16,
+          "max_seconds": 1.668539995327592,
+          "mean_seconds": 1.3138275259407237,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 16,
+          "max_seconds": 1.6634564995765686,
+          "mean_seconds": 1.183452990022488,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 40.239072032272816,
+      "pair": 3
+    },
+    {
+      "opening": [
+        2,
+        3,
+        4,
+        3,
+        3,
+        5,
+        3,
+        4
+      ],
+      "candidate_player": 1,
+      "candidate_reward": 1,
+      "actions": [
+        2,
+        2,
+        3,
+        3,
+        5,
+        5,
+        4,
+        6,
+        4,
+        1,
+        4,
+        4,
+        5,
+        2,
+        2
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 7,
+          "max_seconds": 1.6401997487992048,
+          "mean_seconds": 0.427318114521248,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 8,
+          "max_seconds": 1.6518645882606506,
+          "mean_seconds": 1.3812955010216683,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 14.174004653468728,
+      "pair": 7
+    },
+    {
+      "opening": [
+        2,
+        3,
+        4,
+        3,
+        3,
+        5,
+        3,
+        4
+      ],
+      "candidate_player": 2,
+      "candidate_reward": -1,
+      "actions": [
+        2,
+        2,
+        3,
+        3,
+        5,
+        6,
+        4,
+        4,
+        4,
+        5,
+        4,
+        6,
+        5,
+        5,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 16,
+          "max_seconds": 1.641794141381979,
+          "mean_seconds": 1.4032878597499803,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 15,
+          "max_seconds": 1.6552629098296165,
+          "mean_seconds": 1.3861520506441594,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 43.519044037908316,
+      "pair": 7
+    },
+    {
+      "opening": [
+        6,
+        0
+      ],
+      "candidate_player": 1,
+      "candidate_reward": 0,
+      "actions": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3,
+        4,
+        4,
+        6,
+        2,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 20,
+          "max_seconds": 1.6649126913398504,
+          "mean_seconds": 1.2926207423210143,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 20,
+          "max_seconds": 1.6693785823881626,
+          "mean_seconds": 1.4542290450073778,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 55.29039035923779,
+      "pair": 11
+    },
+    {
+      "opening": [
+        6,
+        0
+      ],
+      "candidate_player": 2,
+      "candidate_reward": 1,
+      "actions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        5,
+        5,
+        5,
+        3,
+        5,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        0,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 18,
+          "max_seconds": 1.6676963083446026,
+          "mean_seconds": 1.4238199991070561,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 18,
+          "max_seconds": 1.646408261731267,
+          "mean_seconds": 1.3366323540815048,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 50.01712032780051,
+      "pair": 11
+    },
+    {
+      "opening": [
+        6,
+        3
+      ],
+      "candidate_player": 1,
+      "candidate_reward": -1,
+      "actions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        0,
+        4,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        2,
+        1,
+        2,
+        2,
+        5,
+        6,
+        0,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 19,
+          "max_seconds": 1.6519785784184933,
+          "mean_seconds": 1.2667447572672053,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 19,
+          "max_seconds": 1.6676975954324007,
+          "mean_seconds": 1.4428482259574689,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 51.819633319973946,
+      "pair": 15
+    },
+    {
+      "opening": [
+        6,
+        3
+      ],
+      "candidate_player": 2,
+      "candidate_reward": 1,
+      "actions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        0,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        5,
+        4,
+        2,
+        5,
+        5,
+        5,
+        5,
+        2,
+        1,
+        2,
+        5,
+        2,
+        6,
+        0,
+        6,
+        6,
+        6,
+        6,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 19,
+          "max_seconds": 1.6452611591666937,
+          "mean_seconds": 1.4406248733989502,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 19,
+          "max_seconds": 1.647856317460537,
+          "mean_seconds": 1.4408960248294629,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 55.09041407331824,
+      "pair": 15
+    },
+    {
+      "opening": [
+        3,
+        6
+      ],
+      "candidate_player": 1,
+      "candidate_reward": 1,
+      "actions": [
+        2,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        1,
+        5,
+        4,
+        4,
+        4,
+        5,
+        4,
+        3,
+        1,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        0,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        5,
+        5,
+        0,
+        0
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 17,
+          "max_seconds": 1.6500659510493279,
+          "mean_seconds": 1.4201458820744473,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 18,
+          "max_seconds": 1.6570111103355885,
+          "mean_seconds": 1.0725026892291174,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 43.75475395657122,
+      "pair": 19
+    },
+    {
+      "opening": [
+        3,
+        6
+      ],
+      "candidate_player": 2,
+      "candidate_reward": 0,
+      "actions": [
+        2,
+        1,
+        1,
+        6,
+        1,
+        1,
+        2,
+        2,
+        4,
+        5,
+        4,
+        3,
+        2,
+        4,
+        3,
+        1,
+        4,
+        3,
+        5,
+        3,
+        2,
+        5,
+        3,
+        6,
+        6,
+        6,
+        5,
+        5,
+        4,
+        4,
+        5,
+        6,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 20,
+          "max_seconds": 1.6577240508049726,
+          "mean_seconds": 1.0500081521458924,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 20,
+          "max_seconds": 1.6589397080242634,
+          "mean_seconds": 1.0495086153969169,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 42.3485400993377,
+      "pair": 19
+    },
+    {
+      "opening": [
+        1,
+        3,
+        3,
+        0,
+        1,
+        4
+      ],
+      "candidate_player": 1,
+      "candidate_reward": -1,
+      "actions": [
+        3,
+        5,
+        2,
+        6
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 2,
+          "max_seconds": 1.371231546625495,
+          "mean_seconds": 0.6858331272378564,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 2,
+          "max_seconds": 1.258451385423541,
+          "mean_seconds": 0.6295331632718444,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 2.665479402989149,
+      "pair": 23
+    },
+    {
+      "opening": [
+        1,
+        3,
+        3,
+        0,
+        1,
+        4
+      ],
+      "candidate_player": 2,
+      "candidate_reward": 1,
+      "actions": [
+        1,
+        1,
+        3,
+        5,
+        2,
+        6
+      ],
+      "failure": null,
+      "timings": {
+        "reference": {
+          "moves": 3,
+          "max_seconds": 1.6404441334307194,
+          "mean_seconds": 0.9909794672081867,
+          "moves_over_two_seconds": 0
+        },
+        "candidate": {
+          "moves": 3,
+          "max_seconds": 1.2789865285158157,
+          "mean_seconds": 0.42666161929567653,
+          "moves_over_two_seconds": 0
+        }
+      },
+      "elapsed_seconds": 4.305093992501497,
+      "pair": 23
+    }
+  ]
+}
