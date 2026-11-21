@@ -100,6 +100,7 @@ def main():
     parser.add_argument("--candidate", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--pairs", type=int, default=24)
+    parser.add_argument("--seed", type=int, default=82026)
     parser.add_argument("--worker", type=int, default=0)
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
@@ -107,14 +108,14 @@ def main():
     args.output.parent.mkdir(parents=True, exist_ok=True)
     report = {"reference_sha256": hashlib.sha256(args.reference.read_bytes()).hexdigest(),
               "candidate_sha256": hashlib.sha256(args.candidate.read_bytes()).hexdigest(),
-              "worker": args.worker, "pairs_total": args.pairs, "opening_seed": 82026,
+              "worker": args.worker, "pairs_total": args.pairs, "opening_seed": args.seed,
               "games": []}
     with tempfile.TemporaryDirectory() as folder:
         directory = Path(folder)
         modules = [load_archive(args.reference, directory, "reference"),
                    load_archive(args.candidate, directory, "candidate")]
         assert modules[0]._TIME_BUDGET_SECS == modules[1]._TIME_BUDGET_SECS == 1.9
-        for index, opening in enumerate(openings(args.pairs, 82026)):
+        for index, opening in enumerate(openings(args.pairs, args.seed)):
             if index % args.workers != args.worker:
                 continue
             for side in (0, 1):

@@ -1,0 +1,47 @@
+{
+  "added_seeds": [
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "three_arm_block": {
+    "n1": {
+      "variant": "plain",
+      "n_step": 1
+    },
+    "tactical": {
+      "variant": "tactical",
+      "n_step": 1
+    },
+    "n3": {
+      "variant": "plain",
+      "n_step": 3
+    }
+  },
+  "budget": {
+    "moves": 80000,
+    "updates": 19745,
+    "epsilon_decay_moves": 64000
+  },
+  "inputs_sha256": {
+    "openings.json": "39bdc4c720e81118dd7ebd51d4edd37efe773780d4c105203b7c391167f46e65",
+    "defence-positions.json": "76339f31072e45662b4c975478667d9c7142a0d1aec34c53f31ac470c3016687",
+    "solved-positions.json": "026598cd585e4e2dc03afb2c42027351a7063c6aac60c30d5b0a3e47f7c3d625"
+  },
+  "reuse": {
+    "n1": [
+      "search",
+      "defence",
+      "horizon"
+    ],
+    "tactical": [
+      "defence"
+    ],
+    "n3": [
+      "horizon"
+    ]
+  },
+  "fixed_protocol": "The three existing analyses retain their original opening and position sets and endpoints."
+}

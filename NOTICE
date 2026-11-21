@@ -9,3 +9,18 @@ The pretrained reference checkpoint models/large.pt also comes from that project
 This repository adds the bounded fine-tuning experiments, saved iteration-2
 self-play data and checkpoint, training and export checks, standalone inference
 improvements, actual-archive comparisons, and their recorded results.
+
+The separate DQN and Double DQN implementation in src/training/double_dqn.py
+and scripts/double_dqn.py uses the upstream Connect Four environment and,
+for evaluation, its minimax agent. The Q-network, replay and update logic are
+implemented directly in PyTorch with Codex assistance. Algorithm references:
+Mnih et al., Nature (2015), doi:10.1038/nature14236, and van Hasselt et al.,
+AAAI (2016), doi:10.1609/aaai.v30i1.10295.
+
+The move-matched tactical follow-up, alternating multi-step targets, late-game
+solver, independent label check and two-ply evaluator are project-specific
+additions. They use the inherited board environment, minimax opponent and
+window heuristic. The oracle reference test separately loads Peng's pretrained
+network and its batched MCTS code.
+The experimental training and analysis code and the video renderer were
+developed with Codex assistance, as declared in the coursework report.

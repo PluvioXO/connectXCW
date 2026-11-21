@@ -1,0 +1,74 @@
+% Compile with XeLaTeX -no-pdf, then dvisvgm --no-fonts --exact-bbox --page=1-.
+% Each mathasset environment becomes one standalone vector equation.
+\documentclass[multi=mathasset,border=0pt]{standalone}
+\usepackage{fontspec,unicode-math,xcolor,amsmath}
+\setmainfont{STIXTwoText.ttf}[Path=/System/Library/Fonts/Supplemental/]
+\setmathfont{STIXTwoMath.otf}[Path=/System/Library/Fonts/Supplemental/]
+\newenvironment{mathasset}{}{}
+\begin{document}
+% 1: stem_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(F_0=\operatorname{ReLU}(\operatorname{BN}_0(W_s\ast X))\)\end{mathasset}
+% 2: stem_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(3\times3,\quad W_s:[128,3,3,3]\)\end{mathasset}
+% 3: stem_d2
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(\gamma_0,\beta_0:[128];\quad F_0:[128,6,7]\)\end{mathasset}
+% 4: res1_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(H=\operatorname{ReLU}(\operatorname{BN}_1(W_1\ast F))\)\end{mathasset}
+% 5: res1_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(W_1:[128,128,3,3]\)\end{mathasset}
+% 6: res1_d2
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(\operatorname{BN}:\ \gamma_1,\beta_1:[128]\)\end{mathasset}
+% 7: res2_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(C=\operatorname{BN}_2(W_2\ast H)\)\end{mathasset}
+% 8: res2_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(W_2:[128,128,3,3]\)\end{mathasset}
+% 9: res2_d2
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(\operatorname{BN}:\ \gamma_2,\beta_2:[128]\)\end{mathasset}
+% 10: resout_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(F'=\operatorname{ReLU}(F+C)\)\end{mathasset}
+% 11: resout_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(\operatorname{shape}(F')=[128,6,7]\)\end{mathasset}
+% 12: policy_conv_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(A_\pi=\operatorname{ReLU}(\operatorname{BN}_\pi(W_{\pi,c}\ast F_5))\)\end{mathasset}
+% 13: policy_conv_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(W:32{\times}128{\times}1{\times}1,\quad A:32{\times}6{\times}7,\quad\mathrm{BN}_{32}\)\end{mathasset}
+% 14: policy_dense_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(f_\pi=\operatorname{vec}(A_\pi);\quad \ell=W_\pi f_\pi+b_\pi\)\end{mathasset}
+% 15: policy_dense_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(1344\to7;\quad W_\pi:7\times1344,\quad b_\pi:7\)\end{mathasset}
+% 16: policy_mask_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(p=\operatorname{softmax}(\operatorname{mask}(\ell));\quad \sum_a p_a=1\)\end{mathasset}
+% 17: policy_mask_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(p_a=0\quad\forall\,a\notin\mathcal A_{\mathrm{legal}}\)\end{mathasset}
+% 18: value_conv_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(A_v=\operatorname{ReLU}(\operatorname{BN}_v(W_{v,c}\ast F_5))\)\end{mathasset}
+% 19: value_conv_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(W:32{\times}128{\times}1{\times}1,\quad A:32{\times}6{\times}7,\quad\mathrm{BN}_{32}\)\end{mathasset}
+% 20: value_dense_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(h=\operatorname{ReLU}(W_{1v}\operatorname{vec}(A_v)+b_{1v})\)\end{mathasset}
+% 21: value_dense_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(1344\to256;\quad W_{1v}:256\times1344,\quad b_{1v}:256\)\end{mathasset}
+% 22: value_out_eq
+\begin{mathasset}\fontsize{28bp}{33bp}\selectfont\color[HTML]{253044}\(v=\tanh(W_{2v}h+b_{2v})\in[-1,1]\)\end{mathasset}
+% 23: value_out_d1
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{596779}\(256\to1;\quad W_{2v}:1\times256,\quad b_{2v}:1\)\end{mathasset}
+% 24: input_shape
+\begin{mathasset}\fontsize{27bp}{33bp}\selectfont\color[HTML]{087F8C}\(X:[3,6,7]\)\end{mathasset}
+% 25: skip_f
+\begin{mathasset}\fontsize{27bp}{33bp}\selectfont\color[HTML]{596779}\(F\)\end{mathasset}
+% 26: shared_shape
+\begin{mathasset}\fontsize{23bp}{27bp}\selectfont\color[HTML]{087F8C}\(F_5:[128,6,7]\)\end{mathasset}
+% 27: returned_move
+\begin{mathasset}\fontsize{27bp}{31bp}\selectfont\color[HTML]{253044}\(\text{Return }a\in\{0,\ldots,6\}\)\end{mathasset}
+% 28: residual_index
+\begin{mathasset}\fontsize{27bp}{33bp}\selectfont\color[HTML]{253044}\(R_i\)\end{mathasset}
+% 29: repeat_five
+\begin{mathasset}\fontsize{27bp}{33bp}\selectfont\color[HTML]{253044}\(5\times\)\end{mathasset}
+% 30: inline_p
+\begin{mathasset}\fontsize{23bp}{25bp}\selectfont\color[HTML]{596779}\(p\)\end{mathasset}
+% 31: inline_v
+\begin{mathasset}\fontsize{23bp}{25bp}\selectfont\color[HTML]{596779}\(v\)\end{mathasset}
+% 32: inline_a_plus_one
+\begin{mathasset}\fontsize{23bp}{25bp}\selectfont\color[HTML]{596779}\(a+1\)\end{mathasset}
+\end{document}
+

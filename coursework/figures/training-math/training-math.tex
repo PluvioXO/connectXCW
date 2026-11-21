@@ -1,0 +1,43 @@
+% Figure 02 maths. Render with: python ../network-math/render.py training-math.tex
+\documentclass[multi=mathasset,border=0pt]{standalone}
+\usepackage{fontspec,unicode-math,xcolor,amsmath}
+\setmainfont{STIXTwoText.ttf}[Path=/System/Library/Fonts/Supplemental/]
+\setmathfont{STIXTwoMath.otf}[Path=/System/Library/Fonts/Supplemental/]
+\newenvironment{mathasset}{}{}
+\begin{document}
+% 1: learner_state
+\begin{mathasset}\fontsize{34bp}{44bp}\selectfont\color[HTML]{8052AD}\((\theta_t,\mathcal O_t)\)\end{mathasset}
+% 2: shared_weights
+\begin{mathasset}\fontsize{27bp}{34bp}\selectfont\color[HTML]{253044}\(\theta_t\)\end{mathasset}
+% 3: root_noise
+\begin{mathasset}\fontsize{23bp}{34bp}\selectfont\color[HTML]{596779}\(\widetilde p=0.85p+0.15\eta,\quad\eta\sim\operatorname{Dir}(1)\)\end{mathasset}
+% 4: temperature
+\begin{mathasset}\fontsize{23bp}{32bp}\selectfont\color[HTML]{596779}\(\tau:\ 1.0\ \text{(first 12 moves)},\ 0.3\ \text{after}\)\end{mathasset}
+% 5: record
+\begin{mathasset}\fontsize{34bp}{44bp}\selectfont\color[HTML]{087F8C}\((s,\pi,z)\)\end{mathasset}
+% 6: visit_target
+\begin{mathasset}\fontsize{26bp}{42bp}\selectfont\color[HTML]{253044}\(\pi(a)=N(a)\big/\sum_b N(b)\)\end{mathasset}
+% 7: terminal_values
+\begin{mathasset}\fontsize{27bp}{36bp}\selectfont\color[HTML]{253044}\(z=+1,\quad0,\quad-1\)\end{mathasset}
+% 8: policy_loss
+\begin{mathasset}\fontsize{28bp}{44bp}\selectfont\color[HTML]{253044}\(\ell_\pi=-\sum_a\pi(a)\log p_\theta(a\mid s)\)\end{mathasset}
+% 9: value_loss
+\begin{mathasset}\fontsize{28bp}{42bp}\selectfont\color[HTML]{253044}\(\ell_v=\bigl(v_\theta(s)-z\bigr)^2\)\end{mathasset}
+% 10: mean_loss
+\begin{mathasset}\fontsize{28bp}{54bp}\selectfont\color[HTML]{253044}\(\mathcal L=\frac{1}{B}\sum_{i=1}^{B}(\ell_{\pi,i}+\ell_{v,i})\)\end{mathasset}
+% 11: adam_settings
+\begin{mathasset}\fontsize{24bp}{34bp}\selectfont\color[HTML]{596779}\(\eta=8\times10^{-5},\quad\lambda=10^{-5}\)\end{mathasset}
+% 12: clip_norm
+\begin{mathasset}\fontsize{25bp}{36bp}\selectfont\color[HTML]{596779}\(\|\nabla_\theta\mathcal L\|_2\le1\)\end{mathasset}
+% 13: candidate
+\begin{mathasset}\fontsize{27bp}{36bp}\selectfont\color[HTML]{8052AD}\(\theta_{t+1}\)\end{mathasset}
+% 14: champion
+\begin{mathasset}\fontsize{36bp}{46bp}\selectfont\color[HTML]{253044}\(\theta_t^\star\)\end{mathasset}
+% 15: score
+\begin{mathasset}\fontsize{27bp}{40bp}\selectfont\color[HTML]{253044}\(S=(W+\tfrac12D)/128\)\end{mathasset}
+% 16: promotion
+\begin{mathasset}\fontsize{28bp}{38bp}\selectfont\color[HTML]{087F8C}\(S\ge0.55\quad\land\quad L_{95\%}>0.50\)\end{mathasset}
+% 17: matchup
+\begin{mathasset}\fontsize{34bp}{46bp}\selectfont\color[HTML]{253044}\(\theta_{t+1}\quad\text{versus}\quad\theta_t^\star\)\end{mathasset}
+\end{document}
+

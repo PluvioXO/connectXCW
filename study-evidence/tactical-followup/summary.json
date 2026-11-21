@@ -1,0 +1,3008 @@
+{
+  "testpack_sha256": "026598cd585e4e2dc03afb2c42027351a7063c6aac60c30d5b0a3e47f7c3d625",
+  "seeds": [
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "trained_moves": 800000,
+  "games_replayed": 10400,
+  "all_scores_match_initial_evaluation": true,
+  "evaluation_manifest": {
+    "evaluation-with-traces/plain-61/step-0/curve-greedy-0-minimax-2.json": "301159245c95906209bab28e4e1f1a696c456e90f72972f5251c64e24f39219e",
+    "evaluation-with-traces/plain-61/step-0/final-greedy-0-minimax-2.json": "0ece922910d70843c89034dcc30c2efd7cee43ee8927114087ac7b3314281300",
+    "evaluation-with-traces/plain-61/step-0/final-greedy-0-random.json": "55ebbf8f0cfc2687335473136165d2f7ccb46975dfd3fddb2ac27fea80213571",
+    "evaluation-with-traces/plain-61/step-0/oracle-0.json": "d3bab7e1839de92f87beeba76e6e26eb57438e190e105ef849615547ada8da52",
+    "evaluation-with-traces/plain-61/step-20000/curve-greedy-20000-minimax-2.json": "d359dc20b119e2d300e10e0e3fa240f6ff0b6adbefece2ac3b5225af275a4b61",
+    "evaluation-with-traces/plain-61/step-40000/curve-greedy-40000-minimax-2.json": "d020a96311be73fbb9b703554e89a162da1a4725384826bd6b3a4f54be596432",
+    "evaluation-with-traces/plain-61/step-40000/oracle-40000.json": "2ada2b6b4fc4e40a0594f05fc4afd8184599bc43dd404f105e4a8bafe933c194",
+    "evaluation-with-traces/plain-61/step-60000/curve-greedy-60000-minimax-2.json": "0f75d23696b1151fc4825c2567bb3529c5b515418405e94165acaa929cd57482",
+    "evaluation-with-traces/plain-61/step-80000/curve-greedy-80000-minimax-2.json": "4c6ff345c40e0080f36a2ef7bc88eedc4aa357fb6b0e0b63d4a8259afe7a0794",
+    "evaluation-with-traces/plain-61/step-80000/final-greedy-80000-random.json": "a9464404d61421c6ad3af0f8bcec2ac60849c76bd0b524f22af42584f623ca1b",
+    "evaluation-with-traces/plain-61/step-80000/final-greedy-80000-minimax-2.json": "1de4d9e4d6b83d75cdc992c43c59981e8f46d44997454294b8a146bd4ebcf022",
+    "evaluation-with-traces/plain-61/step-80000/final-greedy-80000-minimax-3.json": "ebc2be248c0fef3b04ce2bf0988cbb4bdabbffc3ae935c95645fb40b19c7063b",
+    "evaluation-with-traces/plain-61/step-80000/final-guarded-80000-minimax-2.json": "77a976fdf68930c762c512e51edcb61d2327a20cfcfe425b93f2b9ad589e97cb",
+    "evaluation-with-traces/plain-61/step-80000/final-guarded-80000-minimax-3.json": "5c82efc1440aa717419fb34588b52cd75c7664534c961afbe0d2855c8733d8f8",
+    "evaluation-with-traces/plain-61/step-80000/oracle-80000.json": "f93565ac269011dcc6d898e0665ab08d7fe681ba21a10db63a4cbf8f3202a26d",
+    "evaluation-with-traces/tactical-61/step-0/curve-greedy-0-minimax-2.json": "e8e6fd6a9d9bcb735e6084d3531dc0022602d6617741351c3a5230d9a6ce2787",
+    "evaluation-with-traces/tactical-61/step-0/final-greedy-0-minimax-2.json": "9294949b3c354932241ecbd60835f9885769bc928ca011f4b46061008ceb03c4",
+    "evaluation-with-traces/tactical-61/step-0/final-greedy-0-random.json": "ab08b42bb0bc0a92927517d50beba483d0698a7ecd974c6fa82a985e1f4e597e",
+    "evaluation-with-traces/tactical-61/step-0/oracle-0.json": "816c58053222af4ad234e57ef73348131772326cb83581095c2daf93ab785cd8",
+    "evaluation-with-traces/tactical-61/step-20000/curve-greedy-20000-minimax-2.json": "6b634e1291f7dbb989ed121aa50898024d82f401bdbad55e0bfc0346a46eb5f9",
+    "evaluation-with-traces/tactical-61/step-40000/curve-greedy-40000-minimax-2.json": "32602f478a0d9ed7208e6f837cba596a6f3d119d226181d35e0bd9f8df7f3662",
+    "evaluation-with-traces/tactical-61/step-40000/oracle-40000.json": "6238fa92b42dbb990e80acdb3826ba544ea303db7387c1e0e154ec5ea334c3c6",
+    "evaluation-with-traces/tactical-61/step-60000/curve-greedy-60000-minimax-2.json": "d4afc41c373bd10b83c6f023d9bfe79d23e35b995196cd976edde11eb1f0184d",
+    "evaluation-with-traces/tactical-61/step-80000/curve-greedy-80000-minimax-2.json": "c720859bdd9c26ca593d0d1a4fa6f1d43ea4a03228dc77f7f44e4f3f61d98664",
+    "evaluation-with-traces/tactical-61/step-80000/final-greedy-80000-random.json": "3e6735e9b294107f55d58faa5e53b558c708d3b0083b27c92ee7ce6ddb5a10a3",
+    "evaluation-with-traces/tactical-61/step-80000/final-greedy-80000-minimax-2.json": "6001966377c4957dcdeaf218861a52eaf09e0a50b994214dc1f844583d213dfc",
+    "evaluation-with-traces/tactical-61/step-80000/final-greedy-80000-minimax-3.json": "7d62f871321dbfda217dbf08c109ff86241655ba8140f543d72515122d368213",
+    "evaluation-with-traces/tactical-61/step-80000/final-guarded-80000-minimax-2.json": "ab3691ab92dfce1d945396c15d19fdc986a9182466a887a920f50f38c950c491",
+    "evaluation-with-traces/tactical-61/step-80000/final-guarded-80000-minimax-3.json": "3572f3f2e2f944f2fbdff4981bd7d96421c31fb70f5f2181ae820db3d6d143d9",
+    "evaluation-with-traces/tactical-61/step-80000/oracle-80000.json": "f0e083a6c350f24781d87ef40e10b8754f4c0bd49e8add8b9ac5c24c92d970fc",
+    "evaluation-with-traces/plain-62/step-0/curve-greedy-0-minimax-2.json": "5b7696486bbf0785fd182afd328eb2ba22e5da905bb754ab468d412acda3fef8",
+    "evaluation-with-traces/plain-62/step-0/final-greedy-0-minimax-2.json": "064f0a3c6aa8c8863dc43b9fbec6cd3ba8b640bcb114b3ce17e6c1fe441279d2",
+    "evaluation-with-traces/plain-62/step-0/final-greedy-0-random.json": "594e2df6aaa965f75ea04954f566968fb18389f34874429deca45d90f2084a62",
+    "evaluation-with-traces/plain-62/step-0/oracle-0.json": "d069fb291162b7b415b12a755c349077c3641661981bd3ca8321f680c9ca013d",
+    "evaluation-with-traces/plain-62/step-20000/curve-greedy-20000-minimax-2.json": "e836aec6f90a30ddecedc82ac4a7e7c263e04f2bf60f6f797267934905da3dd9",
+    "evaluation-with-traces/plain-62/step-40000/curve-greedy-40000-minimax-2.json": "6a17e310a7294b34fed31b242431e77d02dcfed9a50f47c8a426883512bec500",
+    "evaluation-with-traces/plain-62/step-40000/oracle-40000.json": "40e2825565855f07afae542c765328a9b9c30b752f9bf858a3550d58599b06ee",
+    "evaluation-with-traces/plain-62/step-60000/curve-greedy-60000-minimax-2.json": "67a99bb360fe448db96ff8620885e9af0ad468395671224c5bad13ffc6b3a277",
+    "evaluation-with-traces/plain-62/step-80000/curve-greedy-80000-minimax-2.json": "33a0f6943892e825b924fb631bf141da9a9b8af545e37c1c2fd131585e89f48f",
+    "evaluation-with-traces/plain-62/step-80000/final-greedy-80000-random.json": "163b2bfb6bb2c21f77ca8698d61f8a7f31dd7e478764aa7350eca9eec43ccdcf",
+    "evaluation-with-traces/plain-62/step-80000/final-greedy-80000-minimax-2.json": "6526f833147ee9629798caef4618951165058b16d818e104a1f0d406c4b431f9",
+    "evaluation-with-traces/plain-62/step-80000/final-greedy-80000-minimax-3.json": "a2f94693f991b9bef121187239975afac4257e62a013241f7e50a383ad58d81e",
+    "evaluation-with-traces/plain-62/step-80000/final-guarded-80000-minimax-2.json": "aa1b31d92e3fad2f833b697101d243079268412a8dc682490925ea2110804725",
+    "evaluation-with-traces/plain-62/step-80000/final-guarded-80000-minimax-3.json": "c0458cf56da10ff3bc604573f8257388778b506f93b2c37527ee0c8fdd8ac095",
+    "evaluation-with-traces/plain-62/step-80000/oracle-80000.json": "b179134691564a15b76b95e58d16dee67a099a0ac64084d6342d31e7bef3dbe6",
+    "evaluation-with-traces/tactical-62/step-0/curve-greedy-0-minimax-2.json": "14e79179c3277c9ba9840969c547352a31db04445185f81f1b99a36f2c05385e",
+    "evaluation-with-traces/tactical-62/step-0/final-greedy-0-minimax-2.json": "0857e325f7d049e6eb6400643b96126ac34dbfb1f537e27cc6bae318332c2fe1",
+    "evaluation-with-traces/tactical-62/step-0/final-greedy-0-random.json": "8463ac5e8eb414e08ac2bccd6c396c1ec40bc18904203ce22eef055a8ed270b4",
+    "evaluation-with-traces/tactical-62/step-0/oracle-0.json": "6313d29c33173f0d649fa61954e6635a5ffc49d3ba2290745739113552ce947e",
+    "evaluation-with-traces/tactical-62/step-20000/curve-greedy-20000-minimax-2.json": "d2fa28d1b3421d3a4f5a6eecef81512fd269e5d06c7b594823101751e0b112d5",
+    "evaluation-with-traces/tactical-62/step-40000/curve-greedy-40000-minimax-2.json": "6faf19f65c6c128aec6430ec86054773be357d9e0bd1b7307a5ca0ac10933476",
+    "evaluation-with-traces/tactical-62/step-40000/oracle-40000.json": "28837cc891314fda832a5b4e83d50adc807a4fc019308625ade2c2e20c6de4f6",
+    "evaluation-with-traces/tactical-62/step-60000/curve-greedy-60000-minimax-2.json": "dafc21193391feb8e0df383a584e061690ae6b93c5606b6dc5f69edaca2833d4",
+    "evaluation-with-traces/tactical-62/step-80000/curve-greedy-80000-minimax-2.json": "e52ba5d792730e20e6d094488e7e8cb6c0643b6f337da520801fe4943accc28a",
+    "evaluation-with-traces/tactical-62/step-80000/final-greedy-80000-random.json": "48088bbb48d8d9d00529a92437f0c869f1f5911891f65b2466f28696bc9c934d",
+    "evaluation-with-traces/tactical-62/step-80000/final-greedy-80000-minimax-2.json": "b927f8b4ebaeb9a443e8f4703d1d061d9b52f62bb846d7d12f176c6e5c6b35b2",
+    "evaluation-with-traces/tactical-62/step-80000/final-greedy-80000-minimax-3.json": "dc90914550059c992b7def8d8a33491f15ad371b7a4e43b661292fa69f11c258",
+    "evaluation-with-traces/tactical-62/step-80000/final-guarded-80000-minimax-2.json": "a542e522d5f60a2126617179eaffc589619f80f80027e2cbb6b72c80756de7ea",
+    "evaluation-with-traces/tactical-62/step-80000/final-guarded-80000-minimax-3.json": "aacee434adca08f168091dfe934e9dbd9977dc5f059777f4fc8419f1fa5307a9",
+    "evaluation-with-traces/tactical-62/step-80000/oracle-80000.json": "0a71d7e946ae28efcf279323dd46b542527a585a01fac0dc7712c20d334affe3",
+    "evaluation-with-traces/plain-63/step-0/curve-greedy-0-minimax-2.json": "74d44189667239e4d4888f6b3337701f53584dc692f45d98cca47e0572b9441f",
+    "evaluation-with-traces/plain-63/step-0/final-greedy-0-minimax-2.json": "e37beb2261c50dd91e93074d11e8a52df5383329d44255374ec57a213d70ebed",
+    "evaluation-with-traces/plain-63/step-0/final-greedy-0-random.json": "a49fbff53fbe777e77e8e17bc324d86aa3e04089bdda1e89600bd8d4707c150a",
+    "evaluation-with-traces/plain-63/step-0/oracle-0.json": "87b7785196640f7617254d1d47aca69212299e99c301ff88419c69de1f8f45cf",
+    "evaluation-with-traces/plain-63/step-20000/curve-greedy-20000-minimax-2.json": "441cc97558964469c9a070628a4d00fa333126115cf5f116675e65eb0b5bdef0",
+    "evaluation-with-traces/plain-63/step-40000/curve-greedy-40000-minimax-2.json": "aff2a1017cc6222ae61c18237844f2ec78cd02377e35b4ba803c4d8c6be87e20",
+    "evaluation-with-traces/plain-63/step-40000/oracle-40000.json": "fb38e082bc03f0705cee17eefe84cda21ff5b39c21f24783e917a90901400d1a",
+    "evaluation-with-traces/plain-63/step-60000/curve-greedy-60000-minimax-2.json": "79c1184da868404f2241a46fe08c9b2d17d51a8f10df94b4f31d758056320df4",
+    "evaluation-with-traces/plain-63/step-80000/curve-greedy-80000-minimax-2.json": "c632f2f7f3f7f90910f4a9fce14a9f831597a506fffa5c3d2bd04228b2e6ff98",
+    "evaluation-with-traces/plain-63/step-80000/final-greedy-80000-random.json": "e8d1f4b9e683357c63d22372fb2bd57114e1f49c94d2010f171b989ff1fa42b8",
+    "evaluation-with-traces/plain-63/step-80000/final-greedy-80000-minimax-2.json": "5210adcf4ef987ca9cfd5b3411452fbb040c9c28d183ad4dcc1412d9a45fa0a1",
+    "evaluation-with-traces/plain-63/step-80000/final-greedy-80000-minimax-3.json": "be85e9f4cb50b400e824976987f58a13d27815bfa8cbac6cd2fc3c78c9d38665",
+    "evaluation-with-traces/plain-63/step-80000/final-guarded-80000-minimax-2.json": "11ecc272b4b6ec7f8211e3caff4a180da7c64cf18fc4a970e4caf6a0d0ce3985",
+    "evaluation-with-traces/plain-63/step-80000/final-guarded-80000-minimax-3.json": "966dfcebe45fa78be3c3ea13b9a7eccb9d84e0d59460861f98cfd6a3db85622a",
+    "evaluation-with-traces/plain-63/step-80000/oracle-80000.json": "5982e4ed1c12602e5384650e9ea29e565c81419e3972c6477ed6392bfb9d0a8e",
+    "evaluation-with-traces/tactical-63/step-0/curve-greedy-0-minimax-2.json": "a95487d2b9eb1d728683eb73988fca3f8d0cf3b228adb29e8be17473cbbdf29c",
+    "evaluation-with-traces/tactical-63/step-0/final-greedy-0-minimax-2.json": "4aee644e360de68ce9934bc22f648c05ff5853e039526085871e8916d55b0135",
+    "evaluation-with-traces/tactical-63/step-0/final-greedy-0-random.json": "c35b525ce06412da13a5c34f45a6bfd932f0c433c4a76ad79e10f3ca1dcbf1a4",
+    "evaluation-with-traces/tactical-63/step-0/oracle-0.json": "4f1d6cfa6b18af7fbf60dc38ae8aeb23c900d1625e13ac2f8d3357666a6d4244",
+    "evaluation-with-traces/tactical-63/step-20000/curve-greedy-20000-minimax-2.json": "925803f1ee281bb049e0f0e2efa4dcfd5d7d350b728dd86539d02a92e179a017",
+    "evaluation-with-traces/tactical-63/step-40000/curve-greedy-40000-minimax-2.json": "85a0c984ffc8190cd7b9789b980ac139860be2842a21b833a714c533941e60d9",
+    "evaluation-with-traces/tactical-63/step-40000/oracle-40000.json": "d1d3164e2536be4fe092904ff3b74c5421ba8628d3a11ae077a2427381a87c69",
+    "evaluation-with-traces/tactical-63/step-60000/curve-greedy-60000-minimax-2.json": "a5a49edf17fc170c7c0d1b98421a80426ef3d19eb68e2988c2b258a3b6aeca44",
+    "evaluation-with-traces/tactical-63/step-80000/curve-greedy-80000-minimax-2.json": "2031ddb6ec97b2bbce249b84875db1ec9b19c06419840c8082b49308c58c5f2a",
+    "evaluation-with-traces/tactical-63/step-80000/final-greedy-80000-random.json": "1dc0dd8cb0a1d88e9f811da97f8294bb48f5423f3dab527c34ff73b51c60c1e7",
+    "evaluation-with-traces/tactical-63/step-80000/final-greedy-80000-minimax-2.json": "c516605efbab7fe23ed71ca81fbc5c7b9fbf7bf8ea0d2150ce09f19955f27682",
+    "evaluation-with-traces/tactical-63/step-80000/final-greedy-80000-minimax-3.json": "44fcd3ed9c59ea82f6785cdd709d1f86fc1f9d6ea11c25b4f2394ed1c2bb3093",
+    "evaluation-with-traces/tactical-63/step-80000/final-guarded-80000-minimax-2.json": "d2a827291fe803b8fbf6bbbea00ec4b4d11052291e49d6085f6eaa36d23e4572",
+    "evaluation-with-traces/tactical-63/step-80000/final-guarded-80000-minimax-3.json": "4e6cb652033f6dbd049a39d7eef2b6ebecc391c2dc4bd03c4c5b429075467d90",
+    "evaluation-with-traces/tactical-63/step-80000/oracle-80000.json": "2da59728665f0049250fc4b6339fd8c8aab0bc37650551da698d77a3366cb65e",
+    "evaluation-with-traces/plain-64/step-0/curve-greedy-0-minimax-2.json": "1bab172c64dcaf282e71cf663b830e3598050708cc9669fb07ce578a00782bec",
+    "evaluation-with-traces/plain-64/step-0/final-greedy-0-minimax-2.json": "30099fd790f76a31a626d9e4c6147c478687e2515cd7d4e07258282c911d5f28",
+    "evaluation-with-traces/plain-64/step-0/final-greedy-0-random.json": "03651c227b0b56468b5023651fc1ee40641cdefbcaa3deb7f30dc6220dbe2cb3",
+    "evaluation-with-traces/plain-64/step-0/oracle-0.json": "760ee144edf70756923eba5e77ed7b36038cc9ee35216e723fd6b8740a097f49",
+    "evaluation-with-traces/plain-64/step-20000/curve-greedy-20000-minimax-2.json": "62dfff5d2215ccfe7c20344b4431b9f432166d2e094eecaaf6217af21bdd2a81",
+    "evaluation-with-traces/plain-64/step-40000/curve-greedy-40000-minimax-2.json": "f11f7e5f4560a72be66cfa43ad5de7081467719594a7566dc9ecf4156d213233",
+    "evaluation-with-traces/plain-64/step-40000/oracle-40000.json": "85d0248027912540c092fe6ca26c6652b959cfa5380d693026441aea52c9d01f",
+    "evaluation-with-traces/plain-64/step-60000/curve-greedy-60000-minimax-2.json": "5b8053a31c2bdae1a6dff4cf67e13728b0b178062bc3de9fd48ad8d2371c76ea",
+    "evaluation-with-traces/plain-64/step-80000/curve-greedy-80000-minimax-2.json": "2ae76cb36dcb436707d1064aeff06a1ae4a2410b415b6a4b0a3f9c3b962580e5",
+    "evaluation-with-traces/plain-64/step-80000/final-greedy-80000-random.json": "f843b606d359a4f82f4e0a1ebf1929fa3f5d3aa6f1d5658108af0c9f08eed74e",
+    "evaluation-with-traces/plain-64/step-80000/final-greedy-80000-minimax-2.json": "e172605c526a0d76ca2d8a1bf5993288e20af2b5138a38ee4038ae12a74107b0",
+    "evaluation-with-traces/plain-64/step-80000/final-greedy-80000-minimax-3.json": "79bec2668517dc99dbc827c495ac7a7b46fff311613150352dfd516404f18357",
+    "evaluation-with-traces/plain-64/step-80000/final-guarded-80000-minimax-2.json": "665422f35546fe8479ead9bf2b84eb473a76b247086b1522f8d08b9f6d21f655",
+    "evaluation-with-traces/plain-64/step-80000/final-guarded-80000-minimax-3.json": "208e8a47573ae1f59b42e0c5be13c5fd52f5bfd38d33b3590b3425303d4c812e",
+    "evaluation-with-traces/plain-64/step-80000/oracle-80000.json": "8abad32251877a0e907921a21104534fa39bdd3a5e77c5d451e81e604710f8cf",
+    "evaluation-with-traces/tactical-64/step-0/curve-greedy-0-minimax-2.json": "c0ec7877011d294aac3d0af6559ba1362077f2fad44ce4f242b3c1d8e9b586cd",
+    "evaluation-with-traces/tactical-64/step-0/final-greedy-0-minimax-2.json": "f827aff37ee1b41b6d4d728067fb2d2ebbb2f79d4c915d1c04f96254869db71e",
+    "evaluation-with-traces/tactical-64/step-0/final-greedy-0-random.json": "bf919af897081f3a6a57ca2feab01a5bc167aac6f85e11fc8e5eb9cfe61640c9",
+    "evaluation-with-traces/tactical-64/step-0/oracle-0.json": "99c4f85ee700ee4b6e31f4bf43cd97b0281a4393b37d339b94dd4324415130d9",
+    "evaluation-with-traces/tactical-64/step-20000/curve-greedy-20000-minimax-2.json": "0bec3e46924a37fc1fbc2aa86d9abd45dee387999602bff89240ef912dc6ddaf",
+    "evaluation-with-traces/tactical-64/step-40000/curve-greedy-40000-minimax-2.json": "18baed5f323ecafe515a95722e550fc83768a01538f97e06453ad0ab87d19893",
+    "evaluation-with-traces/tactical-64/step-40000/oracle-40000.json": "d3f1ad2342fa389ea9f5648e788eed45aaabb1847723dd7d0b93f375f96c4ddf",
+    "evaluation-with-traces/tactical-64/step-60000/curve-greedy-60000-minimax-2.json": "617c2c78392335bfe4042a572f36542ca5f3ff2a2e6121fad3e874b38273a21e",
+    "evaluation-with-traces/tactical-64/step-80000/curve-greedy-80000-minimax-2.json": "d0b27e36e620a906f77027b186aea1d3a52ea5fd4decb82165d5f7c3312df3cf",
+    "evaluation-with-traces/tactical-64/step-80000/final-greedy-80000-random.json": "9124f60271e8269ff3650d23b9abf4829c2552e1dc1f2f0b3f9a7957bc0f880c",
+    "evaluation-with-traces/tactical-64/step-80000/final-greedy-80000-minimax-2.json": "a8a85cfdb31d3e8da7d4fa671f5819f2c45339de2c7586482f0dbd14baaf0c47",
+    "evaluation-with-traces/tactical-64/step-80000/final-greedy-80000-minimax-3.json": "3f8f7db701a5bb52c8f8fb246591219cab0541b6e3cedc278039a681908b3b5c",
+    "evaluation-with-traces/tactical-64/step-80000/final-guarded-80000-minimax-2.json": "203e31ca49c9c59f207a986a598de87bcd799c86e16d1e550698fa4484a9ed65",
+    "evaluation-with-traces/tactical-64/step-80000/final-guarded-80000-minimax-3.json": "57d1823428764b7b8f0784dc61482e3221c9b67f1b931b3483db9187e4378ae4",
+    "evaluation-with-traces/tactical-64/step-80000/oracle-80000.json": "b20fa74e20fddf35a78442062b39b09b66a417a29bd2ee00bda41dc9f066abb8",
+    "evaluation-with-traces/plain-65/step-0/curve-greedy-0-minimax-2.json": "51648ae2c34254b2d0e2ffe0d3e0028737b3b17b093d484e4c58216f291c3a70",
+    "evaluation-with-traces/plain-65/step-0/final-greedy-0-minimax-2.json": "c6a65d0e66aed5156ffa5a471c09008f74f8921d4bde712c0bab375d34d161af",
+    "evaluation-with-traces/plain-65/step-0/final-greedy-0-random.json": "5e9f82387e8a62e1fb1896628bdd45692ebcf950b8c23905f9fefdc24437f0a9",
+    "evaluation-with-traces/plain-65/step-0/oracle-0.json": "3f13a14ebdaf8db98562a3dfa4403472fe74d96fe09ac21a34fb1c53d745a466",
+    "evaluation-with-traces/plain-65/step-20000/curve-greedy-20000-minimax-2.json": "bb274a170aa6eab22e4f4825c2784b57a3c0cf3d9621d0e90984159d607b5571",
+    "evaluation-with-traces/plain-65/step-40000/curve-greedy-40000-minimax-2.json": "c946eb20132aa3d0c48df20f50be23633d7cbec1b8f4713f9bd074b7440701cd",
+    "evaluation-with-traces/plain-65/step-40000/oracle-40000.json": "5ed5fd2cb2be078b7e61073132af22fa24e480485b2f9e061c89f2116a7180ad",
+    "evaluation-with-traces/plain-65/step-60000/curve-greedy-60000-minimax-2.json": "9edee6d8fd4052e35420b54c9e0ca3ca6b10c0bd52ddd24ab68323cbc7841c42",
+    "evaluation-with-traces/plain-65/step-80000/curve-greedy-80000-minimax-2.json": "d24fa22c5e17cacb8f9a6b0498ea98d3e01e3d60e5c8b0713ebbd709302859be",
+    "evaluation-with-traces/plain-65/step-80000/final-greedy-80000-random.json": "63f13e091ed8b39f1c8520ed3062920a5b529ab17df8e0846862f1f9766e9055",
+    "evaluation-with-traces/plain-65/step-80000/final-greedy-80000-minimax-2.json": "33aab9a57e4d79e310b89880c0031a7c6c49891a25f5b8845cfd74e850c4e72a",
+    "evaluation-with-traces/plain-65/step-80000/final-greedy-80000-minimax-3.json": "40038b34b0687b9d315b87ed2d428cc2c815e7b8688670772d66fc82015b9535",
+    "evaluation-with-traces/plain-65/step-80000/final-guarded-80000-minimax-2.json": "f80c986ccbe06433df04cad4a569dd2a30870cda905d43ca803c83a0c2841ce3",
+    "evaluation-with-traces/plain-65/step-80000/final-guarded-80000-minimax-3.json": "aa5191c453d29c92422dacc820e65c1b9b23a3320db72c257656bb863338ca7c",
+    "evaluation-with-traces/plain-65/step-80000/oracle-80000.json": "639becad89c8c7e872a5698ebe6c1abb1a3360f1be8ab8ed6d89bf1844c6af76",
+    "evaluation-with-traces/tactical-65/step-0/curve-greedy-0-minimax-2.json": "872283379ec7d709977309fa82c3556e42dabfcbedf6c357895f67305b7ea5b0",
+    "evaluation-with-traces/tactical-65/step-0/final-greedy-0-minimax-2.json": "4eb5ee93c2e15418b7fdbd032302cf4b41bf53ea2cf8f4ff027d16a71c68ffc4",
+    "evaluation-with-traces/tactical-65/step-0/final-greedy-0-random.json": "8ce20f7db6d00666623cb486478b256d8bae187ade788adb9257c993a0b45be2",
+    "evaluation-with-traces/tactical-65/step-0/oracle-0.json": "ba06322f95a6a5af92c628fb6387468427456370bc0f58e67b3af30727c26388",
+    "evaluation-with-traces/tactical-65/step-20000/curve-greedy-20000-minimax-2.json": "dce0aa81182061207a74dca83ac20ec00608b887fdf2ac45b37530a1e0d9968f",
+    "evaluation-with-traces/tactical-65/step-40000/curve-greedy-40000-minimax-2.json": "ca10cdd49a878469b19e1a9dd5ee1aab3360330aeef147128009aac6ab53f043",
+    "evaluation-with-traces/tactical-65/step-40000/oracle-40000.json": "b1011478ff872493361f38deea1571ebcef273c4c6755e60fb353f99511cead3",
+    "evaluation-with-traces/tactical-65/step-60000/curve-greedy-60000-minimax-2.json": "af4378dd8b29037de770353d21f6e00f469230301fefd6b4a60f4d26ddaefb57",
+    "evaluation-with-traces/tactical-65/step-80000/curve-greedy-80000-minimax-2.json": "a89b9219fa6d01790b4ddaa3f66543210aac5ae5b969bbcda7fa0efa24425831",
+    "evaluation-with-traces/tactical-65/step-80000/final-greedy-80000-random.json": "643569046b7afbb3ef9f2388ec8a4df68066363bfbc0363e87d139584541cf0f",
+    "evaluation-with-traces/tactical-65/step-80000/final-greedy-80000-minimax-2.json": "d8c76f3753c9733f1404494945831818afe2a6fc8dc3a5c3726f5daebfecc3f4",
+    "evaluation-with-traces/tactical-65/step-80000/final-greedy-80000-minimax-3.json": "b6eb1c50c0e87a9cbcb47d02f4390223786c59563efe0aa787047c6394473bd1",
+    "evaluation-with-traces/tactical-65/step-80000/final-guarded-80000-minimax-2.json": "42ead874b863e112a0845ad1c8c50032d60e545e0934c0e9b7673f699325bf1c",
+    "evaluation-with-traces/tactical-65/step-80000/final-guarded-80000-minimax-3.json": "8e18ae46be9546c030c164b447daeac19b5a2e04e0b78b869ee4bd3059d3b5ac",
+    "evaluation-with-traces/tactical-65/step-80000/oracle-80000.json": "8f3150b77536e7e07998ad5a0cf444216999d2c6b117de5e479c120e9adb7066",
+    "evaluation-with-traces/tactics-only/final-tactics-only-None-random.json": "92da299fc8ea793f32fe950fa78e038e50910e6c4d9afb496b460f3a4c2d36ba",
+    "evaluation-with-traces/tactics-only/final-tactics-only-None-minimax-2.json": "831e03e38921b9d3d1364afd07441bc061f1e72f17b193934a75f3066874229b",
+    "evaluation-with-traces/tactics-only/final-tactics-only-None-minimax-3.json": "563dfdc791e9c12f8f214b804b1fd257099ceada107cb8f9932ddca7e64f2452"
+  },
+  "certified_action_fraction": {
+    "plain-61": 0.20432181640500133,
+    "tactical-61": 0.19917054677759968,
+    "plain-62": 0.2132486388384755,
+    "tactical-62": 0.20072292390618313,
+    "plain-63": 0.20773097249757416,
+    "tactical-63": 0.19770844241845567,
+    "plain-64": 0.19858108120443788,
+    "tactical-64": 0.19622425214217823,
+    "plain-65": 0.20564541903246955,
+    "tactical-65": 0.18924691243383787
+  },
+  "training": {
+    "plain-61": {
+      "config": {
+        "variant": "plain",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 61,
+        "output": "runs/plain-61/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 0.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4632,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 111857,
+        "legal_actions": 547455,
+        "seconds": 310.97365257143974,
+        "mean_loss": 0.011246310323476791
+      },
+      "checkpoints": {
+        "0": "febdcaf0182911bcfdfee1ce8a8f5e6e0f498bf5cb3b171d4d2d4a660c32c34f",
+        "20000": "fdec8ab85f8b34861b2ec15e3d5ada6ab3047d0f6db48da3b919ce4b39f6425e",
+        "40000": "6dec7bc261cae4a92e3cb588091f702ff48bdf7c305bc28b394c4b86a4557e17",
+        "60000": "07a92e72e54d8aeb9f1b164d97da1e464221435fd93c85e4b07c8f0fb718b941",
+        "80000": "08cbf8d36d2ef873334789d82110b66fbe6bfddb3c4379497d656efacedcbcad"
+      }
+    },
+    "tactical-61": {
+      "config": {
+        "variant": "tactical",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 61,
+        "output": "runs/tactical-61/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 1.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4890,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 109592,
+        "legal_actions": 550242,
+        "seconds": 329.15501270256937,
+        "mean_loss": 0.05039171786606312
+      },
+      "checkpoints": {
+        "0": "38e5d8f426f916dfc5018e6da2fc1d7a00cd037c6438b39791ea5308c7e577f1",
+        "20000": "4aa1aa45d309e18674ec0b80e86b71315741e17f042ece52968352c82aad7822",
+        "40000": "afec056d601447a2c97d8c17ee5f84e3f6c976f1d9096d3806d9bb01da137691",
+        "60000": "d9cbeedf0ed1249d08e55b25b7c84b37738f8e6cf0a895746d17b17bd66e0a8a",
+        "80000": "2df4e76a80961be9adcf3dd6f31a510966850be3b4993aebb6a03a61d258b916"
+      }
+    },
+    "plain-62": {
+      "config": {
+        "variant": "plain",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 62,
+        "output": "runs/plain-62/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 0.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4840,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 117030,
+        "legal_actions": 548796,
+        "seconds": 309.5775729380548,
+        "mean_loss": 0.012372984573245049
+      },
+      "checkpoints": {
+        "0": "c234d802c0ab60b3a15dda1546ed485c77fa1498e6d32e9f688344da63d51e51",
+        "20000": "50e376a567d1682be483af563a125b0e0f91fc6dfd47e1a6d9ca9a77a33317b2",
+        "40000": "a7caea9a2b1e441dcb244bcfc77b3af5adba52e3c07223b195cb6604a215f158",
+        "60000": "1a8a4e7a269040dad8da0f79d11dbc3dfb1ae23e066d4440de15bbbf60a05aec",
+        "80000": "91bee1ebbea2b7b35fcd18ba75abedf9a4ccc0ce1f7a323aa3852ef0ea718e0d"
+      }
+    },
+    "tactical-62": {
+      "config": {
+        "variant": "tactical",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 62,
+        "output": "runs/tactical-62/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 1.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 5000,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 110673,
+        "legal_actions": 551372,
+        "seconds": 347.17399273999035,
+        "mean_loss": 0.04983250107616186
+      },
+      "checkpoints": {
+        "0": "608a1e74376d2fdfed7baf34107ce5521aa5c3ad0fab912f5df4f1ac1bf84427",
+        "20000": "a40e41b388a4d756f4e56b80c73e8ecec54f729c7f1365b15d7149d40aed2ac7",
+        "40000": "b8323041faf9fb3ca8f716344b68928d32f8d3e548fca91aaea44df252bd1f01",
+        "60000": "c07e2e4df3a753b3d4dd420a94dd44e9aae4d329a56cb41960518032975fb0a3",
+        "80000": "fb877e2630a6545cc59078001d7767ca36d91de14a33a31cb533a14dd8aab069"
+      }
+    },
+    "plain-63": {
+      "config": {
+        "variant": "plain",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 63,
+        "output": "runs/plain-63/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 0.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4655,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 114106,
+        "legal_actions": 549297,
+        "seconds": 501.38782706297934,
+        "mean_loss": 0.013640570595860482
+      },
+      "checkpoints": {
+        "0": "e10557846196634212571102822048e181910f5e771727dd60009fa1ed262763",
+        "20000": "23e03b475fee05f41a2ccfd5bec52a4191ccd535100b106db62976b00826ed7b",
+        "40000": "44a033b43814f6830e1dd86fb98b329ef1f90964d630981de6a05c5919170568",
+        "60000": "a13a1a595ac3c97d57b51a3279035dddb4e7aa21ef67ae90fab9770dc466849a",
+        "80000": "4147027a6567eb970dbfc093cfbcca937c3d51c02c0e3749b6f5023ed4ad8fca"
+      }
+    },
+    "tactical-63": {
+      "config": {
+        "variant": "tactical",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 63,
+        "output": "runs/tactical-63/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 1.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4798,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 109123,
+        "legal_actions": 551939,
+        "seconds": 396.09784815087914,
+        "mean_loss": 0.05712479200959206
+      },
+      "checkpoints": {
+        "0": "a9a55e615ec1e6c71b0ad4a3167653dc3c88d0ae704dcc35a2f3b472c896c08d",
+        "20000": "fd16f8c4214f4189bb9a1497a12cab34ce982e25e905e3874de6764910481f02",
+        "40000": "1eb7807da5eb9698e00705e7fce74e390cff79ad2b342aa0f908542c37ae72fc",
+        "60000": "d8e48ec6412c274199c90bb4c37e751427e38f5b69f773ea0602ad29a9c8ee0e",
+        "80000": "42dacc5523b43fe75a2cc4b795e98ded83bcf4dc70da4b4c8cc09c43883a8f79"
+      }
+    },
+    "plain-64": {
+      "config": {
+        "variant": "plain",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 64,
+        "output": "runs/plain-64/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 0.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4512,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 108771,
+        "legal_actions": 547741,
+        "seconds": 499.8712365049869,
+        "mean_loss": 0.012107234811410308
+      },
+      "checkpoints": {
+        "0": "bb6ce85f58c0da1c1f74c552e040c56767cfba177bd6bcb44ef4aed72e0074e1",
+        "20000": "385c0f7213ea1798ffba395bb75af38653321f54f4e17210f70fc805c56226b9",
+        "40000": "f27f17d097204b4ac659953cb9309b585b32bad1bc6245aa9413fde44d4eda68",
+        "60000": "e726cf844cf98a9cda106419f131805c2f6ef9fbed07e011b32f7c4f732e2cb1",
+        "80000": "970fc872abaa99ff38ce48afe0a144844dc9a9a0340d66d2d7d4ad80f826e34c"
+      }
+    },
+    "tactical-64": {
+      "config": {
+        "variant": "tactical",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 64,
+        "output": "runs/tactical-64/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 1.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4898,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 108180,
+        "legal_actions": 551308,
+        "seconds": 456.14334845915437,
+        "mean_loss": 0.05277091421186924
+      },
+      "checkpoints": {
+        "0": "34154d8de783b205c18af6dc6d803cedb98faa41d9e75e71712163e8c91cf1cb",
+        "20000": "2e66a387e1d5bbb7bc6e74f99f3237fc55a02a0e4189071ab821c06b01de04ef",
+        "40000": "134785a8b9f19b67128b176f3477b110e712c6ab2f139bd4c8e0d1b0353895de",
+        "60000": "587ca9393bd47e0d2ef8b8b7d136e13908edcbbecbd97845f989aca1cd1fa1b5",
+        "80000": "b002c99f77908a790c7d491d4cd22bf54a5b1c2fd02d6caf9400fe12ac882eb6"
+      }
+    },
+    "plain-65": {
+      "config": {
+        "variant": "plain",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 65,
+        "output": "runs/plain-65/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 0.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4609,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 112603,
+        "legal_actions": 547559,
+        "seconds": 352.18700200505555,
+        "mean_loss": 0.012734907364472747
+      },
+      "checkpoints": {
+        "0": "046e9f87ddc0710146fac3e6405d77a1dc188ad09e562d226eb3675a1e5cb31c",
+        "20000": "cc072927f2bbbfffebb93aa7871516615a672a7a0bd323b2138f15f164e2a185",
+        "40000": "7cc262d623617578e707b87b8d0351ec225d7349fde1182d1a89797368d296a1",
+        "60000": "60ae2a5a77cfb7921d24c9eca60250d8402402c168a67e70f3483e117704e9d7",
+        "80000": "0cf534d32b6aabd0ddbd670df391b7534d0b5bfd43f7431de86933019e62c242"
+      }
+    },
+    "tactical-65": {
+      "config": {
+        "variant": "tactical",
+        "moves": 80000,
+        "decay_moves": 64000,
+        "save_every": 20000,
+        "log_every": 1000,
+        "seed": 65,
+        "output": "runs/tactical-65/training",
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "tactical_weight": 1.0,
+        "batch_size": 128,
+        "warmup": 1024,
+        "update_every": 4,
+        "sync_every": 500,
+        "replay_capacity": 50000,
+        "learning_rate": 0.0003
+      },
+      "last": {
+        "moves": 80000,
+        "games": 4745,
+        "epsilon": 0.05,
+        "updates": 19745,
+        "certified_actions": 103938,
+        "legal_actions": 549219,
+        "seconds": 380.51877290196717,
+        "mean_loss": 0.057171647898852825
+      },
+      "checkpoints": {
+        "0": "4d3e1702842bd03fb209ab6ede9448d6698f4aa97eb208e3638b26f0d900879b",
+        "20000": "1e93aff40f04b9077a134b62adb2e5ed5313d82ac7903d7b1aa940dc8bcf5280",
+        "40000": "69f77f5c665b63db53b98f4947fd2019e952f74763bbf45b95fe1bcf8a3f05f3",
+        "60000": "2fc20b6ec8757207fe2fcd54a44bc41fc3d621e6faad1bb34ac3da8056bba9d1",
+        "80000": "1c040c4203b7f54c0bc662548956e6d14b1ff8d62f92d5e2b8c220f997a47256"
+      }
+    }
+  },
+  "diagnostics": {
+    "plain-61/greedy": {
+      "defence_opportunities": 252,
+      "avoidable_immediate_exposures": 90,
+      "defence_opportunities_before_30_moves": 245,
+      "avoidable_exposures_before_30_moves": 85,
+      "win_opportunities": 15,
+      "missed_wins": 2
+    },
+    "plain-61/guarded": {
+      "defence_opportunities": 703,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 583,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 28,
+      "missed_wins": 0
+    },
+    "tactical-61/greedy": {
+      "defence_opportunities": 214,
+      "avoidable_immediate_exposures": 87,
+      "defence_opportunities_before_30_moves": 211,
+      "avoidable_exposures_before_30_moves": 86,
+      "win_opportunities": 20,
+      "missed_wins": 7
+    },
+    "tactical-61/guarded": {
+      "defence_opportunities": 718,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 603,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 25,
+      "missed_wins": 0
+    },
+    "plain-62/greedy": {
+      "defence_opportunities": 230,
+      "avoidable_immediate_exposures": 87,
+      "defence_opportunities_before_30_moves": 230,
+      "avoidable_exposures_before_30_moves": 87,
+      "win_opportunities": 17,
+      "missed_wins": 3
+    },
+    "plain-62/guarded": {
+      "defence_opportunities": 713,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 594,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 31,
+      "missed_wins": 0
+    },
+    "tactical-62/greedy": {
+      "defence_opportunities": 191,
+      "avoidable_immediate_exposures": 93,
+      "defence_opportunities_before_30_moves": 189,
+      "avoidable_exposures_before_30_moves": 91,
+      "win_opportunities": 14,
+      "missed_wins": 0
+    },
+    "tactical-62/guarded": {
+      "defence_opportunities": 623,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 521,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 30,
+      "missed_wins": 0
+    },
+    "plain-63/greedy": {
+      "defence_opportunities": 216,
+      "avoidable_immediate_exposures": 89,
+      "defence_opportunities_before_30_moves": 212,
+      "avoidable_exposures_before_30_moves": 86,
+      "win_opportunities": 24,
+      "missed_wins": 8
+    },
+    "plain-63/guarded": {
+      "defence_opportunities": 694,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 574,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 38,
+      "missed_wins": 0
+    },
+    "tactical-63/greedy": {
+      "defence_opportunities": 203,
+      "avoidable_immediate_exposures": 90,
+      "defence_opportunities_before_30_moves": 202,
+      "avoidable_exposures_before_30_moves": 89,
+      "win_opportunities": 14,
+      "missed_wins": 1
+    },
+    "tactical-63/guarded": {
+      "defence_opportunities": 621,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 540,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 22,
+      "missed_wins": 0
+    },
+    "plain-64/greedy": {
+      "defence_opportunities": 229,
+      "avoidable_immediate_exposures": 81,
+      "defence_opportunities_before_30_moves": 224,
+      "avoidable_exposures_before_30_moves": 80,
+      "win_opportunities": 23,
+      "missed_wins": 7
+    },
+    "plain-64/guarded": {
+      "defence_opportunities": 615,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 524,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 28,
+      "missed_wins": 0
+    },
+    "tactical-64/greedy": {
+      "defence_opportunities": 235,
+      "avoidable_immediate_exposures": 84,
+      "defence_opportunities_before_30_moves": 231,
+      "avoidable_exposures_before_30_moves": 82,
+      "win_opportunities": 13,
+      "missed_wins": 1
+    },
+    "tactical-64/guarded": {
+      "defence_opportunities": 642,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 549,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 21,
+      "missed_wins": 0
+    },
+    "plain-65/greedy": {
+      "defence_opportunities": 272,
+      "avoidable_immediate_exposures": 82,
+      "defence_opportunities_before_30_moves": 271,
+      "avoidable_exposures_before_30_moves": 81,
+      "win_opportunities": 24,
+      "missed_wins": 7
+    },
+    "plain-65/guarded": {
+      "defence_opportunities": 666,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 575,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 42,
+      "missed_wins": 0
+    },
+    "tactical-65/greedy": {
+      "defence_opportunities": 282,
+      "avoidable_immediate_exposures": 84,
+      "defence_opportunities_before_30_moves": 275,
+      "avoidable_exposures_before_30_moves": 81,
+      "win_opportunities": 16,
+      "missed_wins": 5
+    },
+    "tactical-65/guarded": {
+      "defence_opportunities": 696,
+      "avoidable_immediate_exposures": 0,
+      "defence_opportunities_before_30_moves": 580,
+      "avoidable_exposures_before_30_moves": 0,
+      "win_opportunities": 30,
+      "missed_wins": 0
+    }
+  },
+  "learning_curve": {
+    "plain": [
+      {
+        "mean": 0.016666666666666666,
+        "by_seed": [
+          0.0,
+          0.020833333333333332,
+          0.041666666666666664,
+          0.0,
+          0.020833333333333332
+        ]
+      },
+      {
+        "mean": 0.075,
+        "by_seed": [
+          0.0625,
+          0.08333333333333333,
+          0.0625,
+          0.10416666666666667,
+          0.0625
+        ]
+      },
+      {
+        "mean": 0.07916666666666666,
+        "by_seed": [
+          0.08333333333333333,
+          0.10416666666666667,
+          0.08333333333333333,
+          0.0625,
+          0.0625
+        ]
+      },
+      {
+        "mean": 0.07916666666666666,
+        "by_seed": [
+          0.10416666666666667,
+          0.0625,
+          0.08333333333333333,
+          0.0625,
+          0.08333333333333333
+        ]
+      },
+      {
+        "mean": 0.09791666666666668,
+        "by_seed": [
+          0.125,
+          0.10416666666666667,
+          0.10416666666666667,
+          0.08333333333333333,
+          0.07291666666666667
+        ]
+      }
+    ],
+    "tactical": [
+      {
+        "mean": 0.016666666666666666,
+        "by_seed": [
+          0.0,
+          0.020833333333333332,
+          0.041666666666666664,
+          0.0,
+          0.020833333333333332
+        ]
+      },
+      {
+        "mean": 0.0875,
+        "by_seed": [
+          0.10416666666666667,
+          0.10416666666666667,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.0625
+        ]
+      },
+      {
+        "mean": 0.07083333333333333,
+        "by_seed": [
+          0.0625,
+          0.0625,
+          0.08333333333333333,
+          0.0625,
+          0.08333333333333333
+        ]
+      },
+      {
+        "mean": 0.09583333333333334,
+        "by_seed": [
+          0.0625,
+          0.10416666666666667,
+          0.08333333333333333,
+          0.10416666666666667,
+          0.125
+        ]
+      },
+      {
+        "mean": 0.07083333333333333,
+        "by_seed": [
+          0.0625,
+          0.08333333333333333,
+          0.041666666666666664,
+          0.0625,
+          0.10416666666666667
+        ]
+      }
+    ]
+  },
+  "final": {
+    "plain": {
+      "random": {
+        "greedy": {
+          "mean": 0.940625,
+          "by_seed": [
+            0.953125,
+            0.9609375,
+            0.9140625,
+            0.9296875,
+            0.9453125
+          ]
+        },
+        "initial": {
+          "mean": 0.709375,
+          "by_seed": [
+            0.6328125,
+            0.6640625,
+            0.8515625,
+            0.7265625,
+            0.671875
+          ]
+        },
+        "learning_gain": {
+          "mean": 0.23125,
+          "by_seed": [
+            0.3203125,
+            0.296875,
+            0.0625,
+            0.203125,
+            0.2734375
+          ],
+          "seed_t_ci95": [
+            0.10208391774132783,
+            0.36041608225867217
+          ],
+          "openings_only_ci95": [
+            0.1796875,
+            0.284375
+          ]
+        }
+      },
+      "minimax-2": {
+        "greedy": {
+          "mean": 0.11875,
+          "by_seed": [
+            0.1015625,
+            0.109375,
+            0.125,
+            0.125,
+            0.1328125
+          ]
+        },
+        "initial": {
+          "mean": 0.01015625,
+          "by_seed": [
+            0.0,
+            0.0,
+            0.04296875,
+            0.0078125,
+            0.0
+          ]
+        },
+        "learning_gain": {
+          "mean": 0.10859375,
+          "by_seed": [
+            0.1015625,
+            0.109375,
+            0.08203125,
+            0.1171875,
+            0.1328125
+          ],
+          "seed_t_ci95": [
+            0.08523185239148119,
+            0.13195564760851883
+          ],
+          "openings_only_ci95": [
+            0.07109375000000001,
+            0.1484375
+          ]
+        },
+        "guarded": {
+          "mean": 0.271875,
+          "by_seed": [
+            0.23828125,
+            0.2578125,
+            0.30078125,
+            0.23046875,
+            0.33203125
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.153125,
+          "by_seed": [
+            0.13671875,
+            0.1484375,
+            0.17578125,
+            0.10546875,
+            0.19921875
+          ],
+          "seed_t_ci95": [
+            0.10835532712286192,
+            0.1978946728771381
+          ],
+          "openings_only_ci95": [
+            0.12578125,
+            0.18203125
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.1625,
+          "by_seed": [
+            0.12890625,
+            0.1484375,
+            0.19140625,
+            0.12109375,
+            0.22265625
+          ],
+          "seed_t_ci95": [
+            0.10875187641120157,
+            0.21624812358879844
+          ],
+          "openings_only_ci95": [
+            0.11015625000000001,
+            0.2125
+          ]
+        }
+      },
+      "minimax-3": {
+        "greedy": {
+          "mean": 0.115625,
+          "by_seed": [
+            0.140625,
+            0.109375,
+            0.125,
+            0.09375,
+            0.109375
+          ]
+        },
+        "guarded": {
+          "mean": 0.2265625,
+          "by_seed": [
+            0.234375,
+            0.265625,
+            0.2578125,
+            0.1484375,
+            0.2265625
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.1109375,
+          "by_seed": [
+            0.09375,
+            0.15625,
+            0.1328125,
+            0.0546875,
+            0.1171875
+          ],
+          "seed_t_ci95": [
+            0.06272689339263314,
+            0.15914810660736683
+          ],
+          "openings_only_ci95": [
+            0.07343749999999999,
+            0.1515625
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.0234375,
+          "by_seed": [
+            0.03125,
+            0.0625,
+            0.0546875,
+            -0.0546875,
+            0.0234375
+          ],
+          "seed_t_ci95": [
+            -0.034359899156103234,
+            0.08123489915610324
+          ],
+          "openings_only_ci95": [
+            -0.078125,
+            0.12187499999999998
+          ]
+        }
+      }
+    },
+    "tactical": {
+      "random": {
+        "greedy": {
+          "mean": 0.9453125,
+          "by_seed": [
+            0.9453125,
+            0.953125,
+            0.921875,
+            0.9453125,
+            0.9609375
+          ]
+        },
+        "initial": {
+          "mean": 0.709375,
+          "by_seed": [
+            0.6328125,
+            0.6640625,
+            0.8515625,
+            0.7265625,
+            0.671875
+          ]
+        },
+        "learning_gain": {
+          "mean": 0.2359375,
+          "by_seed": [
+            0.3125,
+            0.2890625,
+            0.0703125,
+            0.21875,
+            0.2890625
+          ],
+          "seed_t_ci95": [
+            0.11296668319201292,
+            0.35890831680798707
+          ],
+          "openings_only_ci95": [
+            0.1859375,
+            0.2875
+          ]
+        }
+      },
+      "minimax-2": {
+        "greedy": {
+          "mean": 0.0984375,
+          "by_seed": [
+            0.1015625,
+            0.109375,
+            0.1015625,
+            0.09375,
+            0.0859375
+          ]
+        },
+        "initial": {
+          "mean": 0.01015625,
+          "by_seed": [
+            0.0,
+            0.0,
+            0.04296875,
+            0.0078125,
+            0.0
+          ]
+        },
+        "learning_gain": {
+          "mean": 0.08828125,
+          "by_seed": [
+            0.1015625,
+            0.109375,
+            0.05859375,
+            0.0859375,
+            0.0859375
+          ],
+          "seed_t_ci95": [
+            0.06412719982488414,
+            0.11243530017511587
+          ],
+          "openings_only_ci95": [
+            0.05546875000000001,
+            0.12421874999999999
+          ]
+        },
+        "guarded": {
+          "mean": 0.21640625,
+          "by_seed": [
+            0.22265625,
+            0.2578125,
+            0.18359375,
+            0.17578125,
+            0.2421875
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.11796875,
+          "by_seed": [
+            0.12109375,
+            0.1484375,
+            0.08203125,
+            0.08203125,
+            0.15625
+          ],
+          "seed_t_ci95": [
+            0.07412828499282395,
+            0.16180921500717604
+          ],
+          "openings_only_ci95": [
+            0.09453125,
+            0.14218750000000002
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.10703125,
+          "by_seed": [
+            0.11328125,
+            0.1484375,
+            0.07421875,
+            0.06640625,
+            0.1328125
+          ],
+          "seed_t_ci95": [
+            0.06249866443582056,
+            0.15156383556417943
+          ],
+          "openings_only_ci95": [
+            0.05703125,
+            0.153125
+          ]
+        }
+      },
+      "minimax-3": {
+        "greedy": {
+          "mean": 0.109375,
+          "by_seed": [
+            0.09375,
+            0.125,
+            0.140625,
+            0.125,
+            0.0625
+          ]
+        },
+        "guarded": {
+          "mean": 0.2359375,
+          "by_seed": [
+            0.2421875,
+            0.265625,
+            0.2109375,
+            0.1953125,
+            0.265625
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.1265625,
+          "by_seed": [
+            0.1484375,
+            0.140625,
+            0.0703125,
+            0.0703125,
+            0.203125
+          ],
+          "seed_t_ci95": [
+            0.056141947681609836,
+            0.19698305231839014
+          ],
+          "openings_only_ci95": [
+            0.09062500000000001,
+            0.16562500000000002
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.0328125,
+          "by_seed": [
+            0.0390625,
+            0.0625,
+            0.0078125,
+            -0.0078125,
+            0.0625
+          ],
+          "seed_t_ci95": [
+            -0.006829207703230068,
+            0.07245420770323008
+          ],
+          "openings_only_ci95": [
+            -0.07500000000000001,
+            0.1328125
+          ]
+        }
+      }
+    }
+  },
+  "oracle": {
+    "plain": {
+      "0": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.3791666666666666,
+              "by_seed": [
+                0.3229166666666667,
+                0.2708333333333333,
+                0.6041666666666666,
+                0.3645833333333333,
+                0.3333333333333333
+              ]
+            },
+            "regret": {
+              "mean": 1.2312500000000002,
+              "by_seed": [
+                1.34375,
+                1.4479166666666667,
+                0.7916666666666666,
+                1.25,
+                1.3229166666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.2875,
+              "by_seed": [
+                0.21875,
+                0.25,
+                0.40625,
+                0.25,
+                0.3125
+              ]
+            },
+            "regret": {
+              "mean": 1.1645833333333333,
+              "by_seed": [
+                1.2708333333333333,
+                1.2604166666666667,
+                0.9270833333333334,
+                1.1875,
+                1.1770833333333333
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4291666666666666,
+              "by_seed": [
+                0.3020833333333333,
+                0.3125,
+                0.6458333333333334,
+                0.46875,
+                0.4166666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.81875,
+              "by_seed": [
+                1.0,
+                0.9895833333333334,
+                0.4895833333333333,
+                0.7916666666666666,
+                0.8229166666666666
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.9166666666666667,
+              "by_seed": [
+                0.90625,
+                0.9270833333333334,
+                0.9270833333333334,
+                0.8958333333333334,
+                0.9270833333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.14375,
+              "by_seed": [
+                0.15625,
+                0.125,
+                0.125,
+                0.17708333333333334,
+                0.13541666666666666
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4291666666666666,
+              "by_seed": [
+                0.3020833333333333,
+                0.3125,
+                0.6458333333333334,
+                0.46875,
+                0.4166666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.81875,
+              "by_seed": [
+                1.0,
+                0.9895833333333334,
+                0.4895833333333333,
+                0.7916666666666666,
+                0.8229166666666666
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.3916666666666667,
+              "by_seed": [
+                0.3333333333333333,
+                0.3229166666666667,
+                0.6458333333333334,
+                0.2916666666666667,
+                0.3645833333333333
+              ]
+            },
+            "regret": {
+              "mean": 1.2062500000000003,
+              "by_seed": [
+                1.3229166666666667,
+                1.34375,
+                0.7083333333333334,
+                1.3958333333333333,
+                1.2604166666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.28125,
+              "by_seed": [
+                0.21875,
+                0.2708333333333333,
+                0.3958333333333333,
+                0.19791666666666666,
+                0.3229166666666667
+              ]
+            },
+            "regret": {
+              "mean": 1.175,
+              "by_seed": [
+                1.28125,
+                1.21875,
+                0.9479166666666666,
+                1.2708333333333333,
+                1.15625
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.38541666666666663,
+              "by_seed": [
+                0.3229166666666667,
+                0.3125,
+                0.6145833333333334,
+                0.3020833333333333,
+                0.375
+              ]
+            },
+            "regret": {
+              "mean": 0.8958333333333333,
+              "by_seed": [
+                1.0,
+                1.0208333333333333,
+                0.5416666666666666,
+                1.0104166666666667,
+                0.90625
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.05403006019445861,
+          "by_seed": [
+            0.04797353032821169,
+            0.05658107633805937,
+            0.07583105392081456,
+            0.043957973238624014,
+            0.0458066671465834
+          ]
+        }
+      },
+      "40000": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.7749999999999999,
+              "by_seed": [
+                0.7291666666666666,
+                0.7916666666666666,
+                0.7708333333333334,
+                0.7916666666666666,
+                0.7916666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.4416666666666667,
+              "by_seed": [
+                0.53125,
+                0.40625,
+                0.4583333333333333,
+                0.4166666666666667,
+                0.3958333333333333
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.4541666666666667,
+              "by_seed": [
+                0.4791666666666667,
+                0.4166666666666667,
+                0.4791666666666667,
+                0.4375,
+                0.4583333333333333
+              ]
+            },
+            "regret": {
+              "mean": 0.8583333333333334,
+              "by_seed": [
+                0.8020833333333334,
+                0.9375,
+                0.8125,
+                0.875,
+                0.8645833333333334
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5083333333333333,
+              "by_seed": [
+                0.5416666666666666,
+                0.5208333333333334,
+                0.4583333333333333,
+                0.5104166666666666,
+                0.5104166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.68125,
+              "by_seed": [
+                0.65625,
+                0.6979166666666666,
+                0.7291666666666666,
+                0.6458333333333334,
+                0.6770833333333334
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.94375,
+              "by_seed": [
+                0.9166666666666666,
+                0.9479166666666666,
+                0.9895833333333334,
+                0.9270833333333334,
+                0.9375
+              ]
+            },
+            "regret": {
+              "mean": 0.09166666666666666,
+              "by_seed": [
+                0.13541666666666666,
+                0.08333333333333333,
+                0.010416666666666666,
+                0.11458333333333333,
+                0.11458333333333333
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5083333333333333,
+              "by_seed": [
+                0.5416666666666666,
+                0.5208333333333334,
+                0.4583333333333333,
+                0.5104166666666666,
+                0.5104166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.68125,
+              "by_seed": [
+                0.65625,
+                0.6979166666666666,
+                0.7291666666666666,
+                0.6458333333333334,
+                0.6770833333333334
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.7875,
+              "by_seed": [
+                0.7604166666666666,
+                0.8125,
+                0.8125,
+                0.8125,
+                0.7395833333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.4208333333333333,
+              "by_seed": [
+                0.46875,
+                0.375,
+                0.375,
+                0.375,
+                0.5104166666666666
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.5020833333333333,
+              "by_seed": [
+                0.4791666666666667,
+                0.5416666666666666,
+                0.5,
+                0.4791666666666667,
+                0.5104166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.8020833333333333,
+              "by_seed": [
+                0.8333333333333334,
+                0.7395833333333334,
+                0.8020833333333334,
+                0.8541666666666666,
+                0.78125
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5291666666666667,
+              "by_seed": [
+                0.5,
+                0.5520833333333334,
+                0.5729166666666666,
+                0.4895833333333333,
+                0.53125
+              ]
+            },
+            "regret": {
+              "mean": 0.6458333333333333,
+              "by_seed": [
+                0.6875,
+                0.625,
+                0.5729166666666666,
+                0.6770833333333334,
+                0.6666666666666666
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.5815006397664547,
+          "by_seed": [
+            0.5935888327270126,
+            0.5860820152770935,
+            0.5223147542112403,
+            0.5579578539925731,
+            0.647559742624354
+          ]
+        }
+      },
+      "80000": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.7875,
+              "by_seed": [
+                0.71875,
+                0.8958333333333334,
+                0.78125,
+                0.78125,
+                0.7604166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.4229166666666667,
+              "by_seed": [
+                0.5520833333333334,
+                0.20833333333333334,
+                0.4375,
+                0.4375,
+                0.4791666666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.46875,
+              "by_seed": [
+                0.4479166666666667,
+                0.5,
+                0.4895833333333333,
+                0.4166666666666667,
+                0.4895833333333333
+              ]
+            },
+            "regret": {
+              "mean": 0.8458333333333334,
+              "by_seed": [
+                0.8854166666666666,
+                0.8229166666666666,
+                0.7916666666666666,
+                0.9270833333333334,
+                0.8020833333333334
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.53125,
+              "by_seed": [
+                0.5208333333333334,
+                0.53125,
+                0.6041666666666666,
+                0.4583333333333333,
+                0.5416666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.6354166666666666,
+              "by_seed": [
+                0.65625,
+                0.6875,
+                0.5104166666666666,
+                0.6979166666666666,
+                0.625
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.9520833333333334,
+              "by_seed": [
+                0.9270833333333334,
+                0.9375,
+                0.9895833333333334,
+                0.9479166666666666,
+                0.9583333333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.07916666666666668,
+              "by_seed": [
+                0.125,
+                0.10416666666666667,
+                0.010416666666666666,
+                0.08333333333333333,
+                0.07291666666666667
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.53125,
+              "by_seed": [
+                0.5208333333333334,
+                0.53125,
+                0.6041666666666666,
+                0.4583333333333333,
+                0.5416666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.6354166666666666,
+              "by_seed": [
+                0.65625,
+                0.6875,
+                0.5104166666666666,
+                0.6979166666666666,
+                0.625
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.8229166666666666,
+              "by_seed": [
+                0.8125,
+                0.8229166666666666,
+                0.8333333333333334,
+                0.84375,
+                0.8020833333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.35,
+              "by_seed": [
+                0.3645833333333333,
+                0.3541666666666667,
+                0.3229166666666667,
+                0.3125,
+                0.3958333333333333
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.5270833333333333,
+              "by_seed": [
+                0.5,
+                0.5520833333333334,
+                0.5729166666666666,
+                0.46875,
+                0.5416666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.7645833333333333,
+              "by_seed": [
+                0.8020833333333334,
+                0.75,
+                0.6666666666666666,
+                0.8854166666666666,
+                0.71875
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5145833333333333,
+              "by_seed": [
+                0.5104166666666666,
+                0.5208333333333334,
+                0.5416666666666666,
+                0.46875,
+                0.53125
+              ]
+            },
+            "regret": {
+              "mean": 0.6666666666666667,
+              "by_seed": [
+                0.71875,
+                0.6770833333333334,
+                0.5833333333333334,
+                0.6770833333333334,
+                0.6770833333333334
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.5631998104327876,
+          "by_seed": [
+            0.595006638898566,
+            0.5096471609107943,
+            0.595129337743856,
+            0.5261928853999254,
+            0.5900230292107962
+          ]
+        }
+      }
+    },
+    "tactical": {
+      "0": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.3791666666666666,
+              "by_seed": [
+                0.3229166666666667,
+                0.2708333333333333,
+                0.6041666666666666,
+                0.3645833333333333,
+                0.3333333333333333
+              ]
+            },
+            "regret": {
+              "mean": 1.2312500000000002,
+              "by_seed": [
+                1.34375,
+                1.4479166666666667,
+                0.7916666666666666,
+                1.25,
+                1.3229166666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.2875,
+              "by_seed": [
+                0.21875,
+                0.25,
+                0.40625,
+                0.25,
+                0.3125
+              ]
+            },
+            "regret": {
+              "mean": 1.1645833333333333,
+              "by_seed": [
+                1.2708333333333333,
+                1.2604166666666667,
+                0.9270833333333334,
+                1.1875,
+                1.1770833333333333
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4291666666666666,
+              "by_seed": [
+                0.3020833333333333,
+                0.3125,
+                0.6458333333333334,
+                0.46875,
+                0.4166666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.81875,
+              "by_seed": [
+                1.0,
+                0.9895833333333334,
+                0.4895833333333333,
+                0.7916666666666666,
+                0.8229166666666666
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.9166666666666667,
+              "by_seed": [
+                0.90625,
+                0.9270833333333334,
+                0.9270833333333334,
+                0.8958333333333334,
+                0.9270833333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.14375,
+              "by_seed": [
+                0.15625,
+                0.125,
+                0.125,
+                0.17708333333333334,
+                0.13541666666666666
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4291666666666666,
+              "by_seed": [
+                0.3020833333333333,
+                0.3125,
+                0.6458333333333334,
+                0.46875,
+                0.4166666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.81875,
+              "by_seed": [
+                1.0,
+                0.9895833333333334,
+                0.4895833333333333,
+                0.7916666666666666,
+                0.8229166666666666
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.3916666666666667,
+              "by_seed": [
+                0.3333333333333333,
+                0.3229166666666667,
+                0.6458333333333334,
+                0.2916666666666667,
+                0.3645833333333333
+              ]
+            },
+            "regret": {
+              "mean": 1.2062500000000003,
+              "by_seed": [
+                1.3229166666666667,
+                1.34375,
+                0.7083333333333334,
+                1.3958333333333333,
+                1.2604166666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.28125,
+              "by_seed": [
+                0.21875,
+                0.2708333333333333,
+                0.3958333333333333,
+                0.19791666666666666,
+                0.3229166666666667
+              ]
+            },
+            "regret": {
+              "mean": 1.175,
+              "by_seed": [
+                1.28125,
+                1.21875,
+                0.9479166666666666,
+                1.2708333333333333,
+                1.15625
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.38541666666666663,
+              "by_seed": [
+                0.3229166666666667,
+                0.3125,
+                0.6145833333333334,
+                0.3020833333333333,
+                0.375
+              ]
+            },
+            "regret": {
+              "mean": 0.8958333333333333,
+              "by_seed": [
+                1.0,
+                1.0208333333333333,
+                0.5416666666666666,
+                1.0104166666666667,
+                0.90625
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.05403006019445861,
+          "by_seed": [
+            0.04797353032821169,
+            0.05658107633805937,
+            0.07583105392081456,
+            0.043957973238624014,
+            0.0458066671465834
+          ]
+        }
+      },
+      "40000": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.84375,
+              "by_seed": [
+                0.8125,
+                0.8229166666666666,
+                0.875,
+                0.875,
+                0.8333333333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.3104166666666667,
+              "by_seed": [
+                0.375,
+                0.3541666666666667,
+                0.23958333333333334,
+                0.25,
+                0.3333333333333333
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.475,
+              "by_seed": [
+                0.4583333333333333,
+                0.5416666666666666,
+                0.4479166666666667,
+                0.40625,
+                0.5208333333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.8458333333333334,
+              "by_seed": [
+                0.8645833333333334,
+                0.7395833333333334,
+                0.90625,
+                0.96875,
+                0.75
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4791666666666667,
+              "by_seed": [
+                0.4375,
+                0.53125,
+                0.46875,
+                0.4791666666666667,
+                0.4791666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.7145833333333332,
+              "by_seed": [
+                0.78125,
+                0.6666666666666666,
+                0.6979166666666666,
+                0.7291666666666666,
+                0.6979166666666666
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.9625,
+              "by_seed": [
+                0.9583333333333334,
+                0.9895833333333334,
+                0.9479166666666666,
+                0.9583333333333334,
+                0.9583333333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.06875,
+              "by_seed": [
+                0.07291666666666667,
+                0.020833333333333332,
+                0.10416666666666667,
+                0.07291666666666667,
+                0.07291666666666667
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.4791666666666667,
+              "by_seed": [
+                0.4375,
+                0.53125,
+                0.46875,
+                0.4791666666666667,
+                0.4791666666666667
+              ]
+            },
+            "regret": {
+              "mean": 0.7145833333333332,
+              "by_seed": [
+                0.78125,
+                0.6666666666666666,
+                0.6979166666666666,
+                0.7291666666666666,
+                0.6979166666666666
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.86875,
+              "by_seed": [
+                0.84375,
+                0.8958333333333334,
+                0.8541666666666666,
+                0.8645833333333334,
+                0.8854166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.2604166666666667,
+              "by_seed": [
+                0.3125,
+                0.20833333333333334,
+                0.28125,
+                0.2708333333333333,
+                0.22916666666666666
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.53125,
+              "by_seed": [
+                0.5104166666666666,
+                0.5625,
+                0.53125,
+                0.4583333333333333,
+                0.59375
+              ]
+            },
+            "regret": {
+              "mean": 0.7708333333333334,
+              "by_seed": [
+                0.8020833333333334,
+                0.71875,
+                0.7708333333333334,
+                0.90625,
+                0.65625
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5041666666666667,
+              "by_seed": [
+                0.5208333333333334,
+                0.5104166666666666,
+                0.5,
+                0.4791666666666667,
+                0.5104166666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.675,
+              "by_seed": [
+                0.6458333333333334,
+                0.6770833333333334,
+                0.65625,
+                0.71875,
+                0.6770833333333334
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.48419940758887803,
+          "by_seed": [
+            0.5034023807056656,
+            0.4659529182746256,
+            0.4690348801300893,
+            0.49538643859462655,
+            0.4872204202393833
+          ]
+        }
+      },
+      "80000": {
+        "greedy": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.8145833333333334,
+              "by_seed": [
+                0.7916666666666666,
+                0.7708333333333334,
+                0.8020833333333334,
+                0.84375,
+                0.8645833333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.36875,
+              "by_seed": [
+                0.4166666666666667,
+                0.4583333333333333,
+                0.3854166666666667,
+                0.3125,
+                0.2708333333333333
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.5166666666666667,
+              "by_seed": [
+                0.5208333333333334,
+                0.5625,
+                0.5520833333333334,
+                0.40625,
+                0.5416666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.7729166666666667,
+              "by_seed": [
+                0.75,
+                0.6875,
+                0.7395833333333334,
+                0.96875,
+                0.71875
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5083333333333333,
+              "by_seed": [
+                0.4791666666666667,
+                0.5104166666666666,
+                0.5416666666666666,
+                0.5104166666666666,
+                0.5
+              ]
+            },
+            "regret": {
+              "mean": 0.6625,
+              "by_seed": [
+                0.7083333333333334,
+                0.6666666666666666,
+                0.625,
+                0.6666666666666666,
+                0.6458333333333334
+              ]
+            }
+          }
+        },
+        "guarded": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 1.0,
+              "by_seed": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "regret": {
+              "mean": 0.0,
+              "by_seed": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.9520833333333334,
+              "by_seed": [
+                0.9375,
+                0.9583333333333334,
+                0.96875,
+                0.9270833333333334,
+                0.96875
+              ]
+            },
+            "regret": {
+              "mean": 0.0875,
+              "by_seed": [
+                0.10416666666666667,
+                0.08333333333333333,
+                0.0625,
+                0.13541666666666666,
+                0.052083333333333336
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.5083333333333333,
+              "by_seed": [
+                0.4791666666666667,
+                0.5104166666666666,
+                0.5416666666666666,
+                0.5104166666666666,
+                0.5
+              ]
+            },
+            "regret": {
+              "mean": 0.6625,
+              "by_seed": [
+                0.7083333333333334,
+                0.6666666666666666,
+                0.625,
+                0.6666666666666666,
+                0.6458333333333334
+              ]
+            }
+          }
+        },
+        "mirrored_average": {
+          "win-now": {
+            "optimal_action": {
+              "mean": 0.8520833333333334,
+              "by_seed": [
+                0.8125,
+                0.8333333333333334,
+                0.8854166666666666,
+                0.875,
+                0.8541666666666666
+              ]
+            },
+            "regret": {
+              "mean": 0.29583333333333334,
+              "by_seed": [
+                0.375,
+                0.3333333333333333,
+                0.22916666666666666,
+                0.25,
+                0.2916666666666667
+              ]
+            }
+          },
+          "block-now": {
+            "optimal_action": {
+              "mean": 0.5645833333333334,
+              "by_seed": [
+                0.5416666666666666,
+                0.6458333333333334,
+                0.5520833333333334,
+                0.5,
+                0.5833333333333334
+              ]
+            },
+            "regret": {
+              "mean": 0.7020833333333334,
+              "by_seed": [
+                0.75,
+                0.5833333333333334,
+                0.7291666666666666,
+                0.8020833333333334,
+                0.6458333333333334
+              ]
+            }
+          },
+          "multi-step": {
+            "optimal_action": {
+              "mean": 0.525,
+              "by_seed": [
+                0.53125,
+                0.5416666666666666,
+                0.5625,
+                0.5,
+                0.4895833333333333
+              ]
+            },
+            "regret": {
+              "mean": 0.6479166666666667,
+              "by_seed": [
+                0.625,
+                0.6458333333333334,
+                0.59375,
+                0.6875,
+                0.6875
+              ]
+            }
+          }
+        },
+        "reflection_mae": {
+          "mean": 0.48761687196397857,
+          "by_seed": [
+            0.48227558102007606,
+            0.49672989070151946,
+            0.4774181599451468,
+            0.541070598023503,
+            0.440590130129648
+          ]
+        }
+      }
+    }
+  },
+  "primary_tactical_minus_plain": {
+    "mean": -0.0203125,
+    "by_seed": [
+      0.0,
+      0.0,
+      -0.0234375,
+      -0.03125,
+      -0.046875
+    ],
+    "seed_t_ci95": [
+      -0.04560830913607354,
+      0.004983309136073536
+    ],
+    "openings_only_ci95": [
+      -0.0421875,
+      4.336808689942018e-19
+    ]
+  },
+  "tactics_only_match_scores": {
+    "random": 0.9765625,
+    "minimax-2": 0.109375,
+    "minimax-3": 0.203125
+  },
+  "oracle_delta_greedy": {
+    "win-now": {
+      "mean": 0.027083333333333338,
+      "by_seed": [
+        0.07291666666666667,
+        -0.125,
+        0.020833333333333332,
+        0.0625,
+        0.10416666666666667
+      ],
+      "seed_t_ci95": [
+        -0.08477894356373347,
+        0.13894561023040014
+      ],
+      "openings_only_ci95": [
+        -0.016666666666666666,
+        0.07291666666666666
+      ]
+    },
+    "block-now": {
+      "mean": 0.04791666666666668,
+      "by_seed": [
+        0.07291666666666667,
+        0.0625,
+        0.0625,
+        -0.010416666666666666,
+        0.052083333333333336
+      ],
+      "seed_t_ci95": [
+        0.006406787579698758,
+        0.0894265457536346
+      ],
+      "openings_only_ci95": [
+        -0.006250000000000001,
+        0.10416666666666667
+      ]
+    },
+    "multi-step": {
+      "mean": -0.02291666666666666,
+      "by_seed": [
+        -0.041666666666666664,
+        -0.020833333333333332,
+        -0.0625,
+        0.052083333333333336,
+        -0.041666666666666664
+      ],
+      "seed_t_ci95": [
+        -0.07809499638396615,
+        0.03226166305063283
+      ],
+      "openings_only_ci95": [
+        -0.075,
+        0.027083333333333334
+      ]
+    }
+  },
+  "inherited_oracle": {
+    "simulations": 64,
+    "weights_sha256": "9ab60064e3d6d2f80eb2ecd4f47dd99b497f1f525ae83abbb22d1d82ff295ad9",
+    "prior": {
+      "win-now": {
+        "optimal_action": 0.8854166666666666,
+        "regret": 0.22916666666666666
+      },
+      "block-now": {
+        "optimal_action": 0.9791666666666666,
+        "regret": 0.041666666666666664
+      },
+      "multi-step": {
+        "optimal_action": 0.7708333333333334,
+        "regret": 0.3229166666666667
+      }
+    },
+    "puct": {
+      "win-now": {
+        "optimal_action": 1.0,
+        "regret": 0.0
+      },
+      "block-now": {
+        "optimal_action": 0.9895833333333334,
+        "regret": 0.010416666666666666
+      },
+      "multi-step": {
+        "optimal_action": 0.9375,
+        "regret": 0.07291666666666667
+      }
+    }
+  },
+  "lookahead": {
+    "distinct_openings": 24,
+    "pack_sha256": "dc7a362649cd9f392743f13d0b3c2a248f887ea5db8a306ea9fa8880e5307592",
+    "games_replayed": 2496,
+    "file_hashes": {
+      "lookahead/tactics-only/tactics-only-None-minimax-2.json": "97ac3f5362136529668bfb56db71ae3fe1118e99c8c4c109a3ef8e8f3f4683ae",
+      "lookahead/plain-61/guarded-80000-minimax-2.json": "0c2ba9f24b66a5e1f80590f69abeea23c4c2049b56f1f1cbe32f1ef91d7556ed",
+      "lookahead/plain-62/guarded-80000-minimax-2.json": "1673605fe9129f01c74b13caf43ef068432150fc34d81f9a958eb9a8ebf2b147",
+      "lookahead/plain-63/guarded-80000-minimax-2.json": "58272576e663b91694d0d8705f61c6a7a70638566e2cf8541506946e8bc601bc",
+      "lookahead/plain-64/guarded-80000-minimax-2.json": "5c702151f691e1847a5963b8e82331ea1681094a8c74796a3445e1fa20838501",
+      "lookahead/plain-65/guarded-80000-minimax-2.json": "eb0e8d3c6731d1674f8f60e20aa786430b3e7460ffad006f3d3bc4a410ed9d35",
+      "lookahead/plain-61/lookahead-80000-minimax-2.json": "dce83c080efd839cad825dff3a4ccee7fbe739a72c8c74eeca3b5f2626153bd3",
+      "lookahead/plain-62/lookahead-80000-minimax-2.json": "44a0869b69810232bf94f2c735a6707b4ee0a3affc79780f6fb4bff70a46aa53",
+      "lookahead/plain-63/lookahead-80000-minimax-2.json": "62c14301b9337aeee55f386071705a35d8ce7a52471f46e45e9ee73e720a8923",
+      "lookahead/plain-64/lookahead-80000-minimax-2.json": "1103603824473291f1c4e7ae21d74dac63d355e28822c7d494ece36ababb9677",
+      "lookahead/plain-65/lookahead-80000-minimax-2.json": "ca8849bc34931a58b90a8c5f2e1d470e166fa88f5b0375ad03602e3a8e3bb61a",
+      "lookahead/plain-61/lookahead-0-minimax-2.json": "c8fa67e760dca572d43ff11f12fbb7d2ec716beeab9fac68cedf7d3ec1a246f4",
+      "lookahead/plain-62/lookahead-0-minimax-2.json": "834a23b07a72f7862e8151d9b9747f5f5cbaeaf245406c5a916501335d392c37",
+      "lookahead/plain-63/lookahead-0-minimax-2.json": "be5bec513bd63c262ffd06a660e2949dac9bf2a996ca355d106eb07837017a43",
+      "lookahead/plain-64/lookahead-0-minimax-2.json": "bf50f55ff93eeca28cd63785eb5a22706ff7c9013c8de02afa65bf93dfc91935",
+      "lookahead/plain-65/lookahead-0-minimax-2.json": "6031f69e4d6e623a414c7f8c4057a4bf7cb8caa91168d57f1c3525603ca01031",
+      "lookahead/tactical-61/guarded-80000-minimax-2.json": "092ab2cd7464bc4e385f667409939f6d595fb3b1c993321190e33c1bdd1e06f6",
+      "lookahead/tactical-62/guarded-80000-minimax-2.json": "930030d2e5457689cfd607c253fe2dd8817ec14cf2e8eba293a1b96f274329de",
+      "lookahead/tactical-63/guarded-80000-minimax-2.json": "fd09c29056149515f1abca10309dd5c7d1630a78b48e5c55d1dc385d699874db",
+      "lookahead/tactical-64/guarded-80000-minimax-2.json": "af4e50a6ea88557493dd660982f4ee2c38b21cae5b6409d0f5a34f2f333f2cfa",
+      "lookahead/tactical-65/guarded-80000-minimax-2.json": "f315baf55dff191f6ccb2363185b162bd8a8469fbb38ba9ee2ab8a73da781d38",
+      "lookahead/tactical-61/lookahead-80000-minimax-2.json": "ae6031645ece121294f44b58b26457fc32bb32197f23f2aabccc46641a6b2f69",
+      "lookahead/tactical-62/lookahead-80000-minimax-2.json": "3c6e173f9da25f479b6a6622343efc298a3665f7e6b4913eb87fd62fe641accc",
+      "lookahead/tactical-63/lookahead-80000-minimax-2.json": "1b5914d10106fb2b84c685d59963b488b0119cf718aeaa9ae4a38fd1de89e7e5",
+      "lookahead/tactical-64/lookahead-80000-minimax-2.json": "f6cdd80a71aeadcee48c5a5ae47bb63707d50478efff993b09f4dbfc65b5f4e1",
+      "lookahead/tactical-65/lookahead-80000-minimax-2.json": "9b7fba4e79537bb7ca6da9e587a54be4772bc919397f59b59969527ca7422d13",
+      "lookahead/tactics-only/tactics-only-None-minimax-3.json": "9053bd2d35f8c97cb34076d3e4e0050e8ad1c1c54301f8dcd9d53999478f2a6c",
+      "lookahead/plain-61/guarded-80000-minimax-3.json": "1e98fdb6700030bb2b961d2124cd821af9da7ed7d3fab27dc376c222d1836136",
+      "lookahead/plain-62/guarded-80000-minimax-3.json": "63d8e6f61ac80ebb3f482915e5ac735502bcc24207117ef703661b283b7e7b15",
+      "lookahead/plain-63/guarded-80000-minimax-3.json": "2ed2df18d075b07cf503fd81c30e97e9b1372f19f5291afc1cebf97ce85b34c5",
+      "lookahead/plain-64/guarded-80000-minimax-3.json": "8b0b42fa55bd4ba75662a1d330dd5fdf46d8a0b1d1aeacdc28730309c85c1b95",
+      "lookahead/plain-65/guarded-80000-minimax-3.json": "218ba96702b6ee6e0d282f8f3e3e966f0f855cea463965ac8e4a444e21c9fe35",
+      "lookahead/plain-61/lookahead-80000-minimax-3.json": "7f66b121dd9498c22e24f6c78602757a6eb2695f0f230a69249d8a1027335c35",
+      "lookahead/plain-62/lookahead-80000-minimax-3.json": "928e8e4f9fc73d683eaa59f97a708c0a089841c8c95f1c286bfa9097d089b095",
+      "lookahead/plain-63/lookahead-80000-minimax-3.json": "ba1447e05a2d150d1aeb5ae8269e3011cdc1f83d156ef8781404f885b1ee1e04",
+      "lookahead/plain-64/lookahead-80000-minimax-3.json": "3d5bb21abfe027a40b09829b39e320bb880b817b652fe729720d4f337a8f17c7",
+      "lookahead/plain-65/lookahead-80000-minimax-3.json": "5d7b915338c57785de9ab2b0fadc77f162fc23a239498a2c844d54c1b48cac38",
+      "lookahead/plain-61/lookahead-0-minimax-3.json": "27278892495458be792ee720d18e538ff6a9729188cbfcaa291b705a122cf50b",
+      "lookahead/plain-62/lookahead-0-minimax-3.json": "d68fc34955159139e663a6ba1bae8dc9ce505d76e2919dd80c65dd4d8a02148b",
+      "lookahead/plain-63/lookahead-0-minimax-3.json": "3907f9bb8a867bdc581a938e5a0f5f454ce1b8052feff86e6d2bc11a6a55aa28",
+      "lookahead/plain-64/lookahead-0-minimax-3.json": "6be2e6f8df5e59eff2c1443fdd3c097f33a5e662b8a6a8186369569f9981997a",
+      "lookahead/plain-65/lookahead-0-minimax-3.json": "86131569176a7e06ac5ea24d167d877586c3f5ce14c08b4693bdaa6735157bde",
+      "lookahead/tactical-61/guarded-80000-minimax-3.json": "b1f58f3b57ddc32aae69b4ee3148fe5535e10936c36d376b87d93a93d94d0736",
+      "lookahead/tactical-62/guarded-80000-minimax-3.json": "60feb07083f462ebc9652b14a3948cff14c227f1ababb4fdd9b6e0f25c04c9f1",
+      "lookahead/tactical-63/guarded-80000-minimax-3.json": "4e65782ee390bd708a8236a1a11dbacc14ff89d85f9be6c9dc14dd66cac28391",
+      "lookahead/tactical-64/guarded-80000-minimax-3.json": "4b292081c8024722e0de5d115af85e845ab89f0d31434d07ed498b36a20cbaf2",
+      "lookahead/tactical-65/guarded-80000-minimax-3.json": "136feae9f21b481a2b9055782ca8d5ec1f43d389ba7410ad11d1086df55a7c86",
+      "lookahead/tactical-61/lookahead-80000-minimax-3.json": "e929c13c32851284ba2c5dde5f0ab820e90cffc55ddecefd3b61e0c4770f08f8",
+      "lookahead/tactical-62/lookahead-80000-minimax-3.json": "575f0004c5cc714ef32484739f1160d227f53862c2bc9397b64667ad2dd39e52",
+      "lookahead/tactical-63/lookahead-80000-minimax-3.json": "e4d1fa2f816080cf2b717106e4e9a685be8b91d986b583ab6a98a4c83e5aa593",
+      "lookahead/tactical-64/lookahead-80000-minimax-3.json": "a2edd635d18f9a9f857eb45ae5417dc6fc8870529ae3ed983f5a49408d44e8dd",
+      "lookahead/tactical-65/lookahead-80000-minimax-3.json": "fca6300fd1522058e271d14175b3e40ef1c53185775f2e5d5c5e05894d459ea6"
+    },
+    "scores": {
+      "2": {
+        "tactics_only": 0.15625,
+        "plain": {
+          "guarded": {
+            "mean": 0.30833333333333335,
+            "by_seed": [
+              0.3125,
+              0.2916666666666667,
+              0.3020833333333333,
+              0.2604166666666667,
+              0.375
+            ]
+          },
+          "lookahead": {
+            "mean": 0.32083333333333336,
+            "by_seed": [
+              0.3541666666666667,
+              0.25,
+              0.34375,
+              0.2916666666666667,
+              0.3645833333333333
+            ]
+          },
+          "initial_lookahead": {
+            "mean": 0.24375,
+            "by_seed": [
+              0.17708333333333334,
+              0.34375,
+              0.20833333333333334,
+              0.21875,
+              0.2708333333333333
+            ]
+          },
+          "lookahead_minus_guarded": {
+            "mean": 0.012499999999999999,
+            "by_seed": [
+              0.041666666666666664,
+              -0.041666666666666664,
+              0.041666666666666664,
+              0.03125,
+              -0.010416666666666666
+            ],
+            "seed_t_ci95": [
+              -0.03359297251266262,
+              0.058592972512662614
+            ],
+            "openings_only_ci95": [
+              -0.06874999999999999,
+              0.09375
+            ]
+          },
+          "lookahead_minus_tactics": {
+            "mean": 0.16458333333333333,
+            "by_seed": [
+              0.19791666666666666,
+              0.09375,
+              0.1875,
+              0.13541666666666666,
+              0.20833333333333334
+            ],
+            "seed_t_ci95": [
+              0.10433254649451287,
+              0.2248341201721538
+            ],
+            "openings_only_ci95": [
+              0.08333333333333333,
+              0.25
+            ]
+          },
+          "lookahead_training_gain": {
+            "mean": 0.07708333333333334,
+            "by_seed": [
+              0.17708333333333334,
+              -0.09375,
+              0.13541666666666666,
+              0.07291666666666667,
+              0.09375
+            ],
+            "seed_t_ci95": [
+              -0.051478284286311626,
+              0.2056449509529783
+            ],
+            "openings_only_ci95": [
+              0.01666666666666667,
+              0.1416666666666667
+            ]
+          }
+        },
+        "tactical": {
+          "guarded": {
+            "mean": 0.29791666666666666,
+            "by_seed": [
+              0.28125,
+              0.3333333333333333,
+              0.34375,
+              0.22916666666666666,
+              0.3020833333333333
+            ]
+          },
+          "lookahead": {
+            "mean": 0.33958333333333335,
+            "by_seed": [
+              0.2708333333333333,
+              0.3854166666666667,
+              0.3541666666666667,
+              0.34375,
+              0.34375
+            ]
+          },
+          "lookahead_minus_guarded": {
+            "mean": 0.041666666666666664,
+            "by_seed": [
+              -0.010416666666666666,
+              0.052083333333333336,
+              0.010416666666666666,
+              0.11458333333333333,
+              0.041666666666666664
+            ],
+            "seed_t_ci95": [
+              -0.017604367286148656,
+              0.10093770061948198
+            ],
+            "openings_only_ci95": [
+              -0.037500000000000006,
+              0.12083333333333335
+            ]
+          },
+          "lookahead_minus_tactics": {
+            "mean": 0.18333333333333332,
+            "by_seed": [
+              0.11458333333333333,
+              0.22916666666666666,
+              0.19791666666666666,
+              0.1875,
+              0.1875
+            ],
+            "seed_t_ci95": [
+              0.13111456089553433,
+              0.2355521057711323
+            ],
+            "openings_only_ci95": [
+              0.10208333333333332,
+              0.26458333333333334
+            ]
+          },
+          "lookahead_training_gain": {
+            "mean": 0.09583333333333334,
+            "by_seed": [
+              0.09375,
+              0.041666666666666664,
+              0.14583333333333334,
+              0.125,
+              0.07291666666666667
+            ],
+            "seed_t_ci95": [
+              0.04458465352983945,
+              0.14708201313682723
+            ],
+            "openings_only_ci95": [
+              0.029166666666666664,
+              0.16666666666666666
+            ]
+          }
+        }
+      },
+      "3": {
+        "tactics_only": 0.21875,
+        "plain": {
+          "guarded": {
+            "mean": 0.30208333333333337,
+            "by_seed": [
+              0.2708333333333333,
+              0.2708333333333333,
+              0.3645833333333333,
+              0.34375,
+              0.2604166666666667
+            ]
+          },
+          "lookahead": {
+            "mean": 0.3375,
+            "by_seed": [
+              0.40625,
+              0.3541666666666667,
+              0.3229166666666667,
+              0.3229166666666667,
+              0.28125
+            ]
+          },
+          "initial_lookahead": {
+            "mean": 0.20625,
+            "by_seed": [
+              0.16666666666666666,
+              0.25,
+              0.15625,
+              0.22916666666666666,
+              0.22916666666666666
+            ]
+          },
+          "lookahead_minus_guarded": {
+            "mean": 0.035416666666666666,
+            "by_seed": [
+              0.13541666666666666,
+              0.08333333333333333,
+              -0.041666666666666664,
+              -0.020833333333333332,
+              0.020833333333333332
+            ],
+            "seed_t_ci95": [
+              -0.055857426616675754,
+              0.12669075995000909
+            ],
+            "openings_only_ci95": [
+              -0.018750000000000003,
+              0.08541666666666665
+            ]
+          },
+          "lookahead_minus_tactics": {
+            "mean": 0.11875,
+            "by_seed": [
+              0.1875,
+              0.13541666666666666,
+              0.10416666666666667,
+              0.10416666666666667,
+              0.0625
+            ],
+            "seed_t_ci95": [
+              0.061197333344000474,
+              0.17630266665599953
+            ],
+            "openings_only_ci95": [
+              0.03541666666666667,
+              0.2020833333333333
+            ]
+          },
+          "lookahead_training_gain": {
+            "mean": 0.13125,
+            "by_seed": [
+              0.23958333333333334,
+              0.10416666666666667,
+              0.16666666666666666,
+              0.09375,
+              0.052083333333333336
+            ],
+            "seed_t_ci95": [
+              0.04043526591495024,
+              0.2220647340850498
+            ],
+            "openings_only_ci95": [
+              0.075,
+              0.18958333333333335
+            ]
+          }
+        },
+        "tactical": {
+          "guarded": {
+            "mean": 0.2604166666666667,
+            "by_seed": [
+              0.2604166666666667,
+              0.2916666666666667,
+              0.28125,
+              0.25,
+              0.21875
+            ]
+          },
+          "lookahead": {
+            "mean": 0.32291666666666663,
+            "by_seed": [
+              0.3645833333333333,
+              0.3645833333333333,
+              0.28125,
+              0.375,
+              0.22916666666666666
+            ]
+          },
+          "lookahead_minus_guarded": {
+            "mean": 0.06250000000000001,
+            "by_seed": [
+              0.10416666666666667,
+              0.07291666666666667,
+              0.0,
+              0.125,
+              0.010416666666666666
+            ],
+            "seed_t_ci95": [
+              -0.006548664955998318,
+              0.13154866495599835
+            ],
+            "openings_only_ci95": [
+              0.020833333333333332,
+              0.11041666666666668
+            ]
+          },
+          "lookahead_minus_tactics": {
+            "mean": 0.10416666666666667,
+            "by_seed": [
+              0.14583333333333334,
+              0.14583333333333334,
+              0.0625,
+              0.15625,
+              0.010416666666666666
+            ],
+            "seed_t_ci95": [
+              0.023913307314141055,
+              0.18442002601919227
+            ],
+            "openings_only_ci95": [
+              0.01875,
+              0.18958333333333333
+            ]
+          },
+          "lookahead_training_gain": {
+            "mean": 0.11666666666666667,
+            "by_seed": [
+              0.19791666666666666,
+              0.11458333333333333,
+              0.125,
+              0.14583333333333334,
+              0.0
+            ],
+            "seed_t_ci95": [
+              0.026406249463837905,
+              0.20692708386949543
+            ],
+            "openings_only_ci95": [
+              0.06458333333333334,
+              0.16875000000000004
+            ]
+          }
+        }
+      }
+    }
+  },
+  "independent_oracle_verification": {
+    "testpack_sha256": "026598cd585e4e2dc03afb2c42027351a7063c6aac60c30d5b0a3e47f7c3d625",
+    "positions_verified": 288,
+    "verified_by_group": {
+      "win-now": 96,
+      "block-now": 96,
+      "multi-step": 96
+    },
+    "algorithm": "Independent column-grid exhaustive win/draw/loss recursion"
+  }
+}

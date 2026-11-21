@@ -1,0 +1,1560 @@
+{
+  "checkpoint": "game-000000.pt",
+  "checkpoint_sha256": "0954d270edfe8d5485cb0ab07212758654039f2c777e9249675a39fdd52445c7",
+  "training_seed": 51,
+  "method": "ddqn",
+  "training_games": 0,
+  "opponent": "random",
+  "opening_seed": 80421,
+  "pairs": 32,
+  "excluded_opening_boards": 0,
+  "wins": 49,
+  "draws": 0,
+  "losses": 15,
+  "score": 0.765625,
+  "games": [
+    {
+      "pair": 0,
+      "opening": [],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        0,
+        6,
+        1,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 0,
+      "opening": [],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        6,
+        6,
+        3,
+        6,
+        3,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 1,
+      "opening": [
+        1,
+        6,
+        0,
+        6,
+        2,
+        0
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        0,
+        6,
+        1,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 1,
+      "opening": [
+        1,
+        6,
+        0,
+        6,
+        2,
+        0
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 2,
+      "opening": [
+        2,
+        6,
+        1,
+        3,
+        2,
+        6,
+        2,
+        1
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        3,
+        6,
+        2,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 2,
+      "opening": [
+        2,
+        6,
+        1,
+        3,
+        2,
+        6,
+        2,
+        1
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 3,
+      "opening": [
+        2,
+        1,
+        6,
+        5,
+        2,
+        5,
+        3,
+        5,
+        1,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        6,
+        6,
+        5
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 3,
+      "opening": [
+        2,
+        1,
+        6,
+        5,
+        2,
+        5,
+        3,
+        5,
+        1,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        3,
+        6,
+        0,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 4,
+      "opening": [
+        6,
+        5,
+        2,
+        5,
+        0,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        4,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 4,
+      "opening": [
+        6,
+        5,
+        2,
+        5,
+        0,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        3,
+        6,
+        0,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 5,
+      "opening": [
+        0,
+        2,
+        0,
+        6,
+        3,
+        5
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        5,
+        6,
+        6,
+        6,
+        2,
+        6,
+        5,
+        2,
+        1,
+        2,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        5
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 5,
+      "opening": [
+        0,
+        2,
+        0,
+        6,
+        3,
+        5
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        2,
+        6,
+        0,
+        2,
+        3,
+        2,
+        6,
+        6,
+        6,
+        6,
+        4,
+        2,
+        4,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 6,
+      "opening": [
+        4,
+        3,
+        0,
+        1,
+        6,
+        2,
+        3,
+        6,
+        3,
+        1
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        2,
+        6,
+        0,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 6,
+      "opening": [
+        4,
+        3,
+        0,
+        1,
+        6,
+        2,
+        3,
+        6,
+        3,
+        1
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        0,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 7,
+      "opening": [
+        3,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        4,
+        6,
+        1,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 7,
+      "opening": [
+        3,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        1,
+        6,
+        1,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 8,
+      "opening": [
+        1,
+        4,
+        0,
+        2,
+        5,
+        5,
+        6,
+        3,
+        3,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        0,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 8,
+      "opening": [
+        1,
+        4,
+        0,
+        2,
+        5,
+        5,
+        6,
+        3,
+        3,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        2,
+        4,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 9,
+      "opening": [
+        4,
+        2,
+        5,
+        6
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        3,
+        6,
+        3,
+        6,
+        6,
+        6,
+        2,
+        1,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 9,
+      "opening": [
+        4,
+        2,
+        5,
+        6
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        6,
+        2,
+        0,
+        6,
+        2,
+        6,
+        0,
+        6,
+        5,
+        2,
+        4,
+        2,
+        0,
+        2,
+        5,
+        1,
+        0
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 10,
+      "opening": [
+        6,
+        5,
+        2,
+        1
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        5,
+        6,
+        1,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 10,
+      "opening": [
+        6,
+        5,
+        2,
+        1
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        3,
+        6,
+        4,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 11,
+      "opening": [
+        6,
+        3
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        2,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 11,
+      "opening": [
+        6,
+        3
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        2,
+        6,
+        2,
+        6,
+        6,
+        6,
+        3,
+        2,
+        1,
+        2,
+        5,
+        2,
+        3,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 12,
+      "opening": [
+        2,
+        4,
+        3,
+        5,
+        5,
+        3,
+        2,
+        3
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        1,
+        6,
+        1,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 12,
+      "opening": [
+        2,
+        4,
+        3,
+        5,
+        5,
+        3,
+        2,
+        3
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        0
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 13,
+      "opening": [
+        2,
+        1,
+        3,
+        1,
+        3,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        5,
+        6,
+        1,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 13,
+      "opening": [
+        2,
+        1,
+        3,
+        1,
+        3,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        3,
+        6,
+        1,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 14,
+      "opening": [
+        1,
+        3,
+        2,
+        2,
+        5,
+        0,
+        0,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        4,
+        6,
+        3,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 14,
+      "opening": [
+        1,
+        3,
+        2,
+        2,
+        5,
+        0,
+        0,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        2,
+        6,
+        0,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 15,
+      "opening": [
+        2,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        4,
+        6,
+        1,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 15,
+      "opening": [
+        2,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        5,
+        6,
+        3,
+        6,
+        6,
+        6,
+        1,
+        6,
+        5,
+        2,
+        5,
+        2,
+        1,
+        2,
+        0
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 16,
+      "opening": [
+        5,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        0,
+        6,
+        4,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 16,
+      "opening": [
+        5,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        0,
+        6,
+        6,
+        6,
+        4,
+        6,
+        2,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 17,
+      "opening": [
+        6,
+        0,
+        2,
+        4,
+        0,
+        5,
+        4,
+        4,
+        3,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        2,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 17,
+      "opening": [
+        6,
+        0,
+        2,
+        4,
+        0,
+        5,
+        4,
+        4,
+        3,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        2,
+        6,
+        2,
+        6,
+        5,
+        6,
+        6,
+        6,
+        0,
+        2,
+        3,
+        2,
+        0,
+        1,
+        4,
+        1,
+        3,
+        1,
+        4,
+        1
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 18,
+      "opening": [
+        3,
+        0,
+        1,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        4,
+        6,
+        3,
+        6,
+        6,
+        6,
+        0,
+        6,
+        4,
+        2,
+        0,
+        2,
+        2,
+        2,
+        5,
+        1,
+        0
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 18,
+      "opening": [
+        3,
+        0,
+        1,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        2,
+        6,
+        6,
+        6,
+        4,
+        6,
+        1,
+        6,
+        2
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 19,
+      "opening": [
+        0,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        1,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 19,
+      "opening": [
+        0,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        4,
+        6,
+        3,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 20,
+      "opening": [
+        5,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        5,
+        6,
+        6,
+        6,
+        2,
+        6,
+        3,
+        6,
+        3,
+        2,
+        4,
+        2,
+        1
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 20,
+      "opening": [
+        5,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        5,
+        6,
+        3,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 21,
+      "opening": [
+        0,
+        3,
+        4,
+        6,
+        1,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        2,
+        6,
+        5,
+        6,
+        6,
+        6,
+        5,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1,
+        3,
+        2,
+        2,
+        2,
+        5,
+        0,
+        5
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 21,
+      "opening": [
+        0,
+        3,
+        4,
+        6,
+        1,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        0,
+        6,
+        1,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 22,
+      "opening": [
+        1,
+        6,
+        3,
+        6,
+        3,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        0,
+        6,
+        6,
+        2,
+        4,
+        1,
+        3,
+        1,
+        1,
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 22,
+      "opening": [
+        1,
+        6,
+        3,
+        6,
+        3,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        2,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 23,
+      "opening": [
+        5,
+        2,
+        1,
+        1,
+        5,
+        4,
+        4,
+        2,
+        0,
+        0
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        2,
+        6,
+        2
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 23,
+      "opening": [
+        5,
+        2,
+        1,
+        1,
+        5,
+        4,
+        4,
+        2,
+        0,
+        0
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        0,
+        2,
+        3,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 24,
+      "opening": [
+        0,
+        1,
+        6,
+        6,
+        1,
+        2,
+        4,
+        1,
+        0,
+        0
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        6,
+        6,
+        0,
+        6,
+        1,
+        2,
+        3,
+        1,
+        4,
+        1,
+        2,
+        2,
+        5,
+        2,
+        0,
+        2,
+        5,
+        0,
+        5
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 24,
+      "opening": [
+        0,
+        1,
+        6,
+        6,
+        1,
+        2,
+        4,
+        1,
+        0,
+        0
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        1,
+        6,
+        6,
+        6,
+        1,
+        6,
+        3,
+        2,
+        5
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 25,
+      "opening": [
+        4,
+        5,
+        1,
+        0,
+        0,
+        5,
+        5,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        5,
+        6,
+        1,
+        6,
+        1,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 25,
+      "opening": [
+        4,
+        5,
+        1,
+        0,
+        0,
+        5,
+        5,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        3,
+        6,
+        2
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 26,
+      "opening": [
+        4,
+        6,
+        2,
+        3,
+        6,
+        6,
+        0,
+        3,
+        2,
+        1
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        4,
+        6,
+        6,
+        1,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 26,
+      "opening": [
+        4,
+        6,
+        2,
+        3,
+        6,
+        6,
+        0,
+        3,
+        2,
+        1
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        6,
+        6,
+        6,
+        2,
+        4,
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 27,
+      "opening": [
+        4,
+        4,
+        5,
+        2
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        4,
+        6,
+        2,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 27,
+      "opening": [
+        4,
+        4,
+        5,
+        2
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        3,
+        6,
+        5,
+        6,
+        0,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 28,
+      "opening": [
+        4,
+        6
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        6,
+        6,
+        3,
+        6,
+        3,
+        6,
+        4,
+        2,
+        3,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 28,
+      "opening": [
+        4,
+        6
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        3,
+        6,
+        3,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 29,
+      "opening": [
+        6,
+        0,
+        6,
+        5,
+        3,
+        6
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        6,
+        2,
+        2,
+        2,
+        5,
+        2,
+        4,
+        2,
+        0,
+        2
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 29,
+      "opening": [
+        6,
+        0,
+        6,
+        5,
+        3,
+        6
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        5,
+        6,
+        0,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 30,
+      "opening": [
+        6,
+        0
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        1,
+        6,
+        4,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 30,
+      "opening": [
+        6,
+        0
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        4,
+        6,
+        2,
+        6,
+        4,
+        6,
+        6,
+        6,
+        5,
+        2,
+        2,
+        2,
+        5,
+        2,
+        0,
+        2,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "reward": -1.0
+    },
+    {
+      "pair": 31,
+      "opening": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "player": 1,
+      "moves_after_opening": [
+        6,
+        3,
+        6,
+        4,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    },
+    {
+      "pair": 31,
+      "opening": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "player": 2,
+      "moves_after_opening": [
+        3,
+        6,
+        0,
+        6,
+        1,
+        6,
+        5,
+        6
+      ],
+      "reward": 1.0
+    }
+  ]
+}

@@ -1,0 +1,1028 @@
+{
+  "seeds": [
+    51,
+    52,
+    53
+  ],
+  "curve_opening_seed": 621903,
+  "final_opening_seed": 736401,
+  "curve_pairs": 32,
+  "final_pairs": 64,
+  "games_replayed": 11008,
+  "evaluations": 122,
+  "evaluations_sha256": {
+    "evaluation/dqn-51/curve-network-0-minimax.json": "5327f50daf6f32fcfd3de098e7ef02f30dae6830207c39bb7dab1e1ebacc24f7",
+    "evaluation/dqn-51/curve-network-0-random.json": "cb46f2772d81207cc8f0b283361a8d89d500abf6cc4d33f7dd20362ce964be2e",
+    "evaluation/dqn-51/curve-network-1000-minimax.json": "a234b5f6dbd7b03762ef6bc57bea1b69eb3b85f08a90d930ea8923acb4dbcd1d",
+    "evaluation/dqn-51/curve-network-1000-random.json": "18d3d52d9d0ecefc28e2e370f5e20ab9a4f9e2c94887a8ceb9ab9f756c3eb876",
+    "evaluation/dqn-51/curve-network-2000-minimax.json": "a1bcf563a0aee01a4eef021970a5c4c769ab448dd9863ab3f97148352a01df05",
+    "evaluation/dqn-51/curve-network-2000-random.json": "ac9d8fbf06907dd4358a195d8694d9f6f2af2088cd866bd163d74dbde14a877c",
+    "evaluation/dqn-51/curve-network-3000-minimax.json": "2c2b809706752c0b058bf00030a05efe94796f484db83e84abf7534c70b3a9a0",
+    "evaluation/dqn-51/curve-network-3000-random.json": "0a6b305d8ba87dc54a5db5b6e03da99e92ea621efef22e40fb9126cc1a5f36f6",
+    "evaluation/dqn-51/curve-network-4000-minimax.json": "eb3c88c06b7be56739030ac8eb23e293dc79623accccbe3d7e7a777090652faa",
+    "evaluation/dqn-51/curve-network-4000-random.json": "32d2b5c012dde34437bcb7cfd38f95d6ecab3ba320fab4af24b108cdb5147708",
+    "evaluation/dqn-51/curve-network-5000-minimax.json": "87f52e3a4d3c5e2102125bc8e54134a1bf9eebdef5437da8bdabf39664ecd73f",
+    "evaluation/dqn-51/curve-network-5000-random.json": "05a5580d012e3f8a65a1cb61bf3718beb959a687c7828df115353b20d50838fb",
+    "evaluation/dqn-51/final-guarded-0-minimax.json": "136add74418c2f24ba1593144eee91c979b82df0baaa3488721577190aff0864",
+    "evaluation/dqn-51/final-guarded-0-random.json": "09ada185301e599cc67a0e90be12225eb4d585b41c3dc9b8be4212f5bc5fc7cc",
+    "evaluation/dqn-51/final-guarded-5000-minimax.json": "58e531c639ad25cd84c56bcd5fad30265c2bc102683b30a1e76dc4bf8b7b169d",
+    "evaluation/dqn-51/final-guarded-5000-random.json": "c12e11da208b93244e6198f5d614bc1a6cfdd6742fa00b581075134d82392e1d",
+    "evaluation/dqn-51/final-network-0-minimax.json": "1113df6659054799d90db2a57633c25e22e968a867c16e14b760b1540a9604dd",
+    "evaluation/dqn-51/final-network-0-random.json": "31f5ad247f3b53ea8c2e0c2b38a1321cb03efbd5135d5b4fcd0301fb40d4458f",
+    "evaluation/dqn-51/final-network-5000-minimax.json": "1cbec6c9634dd99c3a96280dfefa3bbfe184fdd802b0a8fc679f401009ed0df8",
+    "evaluation/dqn-51/final-network-5000-random.json": "4421874e793973ae34f5a9a71bb6941e6272ad90ae7043ebb92c2ededb8b68d3",
+    "evaluation/ddqn-51/curve-network-0-minimax.json": "b9d33db98cb4e7e3e59f874befa4fe898d3f923648103ac87f01373150a6ed57",
+    "evaluation/ddqn-51/curve-network-0-random.json": "9053ca437d795db3d10f2cd13a2869408fefbfe45ab6077d2c168ffe8481e6a6",
+    "evaluation/ddqn-51/curve-network-1000-minimax.json": "12ecacefba3a93df740050f66983b9af11edf95a9183fd3c3aea6a9f569bb744",
+    "evaluation/ddqn-51/curve-network-1000-random.json": "4cca8fd5e2d8dc7ad32422e925db7db980e3e3d2ba267136ddacc0ac85e7343d",
+    "evaluation/ddqn-51/curve-network-2000-minimax.json": "0015e8755cb729337de72bef5a697768d627f972677313078e0e5604e770f509",
+    "evaluation/ddqn-51/curve-network-2000-random.json": "ebf62549bc3e8b9242fedc12a90157eaa1b3a567f68848ff51c978eac5990441",
+    "evaluation/ddqn-51/curve-network-3000-minimax.json": "d4600ca8ffbd1fb1d65b725797bce7ec2e371c37ed941277892055550a20f1ef",
+    "evaluation/ddqn-51/curve-network-3000-random.json": "2090a499211d494e5b2bfcd4154b80ca75e046f955cc651d2edf6edcaac3a5db",
+    "evaluation/ddqn-51/curve-network-4000-minimax.json": "8071600b6ed58a6a229b1097565ddba0234d04ba32cd825b711661fb5b1b6825",
+    "evaluation/ddqn-51/curve-network-4000-random.json": "e38ed365fdf0a20ca00748df2ac32b3bfdd41a9e8a85653b3f72dad71fa5f4c8",
+    "evaluation/ddqn-51/curve-network-5000-minimax.json": "5eb0750f5ab503e71efeb600816da7a4a466df84272403a5306193b523903122",
+    "evaluation/ddqn-51/curve-network-5000-random.json": "0a5df127d4d6d3391426a0ababd241e8030cb816b907e51a38847a2b9249f4c9",
+    "evaluation/ddqn-51/final-guarded-0-minimax.json": "6e9398eb2ad13f702ff5789ec99c09858a0eaf7e345ffff9e94e356934e17824",
+    "evaluation/ddqn-51/final-guarded-0-random.json": "e40385a3883f632c000e92330027ef01d0821d68c776775409e9b1066990703b",
+    "evaluation/ddqn-51/final-guarded-5000-minimax.json": "9bf6de2bcf3e213d6eb92fa0454de23190ed068ef828f946e222029acbb03ae5",
+    "evaluation/ddqn-51/final-guarded-5000-random.json": "57507b6b01e8807702b841ef9443609e235ab090d8b8d972e6a98397f477e3d7",
+    "evaluation/ddqn-51/final-network-0-minimax.json": "2abeb132a23083ef656caf1f6eb33c6c9a3df44222103e5518b60d5919f95905",
+    "evaluation/ddqn-51/final-network-0-random.json": "66eb9a11d169e8c5778afb3d087dfdec97f4ebf7ee93bbd988bf20bf507fa9d0",
+    "evaluation/ddqn-51/final-network-5000-minimax.json": "d5004892cdafbac459701280e426d78ed61c647fc7f5748ace5fcbdfa1d21a3f",
+    "evaluation/ddqn-51/final-network-5000-random.json": "3b32de22e308093176448b9efbd754e35fdd1bb3767f963fffa8c10bf917b445",
+    "evaluation/dqn-52/curve-network-0-minimax.json": "47b7c226c652735253a72c0c3ff3c438f2dc2f7329cc97e1eb60796fc3827f97",
+    "evaluation/dqn-52/curve-network-0-random.json": "b4dfcbadd8f335d5e03da7f0454949ac49237214f7b857ed733d1768926b8334",
+    "evaluation/dqn-52/curve-network-1000-minimax.json": "f05ec33ad01796b3d89bc13bf15bfdfcec7e64f9a00cdeb68950b010b7f579a8",
+    "evaluation/dqn-52/curve-network-1000-random.json": "4d07015641e9108ed1a950fb79b00fcda3aa9e6f4e5c36d3977a1ee8ea1692f6",
+    "evaluation/dqn-52/curve-network-2000-minimax.json": "2c4bd1d59cc393bd613962089aab9743055656daf853cf2835d090a6c8e0e34a",
+    "evaluation/dqn-52/curve-network-2000-random.json": "1be94617200434456aeb7ae9fba51b3e1be72d8fd9135dea8dfbc684c4d99cb0",
+    "evaluation/dqn-52/curve-network-3000-minimax.json": "7050957adafc918f76254bc924c564504fc0021c89a19e908bfcbe60dc982902",
+    "evaluation/dqn-52/curve-network-3000-random.json": "ef7bd7525158924eb4acdd749b0709854cd123c1ead709af18a478f91acccdd5",
+    "evaluation/dqn-52/curve-network-4000-minimax.json": "0c3a5872e353fccdd33ee5e023df825892f93d9ca3ed428e720a8b7f5b2209eb",
+    "evaluation/dqn-52/curve-network-4000-random.json": "c743da07e83f24abdd6f72b0f3f9393c5e37cdfa8e726e7981d9771cc2263163",
+    "evaluation/dqn-52/curve-network-5000-minimax.json": "c926bc4608a2392d414036685e924e92d614d62e29500acf98e903169446b895",
+    "evaluation/dqn-52/curve-network-5000-random.json": "4009e472ed0565ab3f7d330d44912c3b7e0319509ea3829480b907cbc32dd89c",
+    "evaluation/dqn-52/final-guarded-0-minimax.json": "e79f25aa9df4e86675ef5c91947e1e2a40abae90f8a93752e692495d8a84d8a9",
+    "evaluation/dqn-52/final-guarded-0-random.json": "488addc0f656244efeef2c0ddcd53184f73b4562582cace18c6411bd6486f281",
+    "evaluation/dqn-52/final-guarded-5000-minimax.json": "0169ef7836a36390f5c5f02e97037e99fedbc48f85b12b16c1938926544f04b5",
+    "evaluation/dqn-52/final-guarded-5000-random.json": "d54bc82c1fb19c965d3b701593eff106bcf9b080c53d55a376574ee46a53beff",
+    "evaluation/dqn-52/final-network-0-minimax.json": "db81d2b381742bbe545b7168e6969de5af01900709c6c9aeb164a36cb7001d62",
+    "evaluation/dqn-52/final-network-0-random.json": "46eeb8df4662219a86d526195a9bdbb81e0a1e546b8ed5bc9105dfe9e2ecaa72",
+    "evaluation/dqn-52/final-network-5000-minimax.json": "897a6e8495254104a6fd1542330d95834f8818bf2419b3c736c1384370040d71",
+    "evaluation/dqn-52/final-network-5000-random.json": "7666bd9c8df8e2d99337d59e28a442dc5689c9d3bece21d01d72f3037dd5b2b7",
+    "evaluation/ddqn-52/curve-network-0-minimax.json": "a30fe34de8a73a88384da6ccaf21395ee4f53b2e4826ed18400b47bd46f23c64",
+    "evaluation/ddqn-52/curve-network-0-random.json": "a1eb31c58eb16b81004cd79827178146ca02029812bb114dac561df7bd50a614",
+    "evaluation/ddqn-52/curve-network-1000-minimax.json": "7c3b6f5fc1995367ee1a4e6221fee0ab62710fa7b0589894665fecef7e6a5612",
+    "evaluation/ddqn-52/curve-network-1000-random.json": "c56d663ae8bdf5e1030515d3630bf075485882c21beb4042201742b41a53543d",
+    "evaluation/ddqn-52/curve-network-2000-minimax.json": "7db7d61a91342b95bbecf449a05a229a3eea0cefe75596350352e8c541908f44",
+    "evaluation/ddqn-52/curve-network-2000-random.json": "4192d2d12894cd5c1aa7a2174b00a5436700c5b7bc22c0b4a4bf8f0f64a9ff86",
+    "evaluation/ddqn-52/curve-network-3000-minimax.json": "1e3d3586aff780eabc76311cefb5d4f4c324efcb1a48587a6bf26a9a85416be1",
+    "evaluation/ddqn-52/curve-network-3000-random.json": "f5ec96c57e71b36135b30ea910f92e066681e2f79ae2109fd3124cf9581ceb59",
+    "evaluation/ddqn-52/curve-network-4000-minimax.json": "9e40d73f95c490b83f7faf26e4377524fdabf851ac4753bbbd85659efafd2c19",
+    "evaluation/ddqn-52/curve-network-4000-random.json": "8a175a01628017388ee178c960f532a2c550fdb4ac7fbf517236d3a730a6cb14",
+    "evaluation/ddqn-52/curve-network-5000-minimax.json": "ac5cdf1454660fb507b31b369ead8d66ff7e130ed30963bbf6223d9821d54058",
+    "evaluation/ddqn-52/curve-network-5000-random.json": "3ef6c630191c1902d4a849358099483d533a8a475b6847a1c24c6e8a46fbf950",
+    "evaluation/ddqn-52/final-guarded-0-minimax.json": "2fbbb5273222fbb5cef74e0ac9556af539e0fd7a87eb5908ef4b9ca79d0c43c8",
+    "evaluation/ddqn-52/final-guarded-0-random.json": "92a1a92f578dc8ff9de62e9ca4ae8764ba5310b8250adad69f18e6a6b7f96205",
+    "evaluation/ddqn-52/final-guarded-5000-minimax.json": "088c9db4b5c4b93982b4ff5b66e0a42b64f747d42af948ed13274f03de29834b",
+    "evaluation/ddqn-52/final-guarded-5000-random.json": "dc4535019be60b8ec886a8144fd88d7084eed218efecd5031da8f2559833da89",
+    "evaluation/ddqn-52/final-network-0-minimax.json": "6e3f53194f90573bc2d61435d95d0e1cba33adf7268fe43122c1f1413d4d00c2",
+    "evaluation/ddqn-52/final-network-0-random.json": "c98f1ba5ea67dbde450e6147c57a3f84c7a24bbf55bafb489e6dda694eb4a328",
+    "evaluation/ddqn-52/final-network-5000-minimax.json": "a84c8be078a22504b9d11a9df6b1cf9b6d26f500fa1d3860ed185f7ca4db8d78",
+    "evaluation/ddqn-52/final-network-5000-random.json": "2ef323e459adbdb938b0e0a35adf3c96f1ee1ccd252327b7338c29c4842832e8",
+    "evaluation/dqn-53/curve-network-0-minimax.json": "305b78333487f14b70989b3fedadfbdc68a762b3a39c8b0e08aea53643383a80",
+    "evaluation/dqn-53/curve-network-0-random.json": "b1bae0c206582ff3d21cb77a2c834444555dca49d6cf414f2ea6ee5ba038b01e",
+    "evaluation/dqn-53/curve-network-1000-minimax.json": "10688c60baf380a56f365c9f09652cd1f4722b747d413743caf72163cd68381a",
+    "evaluation/dqn-53/curve-network-1000-random.json": "dd44fc3c82389616240307236ba1ae1150931cc7c46112433ef03c5180e70a65",
+    "evaluation/dqn-53/curve-network-2000-minimax.json": "01ddeecdea7ae0f332cdeb169ac3d8472323c108e188de5b15487ced7b52a106",
+    "evaluation/dqn-53/curve-network-2000-random.json": "72b35070e6126292eff5c4e03f86679033d8eeaa8f81a66d80f0de35e0d1c5b8",
+    "evaluation/dqn-53/curve-network-3000-minimax.json": "e6c3ef8a28ab7d3a0abbd61f4a69829c116e250c28210418207b2f0fde7b4fde",
+    "evaluation/dqn-53/curve-network-3000-random.json": "bb5b1f5eac68bf79fd8ab000bc16239a18c49715838b569e2075e56a6932c6fa",
+    "evaluation/dqn-53/curve-network-4000-minimax.json": "34ac5463d8da47dc7c035dae3a3f97022980d70f40de033ca66dcae52db91eff",
+    "evaluation/dqn-53/curve-network-4000-random.json": "7926786c9e2078b16e300ed87c2012b99d6075d5f9c1c31a8b29da4d085abbc2",
+    "evaluation/dqn-53/curve-network-5000-minimax.json": "fcd86e1df3a995ba421ae09ad81206bddd0474f921d3d0c27ba5346d55d72937",
+    "evaluation/dqn-53/curve-network-5000-random.json": "99ddb654c6beb2e9ad2b330aff0682d01213a6832f735184ba61e3408b0eb133",
+    "evaluation/dqn-53/final-guarded-0-minimax.json": "699e267fa5e6231abd3fa9096dfd3258819b1c5a2fd44744ad8f24d1be1856ca",
+    "evaluation/dqn-53/final-guarded-0-random.json": "3f8c002020a8f58f36c043c3b9f008925950d8d89fd19003e96e9c771ea84972",
+    "evaluation/dqn-53/final-guarded-5000-minimax.json": "06c6abc15df4b115db8eca3a3a609a6b511d4e2248d8ad243abc3db9129c4a4f",
+    "evaluation/dqn-53/final-guarded-5000-random.json": "4e37b42ec7b25ab17bc0a669fb675cff678e6dc6ad7f9ed27471a2f610ddd735",
+    "evaluation/dqn-53/final-network-0-minimax.json": "8024649ae6769bbdeeeec37097b060fc93643cda3e30d1883f161d3ec1a38d42",
+    "evaluation/dqn-53/final-network-0-random.json": "191caaa571b0354a640e2a8d0f14464a58566e188b196d23a80604d5a664d1ab",
+    "evaluation/dqn-53/final-network-5000-minimax.json": "471fac2e2469cd6fc33e6d64778ec89d59c0cbbf6616dfb15cf96b5132dd8bc9",
+    "evaluation/dqn-53/final-network-5000-random.json": "75f4054692cccd519c9d7f723ff2864fb0d795ec683a5b0a45a7e5bb36b5d043",
+    "evaluation/ddqn-53/curve-network-0-minimax.json": "c0452b3b9839742fb9efbccf2f90cf7fd990d78415cc88fb66405ed32a357330",
+    "evaluation/ddqn-53/curve-network-0-random.json": "a6bdaf227d5d3c2c4e113bb079ea60a3af75fcbe40539ff6f3ce98992cff7d31",
+    "evaluation/ddqn-53/curve-network-1000-minimax.json": "fa9463b34fd7903185f8caab5df76112564919af641a96576460336006d9153c",
+    "evaluation/ddqn-53/curve-network-1000-random.json": "aa282b83b420cd432bcaa9725fadb59cba0cb3955b084aaf98ccb9cc6bde6523",
+    "evaluation/ddqn-53/curve-network-2000-minimax.json": "1e22011f744ac0b2b3ccfffabcccacbc9ba818c594b874cc3e65997374a5765e",
+    "evaluation/ddqn-53/curve-network-2000-random.json": "7b4939a24a85df1df7f6c0169a571654c99d49bacad575b7b43582173271275d",
+    "evaluation/ddqn-53/curve-network-3000-minimax.json": "c0debb9122da1a7c6cbbb6960bde248fa0f6e9d780cc57bb9414f336f6db47e2",
+    "evaluation/ddqn-53/curve-network-3000-random.json": "3cdfc52249717a2cef52a3eb72d87a9ce056ca5712437df1dfcd4a3996caf905",
+    "evaluation/ddqn-53/curve-network-4000-minimax.json": "46b44cfa93bdaeece1c49807f1985d3bc128f14914ab845401c1e71f795ff0e2",
+    "evaluation/ddqn-53/curve-network-4000-random.json": "7cd6ab549aa3a0cd533fedf84a8e8d001a62a6086a653b37ff420ab2de6c4b2e",
+    "evaluation/ddqn-53/curve-network-5000-minimax.json": "25f6120a9bcc3c54563893d41595f5cd5129c82d7cc8ec823f84213a8061b864",
+    "evaluation/ddqn-53/curve-network-5000-random.json": "fc9f8a8756ee9bbaa9ce00573aa540edceacc512c7e1f7b78702ece61eb80883",
+    "evaluation/ddqn-53/final-guarded-0-minimax.json": "cee3ee7f4781747807941ec7b8076f4c83d1b02584fe85292b93f4a95138072f",
+    "evaluation/ddqn-53/final-guarded-0-random.json": "8216ed7ae9ac6b8e1cd71fa53adb20dcf95766735dcd091f6c141912a199f752",
+    "evaluation/ddqn-53/final-guarded-5000-minimax.json": "d71fe8ced9996aa2c5d5a588993f50fc2f24eed5aa61b493bb5002bd7723981e",
+    "evaluation/ddqn-53/final-guarded-5000-random.json": "e00fba94c0b8d10ab6e190820504e35ec9e8c45ffb836cd775a83347837bddb3",
+    "evaluation/ddqn-53/final-network-0-minimax.json": "e7c1e7d24c0938ca74eecda474761762a24682b92cd5da34dbf13e68b0cb1d2c",
+    "evaluation/ddqn-53/final-network-0-random.json": "60b2bfcbf61a3dde1ff26d54d8250806f138c23741027b811ba0dc0aa1751b04",
+    "evaluation/ddqn-53/final-network-5000-minimax.json": "f83929b917994c6599cd964fb036a86beee74e74960f747ec138556db99ca499",
+    "evaluation/ddqn-53/final-network-5000-random.json": "5ed37a332fd463c7cd89e65dac9e8e5bc0254f3f79db11a3865e16c2b927210d",
+    "evaluation/tactics-only/final-tactics-only-None-random.json": "9f95888c8ba6c2f84021312fccf8e755fc13140f28f53c2a22cb23fc44dacd21",
+    "evaluation/tactics-only/final-tactics-only-None-minimax.json": "423397aeba4bf013dca6d003fb5ec43cbdc7b775449379aec8a68bf309374714"
+  },
+  "training": {
+    "dqn-51": {
+      "moves": 87183,
+      "updates": 21540,
+      "config": {
+        "command": "train",
+        "method": "dqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 51,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "078b86030d0bf88e84d41f0d46a35730a853af46f02b37f08f95c8accd4f7d3e",
+        "1000": "b3b025cd9f56a44295542733d3f6e4d5df18d9a20de6630e23b2c34178c7ef97",
+        "2000": "a8be89de69f5da79e284af59bb6cbae3e50a814bfed0ca893e9b7f77e077a1d4",
+        "3000": "e4d9aa436defb12753fc8729984375381a4c8cef55503400570ae2f129bd29b0",
+        "4000": "3d9e8e4dca9d737508c6815134caee4246230680678add082c192feef5e5047f",
+        "5000": "9b34463a8764712a3796b88ff75acabbfb93dd5ee33024ab4cd2840adb9a5187"
+      }
+    },
+    "ddqn-51": {
+      "moves": 86076,
+      "updates": 21264,
+      "config": {
+        "command": "train",
+        "method": "ddqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 51,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "0954d270edfe8d5485cb0ab07212758654039f2c777e9249675a39fdd52445c7",
+        "1000": "fbf3d689648ce12f9bc29e5d62061d9ef0501678a170637cb9cff0ef49d9a3ce",
+        "2000": "270691ad373522c1206aecfaeb4190043bda7cab2a67336605fd10fe0fe16a20",
+        "3000": "b976557951db4ea7c3ef3bc7b6ab01fcc57d371582d054a5a6c563aa557c0b4f",
+        "4000": "4321752ab5790927d5996db0047629124ce07c64606a15f35e06f244d6f12a5e",
+        "5000": "c87ac742f2870bbea7db970e8f014258d3df477fdcfa499b75d6a08c0cf83627"
+      }
+    },
+    "dqn-52": {
+      "moves": 88596,
+      "updates": 21894,
+      "config": {
+        "command": "train",
+        "method": "dqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 52,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "cef0b1d1f9e471faa726fbe81e0fea02b8cf08bf5a81347d9f113e590d279e42",
+        "1000": "575f37c959a22c0df769a3d9e2b0ec1e77b9cbfec25208d609b2f57ff4ed8a7e",
+        "2000": "6f792f066092f4793eae52a45a7df55cbbd4f5e9b3a8e4c426be331007efddf0",
+        "3000": "26705da78d641d56bf081e2d1c7d74cd7d9b3cb01b79fee6012ca7a127abced9",
+        "4000": "bb4f68ce3b3ad501ac76d821ef39c68bafdadec596634191a0a9ddbd0fc3b83c",
+        "5000": "61409e8c1088f4522c959cb8a78bbf09f851009dd843ca36da8977b486dac57b"
+      }
+    },
+    "ddqn-52": {
+      "moves": 87274,
+      "updates": 21563,
+      "config": {
+        "command": "train",
+        "method": "ddqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 52,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "da7bc0ea5c682e869e4c3e128e2d3244d530a208c3752c667859fc5e5642fb66",
+        "1000": "6d60460b7ddad1477c7d1f11c3e4338c4e3137790611b347e70d6392babdbbeb",
+        "2000": "87019fce0ef4793eef119c2f37eccc3aecb015b9054922e052407cd7e2e4c504",
+        "3000": "edac8f5cff5f6bda5bdb1853ac068ac6c01f9e2e6d83670bb8af001041b199be",
+        "4000": "e3689cb5a6a86336afd58ee2b3d949a9a3de87c77704a636f45afde69c2ac646",
+        "5000": "f43c9a70f8f0cb27cfcf2f273dccfba35357d7ae9996177f5752b83a200cb7d5"
+      }
+    },
+    "dqn-53": {
+      "moves": 87422,
+      "updates": 21600,
+      "config": {
+        "command": "train",
+        "method": "dqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 53,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "bf3527a05e983bbd7d126461eedf7722dc0412c31e47a7549cc37570beb8c101",
+        "1000": "2a7905b9bd6338ebeb85a1f33e0bf5c9608c6b3a1ae410b3e742a238bc1b8889",
+        "2000": "3ff05f975d36755da929a268342a99f186d9efda8613cfdb113500b1405eb69e",
+        "3000": "63902b71411d7a15a7683a0177eb2aa31572bfee536c1281846470aabafba9c8",
+        "4000": "53881b07a3bebe47565a13b9686042cfccb6b6ee72ac7d0312aa2480066daef1",
+        "5000": "806047f414ce48e5927bf70465785931b169a283c0cd42da905ae05857551b80"
+      }
+    },
+    "ddqn-53": {
+      "moves": 90459,
+      "updates": 22359,
+      "config": {
+        "command": "train",
+        "method": "ddqn",
+        "games": 5000,
+        "decay_games": 4000,
+        "save_every": 1000,
+        "seed": 53,
+        "device": "cuda",
+        "torch_version": "2.1.0+cu121",
+        "batch_size": 128,
+        "warmup": 1024,
+        "sync_every": 500,
+        "update_every": 4,
+        "replay_capacity": 50000
+      },
+      "checkpoint_sha256": {
+        "0": "5767a0597a49e5519615a644db812dcfeb3550763af0d4534f6a3cca2460a4dc",
+        "1000": "3a96ebf680036588a2b8287d27da2cf30ddedf1267b77735ca14f389b337388a",
+        "2000": "53ed90800d60957d06515540dcad24c59ff827d9d6694d979db396987998fa3b",
+        "3000": "ca746983fa61c8f4b64df52322f22814f0b322f60d6c477451f4e9a559fdb8f5",
+        "4000": "2a44c8bf9552ed689ec243f0a88082b5be6d9c8abbff27fb1a78921f5a9d215b",
+        "5000": "dc921dd89953a8f0376c01c14a7dd09d4b87c83e71864bcac60217604da73cb6"
+      }
+    }
+  },
+  "tactics_only": {
+    "random": {
+      "score": 0.90625,
+      "pair_scores": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "avoidable_losses": 0
+    },
+    "minimax": {
+      "score": 0.1875,
+      "pair_scores": [
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.25,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "avoidable_losses": 0
+    }
+  },
+  "curve": {
+    "random": {
+      "dqn": [
+        {
+          "mean": 0.6927083333333334,
+          "by_seed": [
+            0.65625,
+            0.71875,
+            0.703125
+          ]
+        },
+        {
+          "mean": 0.8854166666666666,
+          "by_seed": [
+            0.828125,
+            0.890625,
+            0.9375
+          ]
+        },
+        {
+          "mean": 0.9114583333333334,
+          "by_seed": [
+            0.90625,
+            0.859375,
+            0.96875
+          ]
+        },
+        {
+          "mean": 0.9583333333333334,
+          "by_seed": [
+            0.953125,
+            0.9375,
+            0.984375
+          ]
+        },
+        {
+          "mean": 0.9427083333333334,
+          "by_seed": [
+            0.953125,
+            0.921875,
+            0.953125
+          ]
+        },
+        {
+          "mean": 0.953125,
+          "by_seed": [
+            0.953125,
+            0.9375,
+            0.96875
+          ]
+        }
+      ],
+      "ddqn": [
+        {
+          "mean": 0.6927083333333334,
+          "by_seed": [
+            0.65625,
+            0.71875,
+            0.703125
+          ]
+        },
+        {
+          "mean": 0.9010416666666666,
+          "by_seed": [
+            0.9375,
+            0.859375,
+            0.90625
+          ]
+        },
+        {
+          "mean": 0.9479166666666666,
+          "by_seed": [
+            0.953125,
+            0.9375,
+            0.953125
+          ]
+        },
+        {
+          "mean": 0.9270833333333334,
+          "by_seed": [
+            0.921875,
+            0.921875,
+            0.9375
+          ]
+        },
+        {
+          "mean": 0.9270833333333334,
+          "by_seed": [
+            0.953125,
+            0.90625,
+            0.921875
+          ]
+        },
+        {
+          "mean": 0.9322916666666666,
+          "by_seed": [
+            0.9375,
+            0.921875,
+            0.9375
+          ]
+        }
+      ]
+    },
+    "minimax": {
+      "dqn": [
+        {
+          "mean": 0.005208333333333333,
+          "by_seed": [
+            0.0,
+            0.015625,
+            0.0
+          ]
+        },
+        {
+          "mean": 0.057291666666666664,
+          "by_seed": [
+            0.09375,
+            0.03125,
+            0.046875
+          ]
+        },
+        {
+          "mean": 0.06770833333333333,
+          "by_seed": [
+            0.078125,
+            0.0625,
+            0.0625
+          ]
+        },
+        {
+          "mean": 0.0859375,
+          "by_seed": [
+            0.1015625,
+            0.09375,
+            0.0625
+          ]
+        },
+        {
+          "mean": 0.08854166666666667,
+          "by_seed": [
+            0.078125,
+            0.109375,
+            0.078125
+          ]
+        },
+        {
+          "mean": 0.09375,
+          "by_seed": [
+            0.078125,
+            0.09375,
+            0.109375
+          ]
+        }
+      ],
+      "ddqn": [
+        {
+          "mean": 0.005208333333333333,
+          "by_seed": [
+            0.0,
+            0.015625,
+            0.0
+          ]
+        },
+        {
+          "mean": 0.057291666666666664,
+          "by_seed": [
+            0.046875,
+            0.046875,
+            0.078125
+          ]
+        },
+        {
+          "mean": 0.0625,
+          "by_seed": [
+            0.0625,
+            0.046875,
+            0.078125
+          ]
+        },
+        {
+          "mean": 0.078125,
+          "by_seed": [
+            0.09375,
+            0.046875,
+            0.09375
+          ]
+        },
+        {
+          "mean": 0.08333333333333333,
+          "by_seed": [
+            0.09375,
+            0.09375,
+            0.0625
+          ]
+        },
+        {
+          "mean": 0.08333333333333333,
+          "by_seed": [
+            0.0625,
+            0.078125,
+            0.109375
+          ]
+        }
+      ]
+    }
+  },
+  "final": {
+    "random": {
+      "dqn": {
+        "initial": {
+          "mean": 0.703125,
+          "by_seed": [
+            0.6796875,
+            0.7578125,
+            0.671875
+          ]
+        },
+        "initial_guarded": {
+          "mean": 0.9036458333333334,
+          "by_seed": [
+            0.90625,
+            0.8984375,
+            0.90625
+          ]
+        },
+        "trained": {
+          "mean": 0.9479166666666666,
+          "by_seed": [
+            0.9296875,
+            0.953125,
+            0.9609375
+          ]
+        },
+        "trained_guarded": {
+          "mean": 0.9661458333333334,
+          "by_seed": [
+            0.9609375,
+            0.96875,
+            0.96875
+          ]
+        },
+        "training_gain": {
+          "mean": 0.24479166666666666,
+          "by_seed": [
+            0.25,
+            0.1953125,
+            0.2890625
+          ],
+          "opening_ci95": [
+            0.1875,
+            0.3046875
+          ]
+        },
+        "training_gain_with_guard": {
+          "mean": 0.0625,
+          "by_seed": [
+            0.0546875,
+            0.0703125,
+            0.0625
+          ],
+          "opening_ci95": [
+            0.03906249999999999,
+            0.08854166666666666
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.018229166666666668,
+          "by_seed": [
+            0.03125,
+            0.015625,
+            0.0078125
+          ],
+          "opening_ci95": [
+            0.005208333333333333,
+            0.033854166666666664
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.059895833333333336,
+          "by_seed": [
+            0.0546875,
+            0.0625,
+            0.0625
+          ],
+          "opening_ci95": [
+            0.015625,
+            0.11197916666666666
+          ]
+        },
+        "avoidable_losses": [
+          3,
+          2,
+          1
+        ]
+      },
+      "ddqn": {
+        "initial": {
+          "mean": 0.703125,
+          "by_seed": [
+            0.6796875,
+            0.7578125,
+            0.671875
+          ]
+        },
+        "initial_guarded": {
+          "mean": 0.9036458333333334,
+          "by_seed": [
+            0.90625,
+            0.8984375,
+            0.90625
+          ]
+        },
+        "trained": {
+          "mean": 0.9505208333333334,
+          "by_seed": [
+            0.953125,
+            0.96875,
+            0.9296875
+          ]
+        },
+        "trained_guarded": {
+          "mean": 0.9739583333333334,
+          "by_seed": [
+            0.9765625,
+            0.96875,
+            0.9765625
+          ]
+        },
+        "training_gain": {
+          "mean": 0.24739583333333334,
+          "by_seed": [
+            0.2734375,
+            0.2109375,
+            0.2578125
+          ],
+          "opening_ci95": [
+            0.19010416666666666,
+            0.3046875
+          ]
+        },
+        "training_gain_with_guard": {
+          "mean": 0.0703125,
+          "by_seed": [
+            0.0703125,
+            0.0703125,
+            0.0703125
+          ],
+          "opening_ci95": [
+            0.046875,
+            0.09635416666666666
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.0234375,
+          "by_seed": [
+            0.0234375,
+            0.0,
+            0.046875
+          ],
+          "opening_ci95": [
+            0.0078125,
+            0.04166666666666666
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.06770833333333333,
+          "by_seed": [
+            0.0703125,
+            0.0625,
+            0.0703125
+          ],
+          "opening_ci95": [
+            0.0234375,
+            0.1171875
+          ]
+        },
+        "avoidable_losses": [
+          3,
+          0,
+          5
+        ]
+      },
+      "ddqn_minus_dqn": {
+        "mean": 0.0026041666666666665,
+        "by_seed": [
+          0.0234375,
+          0.015625,
+          -0.03125
+        ],
+        "opening_ci95": [
+          -0.018229166666666668,
+          0.026041666666666664
+        ]
+      }
+    },
+    "minimax": {
+      "dqn": {
+        "initial": {
+          "mean": 0.005208333333333333,
+          "by_seed": [
+            0.0,
+            0.0078125,
+            0.0078125
+          ]
+        },
+        "initial_guarded": {
+          "mean": 0.12890625,
+          "by_seed": [
+            0.11328125,
+            0.109375,
+            0.1640625
+          ]
+        },
+        "trained": {
+          "mean": 0.109375,
+          "by_seed": [
+            0.109375,
+            0.1015625,
+            0.1171875
+          ]
+        },
+        "trained_guarded": {
+          "mean": 0.2721354166666667,
+          "by_seed": [
+            0.26953125,
+            0.26953125,
+            0.27734375
+          ]
+        },
+        "training_gain": {
+          "mean": 0.10416666666666667,
+          "by_seed": [
+            0.109375,
+            0.09375,
+            0.109375
+          ],
+          "opening_ci95": [
+            0.06510416666666666,
+            0.1484375
+          ]
+        },
+        "training_gain_with_guard": {
+          "mean": 0.14322916666666666,
+          "by_seed": [
+            0.15625,
+            0.16015625,
+            0.11328125
+          ],
+          "opening_ci95": [
+            0.09505208333333334,
+            0.19270833333333331
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.16276041666666666,
+          "by_seed": [
+            0.16015625,
+            0.16796875,
+            0.16015625
+          ],
+          "opening_ci95": [
+            0.12369791666666666,
+            0.20442708333333331
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.08463541666666667,
+          "by_seed": [
+            0.08203125,
+            0.08203125,
+            0.08984375
+          ],
+          "opening_ci95": [
+            0.019531250000000003,
+            0.1484375
+          ]
+        },
+        "avoidable_losses": [
+          88,
+          90,
+          82
+        ]
+      },
+      "ddqn": {
+        "initial": {
+          "mean": 0.005208333333333333,
+          "by_seed": [
+            0.0,
+            0.0078125,
+            0.0078125
+          ]
+        },
+        "initial_guarded": {
+          "mean": 0.12890625,
+          "by_seed": [
+            0.11328125,
+            0.109375,
+            0.1640625
+          ]
+        },
+        "trained": {
+          "mean": 0.10677083333333333,
+          "by_seed": [
+            0.0859375,
+            0.1328125,
+            0.1015625
+          ]
+        },
+        "trained_guarded": {
+          "mean": 0.2721354166666667,
+          "by_seed": [
+            0.23828125,
+            0.3046875,
+            0.2734375
+          ]
+        },
+        "training_gain": {
+          "mean": 0.1015625,
+          "by_seed": [
+            0.0859375,
+            0.125,
+            0.09375
+          ],
+          "opening_ci95": [
+            0.0625,
+            0.14322916666666666
+          ]
+        },
+        "training_gain_with_guard": {
+          "mean": 0.14322916666666666,
+          "by_seed": [
+            0.125,
+            0.1953125,
+            0.109375
+          ],
+          "opening_ci95": [
+            0.1015625,
+            0.18489583333333334
+          ]
+        },
+        "guard_gain": {
+          "mean": 0.16536458333333334,
+          "by_seed": [
+            0.15234375,
+            0.171875,
+            0.171875
+          ],
+          "opening_ci95": [
+            0.12890625,
+            0.203125
+          ]
+        },
+        "guarded_minus_tactics_only": {
+          "mean": 0.08463541666666667,
+          "by_seed": [
+            0.05078125,
+            0.1171875,
+            0.0859375
+          ],
+          "opening_ci95": [
+            0.02083333333333333,
+            0.14713541666666669
+          ]
+        },
+        "avoidable_losses": [
+          93,
+          81,
+          78
+        ]
+      },
+      "ddqn_minus_dqn": {
+        "mean": -0.0026041666666666665,
+        "by_seed": [
+          -0.0234375,
+          0.03125,
+          -0.015625
+        ],
+        "opening_ci95": [
+          -0.028645833333333332,
+          0.0234375
+        ]
+      }
+    }
+  },
+  "contrast_interval": "Shared opening-pair bootstrap conditional on these three trained seed pairs."
+}

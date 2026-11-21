@@ -1,0 +1,10 @@
+{
+  "testpack_sha256": "026598cd585e4e2dc03afb2c42027351a7063c6aac60c30d5b0a3e47f7c3d625",
+  "positions_verified": 288,
+  "verified_by_group": {
+    "win-now": 96,
+    "block-now": 96,
+    "multi-step": 96
+  },
+  "algorithm": "Independent column-grid exhaustive win/draw/loss recursion"
+}

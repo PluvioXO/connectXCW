@@ -1,0 +1,193 @@
+{
+  "seed": 51,
+  "opening_seed": 80421,
+  "opening_pairs": 32,
+  "training_games": 5000,
+  "training_moves": 86076,
+  "updates": 21264,
+  "config": {
+    "command": "train",
+    "method": "ddqn",
+    "games": 5000,
+    "decay_games": 4000,
+    "save_every": 1000,
+    "seed": 51,
+    "device": "cuda",
+    "torch_version": "2.1.0+cu121",
+    "batch_size": 128,
+    "warmup": 1024,
+    "sync_every": 500,
+    "update_every": 4,
+    "replay_capacity": 50000
+  },
+  "evaluations": {
+    "random": {
+      "checkpoints": [
+        {
+          "training_games": 0,
+          "score": 0.765625,
+          "ci95": [
+            0.640625,
+            0.875
+          ],
+          "wins": 49,
+          "draws": 0,
+          "losses": 15,
+          "checkpoint_sha256": "0954d270edfe8d5485cb0ab07212758654039f2c777e9249675a39fdd52445c7"
+        },
+        {
+          "training_games": 1000,
+          "score": 0.859375,
+          "ci95": [
+            0.78125,
+            0.9375
+          ],
+          "wins": 55,
+          "draws": 0,
+          "losses": 9,
+          "checkpoint_sha256": "fbf3d689648ce12f9bc29e5d62061d9ef0501678a170637cb9cff0ef49d9a3ce"
+        },
+        {
+          "training_games": 2000,
+          "score": 0.921875,
+          "ci95": [
+            0.859375,
+            0.984375
+          ],
+          "wins": 59,
+          "draws": 0,
+          "losses": 5,
+          "checkpoint_sha256": "270691ad373522c1206aecfaeb4190043bda7cab2a67336605fd10fe0fe16a20"
+        },
+        {
+          "training_games": 3000,
+          "score": 0.921875,
+          "ci95": [
+            0.859375,
+            0.984375
+          ],
+          "wins": 59,
+          "draws": 0,
+          "losses": 5,
+          "checkpoint_sha256": "b976557951db4ea7c3ef3bc7b6ab01fcc57d371582d054a5a6c563aa557c0b4f"
+        },
+        {
+          "training_games": 4000,
+          "score": 0.9375,
+          "ci95": [
+            0.875,
+            0.984375
+          ],
+          "wins": 60,
+          "draws": 0,
+          "losses": 4,
+          "checkpoint_sha256": "4321752ab5790927d5996db0047629124ce07c64606a15f35e06f244d6f12a5e"
+        },
+        {
+          "training_games": 5000,
+          "score": 0.953125,
+          "ci95": [
+            0.890625,
+            1.0
+          ],
+          "wins": 61,
+          "draws": 0,
+          "losses": 3,
+          "checkpoint_sha256": "c87ac742f2870bbea7db970e8f014258d3df477fdcfa499b75d6a08c0cf83627"
+        }
+      ],
+      "final_minus_initial": 0.1875,
+      "difference_ci95": [
+        0.078125,
+        0.3125
+      ]
+    },
+    "minimax": {
+      "checkpoints": [
+        {
+          "training_games": 0,
+          "score": 0.0078125,
+          "ci95": [
+            0.0,
+            0.0234375
+          ],
+          "wins": 0,
+          "draws": 1,
+          "losses": 63,
+          "checkpoint_sha256": "0954d270edfe8d5485cb0ab07212758654039f2c777e9249675a39fdd52445c7"
+        },
+        {
+          "training_games": 1000,
+          "score": 0.03125,
+          "ci95": [
+            0.0,
+            0.078125
+          ],
+          "wins": 2,
+          "draws": 0,
+          "losses": 62,
+          "checkpoint_sha256": "fbf3d689648ce12f9bc29e5d62061d9ef0501678a170637cb9cff0ef49d9a3ce"
+        },
+        {
+          "training_games": 2000,
+          "score": 0.046875,
+          "ci95": [
+            0.0,
+            0.109375
+          ],
+          "wins": 3,
+          "draws": 0,
+          "losses": 61,
+          "checkpoint_sha256": "270691ad373522c1206aecfaeb4190043bda7cab2a67336605fd10fe0fe16a20"
+        },
+        {
+          "training_games": 3000,
+          "score": 0.03125,
+          "ci95": [
+            0.0,
+            0.078125
+          ],
+          "wins": 2,
+          "draws": 0,
+          "losses": 62,
+          "checkpoint_sha256": "b976557951db4ea7c3ef3bc7b6ab01fcc57d371582d054a5a6c563aa557c0b4f"
+        },
+        {
+          "training_games": 4000,
+          "score": 0.09375,
+          "ci95": [
+            0.03125,
+            0.171875
+          ],
+          "wins": 6,
+          "draws": 0,
+          "losses": 58,
+          "checkpoint_sha256": "4321752ab5790927d5996db0047629124ce07c64606a15f35e06f244d6f12a5e"
+        },
+        {
+          "training_games": 5000,
+          "score": 0.0625,
+          "ci95": [
+            0.015625,
+            0.125
+          ],
+          "wins": 4,
+          "draws": 0,
+          "losses": 60,
+          "checkpoint_sha256": "c87ac742f2870bbea7db970e8f014258d3df477fdcfa499b75d6a08c0cf83627"
+        }
+      ],
+      "final_minus_initial": 0.0546875,
+      "difference_ci95": [
+        0.0078125,
+        0.109375
+      ]
+    }
+  },
+  "interval": "Percentile bootstrap across 32 opening pairs. Conditional on one training seed.",
+  "started_utc": "2026-11-19T16:25:40Z",
+  "training_ended_utc": "2026-11-19T16:32:36Z",
+  "ended_utc": "2026-11-19T16:32:55Z",
+  "games_replayed": 768,
+  "final_minimax_avoidable_next_move_losses": 53
+}

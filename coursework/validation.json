@@ -1,0 +1,1708 @@
+{
+  "checked_utc": "2026-11-21T17:27:16.408921+00:00",
+  "main_text_pages": 6,
+  "page_text_characters": [
+    2939,
+    3281,
+    2646,
+    2674,
+    2505,
+    2270,
+    4429,
+    4243,
+    2674,
+    2734,
+    2642,
+    2750,
+    825,
+    3795,
+    2833,
+    1908,
+    1336,
+    935,
+    1145,
+    473,
+    980,
+    633,
+    1277,
+    2696,
+    3347,
+    3171,
+    3475,
+    3383,
+    1792,
+    1256
+  ],
+  "total_pages": 30,
+  "latex_warnings": [
+    "Underfull \\vbox (badness 10000) has occurred while \\output is active []",
+    "Underfull \\hbox (badness 5490) in paragraph at lines 76--82",
+    "Underfull \\hbox (badness 6063) in paragraph at lines 76--82",
+    "Underfull \\hbox (badness 2418) in paragraph at lines 216--222",
+    "Underfull \\hbox (badness 4416) in paragraph at lines 216--222",
+    "Underfull \\hbox (badness 3872) in paragraph at lines 216--222",
+    "Underfull \\vbox (badness 10000) has occurred while \\output is active []"
+  ],
+  "figure_data_assertions": "passed",
+  "source_summary_hashes_verified": 54,
+  "visual_review": "Reviewed the revised results, matched-control tables and the deployment page.",
+  "files": {
+    "README.md": "c0ea1f6a47175c61b0808dfaf3d98f620d50072759d6e62dc3ad23835ff441fd",
+    "demo-replay.md": "400106c150a14e5189ba0e7a3b58184a71cf3e7e387f15eee614fced3c018bbe",
+    "evaluation-plan.md": "c65f6595e016c0dc18bb31b203e6df297d69d2b8e9d88c1a7b56513ef5f29ca2",
+    "evidence/benchmark-details.json": "926535bd9182dd25e06112d55e108e6e35d0c22887df3457003174cfd5bd789e",
+    "evidence/benchmark-linear-fit.json": "bec0d44973cd553ce5a1ca050b020d3e5ec2d8c4162f4caf1e0fe16483a2a2e7",
+    "evidence/ddqn-pilot-summary.json": "abfdfd2aee026750832d3a08c742724c918dc0a3129b0ed3a6c3d4a3ae057ae0",
+    "evidence/dqn-study-summary.json": "e1096539a2b5ccbe1180003d9edb29b809b95fa9181bbe480893f2ec4f8aad20",
+    "evidence/network-example.json": "e14a34c929f70efe69461c6e6bc1de2c6a3633b94b92e12c9886263e3a961205",
+    "evidence/network-tensors.json": "ad94808f05194399f4f62d2163b922b18ef26efb3650bbe2cd412c400788b5fc",
+    "evidence/q-controls-summary.json": "8d44d4690413fe24872856a957ea11aa560e2492f20341050f93c8d1843cced8",
+    "evidence/results.json": "fa673c75253db12bdea8112066b9c5b9a3a68ef416fe3edc281023a474a4d16c",
+    "evidence/tactical-followup-summary.json": "1b022a132ee908eadda25acf38d693cc2371e7bbd5ed7cca95c90bee9ce3fc2e",
+    "figures/benchmark-outcomes.pdf": "9f8cc7877dba3a18c2494fb9ec9282ec759e3ec987492d82cdcfb8cf76eb27e9",
+    "figures/benchmark-outcomes.png": "cff3c07421de2f8f40a7c53f8731fb15ef052338a69ec8c6703a83f838d7bfb0",
+    "figures/candidate-progress.pdf": "b63987275d3ae75bbecae7464225d03cc41c47ddbe261b23f63f413dfc3b9ca3",
+    "figures/candidate-progress.png": "1422e8a302691b6731839855e7e75c7769f58141fdb9f4fbba7a6904c2f95604",
+    "figures/ddqn-pilot.pdf": "e24777180caeb0e83d41e9004ecc35fd959c7f588e78b919e527bc80a1ce4a56",
+    "figures/ddqn-pilot.png": "996885df858e9f5c21f487ecb2fc2490d7caac99e51b0fd12c97f8f8d2b24563",
+    "figures/dqn-study-inline.pdf": "391c998f7884ece25b6cd2e8c3a1b74f24e5bf044feef7d9ffefd05b268d08c4",
+    "figures/dqn-study-inline.png": "1bdfaea226f2757bcf74cda49f4032c861dcd742b98deccc1dd4ab1e42537eb2",
+    "figures/dqn-study.pdf": "f96a6310bd7bb32d7820680b76440e67ba7fa5ec1306521593be0f97cb314403",
+    "figures/dqn-study.png": "e8bf6a2d83c5afff012dd5e796bad095931794bf8621de8a5f0f4ed2fa13eda9",
+    "figures/evaluation.pdf": "f5c8716e827bc4990d1af606a289e5f7e1ffbcdd88e8cf5901c0a4e904c5ec9a",
+    "figures/evaluation.png": "bda6174026edb058afbc0830dee64dbd5ab92e7a34c1e6db9aa163c109285430",
+    "figures/fixed-original-benchmarks.pdf": "929c83074a5ab2caa9177080321c63cea7b911bc027c54ef58c2c2f1d21a10fe",
+    "figures/fixed-original-benchmarks.png": "4bb1d0bf0b012eb99c697388654c1bcab5cd162d3368684fd6c0e78565452452",
+    "figures/network-architecture.pdf": "92c3eb49d7e6f773621b94c762bca812e72246207d274efa476b847ccbb339da",
+    "figures/network-architecture.png": "060d2ecdcda8c749891ca0100075721e5b3947bde7c59ff6952458cab2a188fe",
+    "figures/network-architecture.svg": "f9c9a8d0d05a577d5cb6031a824c53f4f997958af4410486348a23457ed122af",
+    "figures/network-math/inline_a_plus_one.svg": "f655e240364d2e787ae7614647683ac3083c53a215b3059c48da6e01a7e8c6b9",
+    "figures/network-math/inline_p.svg": "a86769b2625b2fc7145c0b546d65f58db0219d5293a03f80e672cfe8de60a24b",
+    "figures/network-math/inline_v.svg": "ebf391d2cc67b20980aff73918bf9bacac08218950958ec3cba8c3755d16222f",
+    "figures/network-math/input_shape.svg": "f432ab4d903f0e7307df7c9ab73ad347b67ab8377159d15a2519185811ea9cd8",
+    "figures/network-math/manifest.json": "5f16df11e3d8586095a4f200d158908c6897fa39d0f045d1fb1abd80e124ef1e",
+    "figures/network-math/network-math.tex": "d50d08cb6a5410a42a5037a76c4e53b1e4586fef9b329605b6b91be3f9347b61",
+    "figures/network-math/policy_conv_d1.svg": "6f215be512ec6f96b7ce9b2cee91a55a744c7ca455bbf12efb1cd70961bb22b6",
+    "figures/network-math/policy_conv_eq.svg": "0a55c1edf9eb11b4cf64ede88f8ba18861541088dba567bb6a198db1c49cfff5",
+    "figures/network-math/policy_dense_d1.svg": "a310f4a243e6c6a8fb4ee60f728d4b79f45cd5b6ba14cf6ec2c08504d924de8f",
+    "figures/network-math/policy_dense_eq.svg": "d53223a5679d69f00d38fb4c723e076f31c6189f53542bd13d5bac0d72940a95",
+    "figures/network-math/policy_mask_d1.svg": "07b214cc4eef747ffb71971573aeb5ac478cd71420147f92a19ae536e34fa346",
+    "figures/network-math/policy_mask_eq.svg": "bb1dc8f543d138049f48270049ce07a661f1671e40ac709b1c2a79171ccd3037",
+    "figures/network-math/render.py": "e71ee4b277b1faddb0e26b3ac236e768a331d9c4d6d0dc810088d2f145f9c82e",
+    "figures/network-math/repeat_five.svg": "d65756782630e9c7b5b36ef6126aa60e9adb3706a690a0eea967525345d5d3a2",
+    "figures/network-math/res1_d1.svg": "a7b393deb51411f3f937a2e6f93b99d0f42c944b4468e83ed97aefdb04b3ec6b",
+    "figures/network-math/res1_d2.svg": "f2df858873c5a26146bd3e159a705e65f2e0f1d12ca25f0484ae9ffe565d8590",
+    "figures/network-math/res1_eq.svg": "11e592128f71196387b9d7f0469ea1b5a089ff4650ea1b8fe981e1106ba44ad5",
+    "figures/network-math/res2_d1.svg": "01f3c8a05a00e0393f5016ad70127f5265cbda6d40d374a3412f8dc240ef8bca",
+    "figures/network-math/res2_d2.svg": "ccd12c5f1a7f51d6683daf288514a58ce01c02ddbdfff5ef8391dd2f540cfca9",
+    "figures/network-math/res2_eq.svg": "1e446f22c9532e41bcedbd28411b1f63010fac7c18b98fbc18cb37b4e9023dd3",
+    "figures/network-math/residual_index.svg": "f58f8b3ac505a7ccc9e9d1b6ccd58830b1107ecf47dbc464811b3d07fc576bea",
+    "figures/network-math/resout_d1.svg": "76b5a34c900d4d401781511000a9ca231d087d23fe0597a6cec82122a2918ed6",
+    "figures/network-math/resout_eq.svg": "a11f13e095de4abe6c0e26c1fcfbf9d9b584226426e411cfa01d8cb6f5bd46ed",
+    "figures/network-math/returned_move.svg": "7bd7a876f3d1f9fdb6a373063a8bfd35d4be7f03e444e352129c5313f1c9b205",
+    "figures/network-math/shared_shape.svg": "f901822e76ee8adc0852dfe75b53a5da26f3658bb72d98a60c740fd6615205bf",
+    "figures/network-math/skip_f.svg": "d6a6103a03b372b5369a8f3af17b4be61808f76687210400f1817b5c0d4bc2f0",
+    "figures/network-math/stem_d1.svg": "dc491bc7976782d9b364f7cc70d6beddb71003f0a48a246a91e78f9081fd9934",
+    "figures/network-math/stem_d2.svg": "b2fe89d158954beb691a78172028cf3ab07db68f3875aa5b4d074c00dc41ed2e",
+    "figures/network-math/stem_eq.svg": "13e15086a00bbc9c0ba3141f5312d50fe6a83e2a8693e0b8bb75a2b9caf7f77f",
+    "figures/network-math/value_conv_d1.svg": "6f215be512ec6f96b7ce9b2cee91a55a744c7ca455bbf12efb1cd70961bb22b6",
+    "figures/network-math/value_conv_eq.svg": "218a7c3855572e0698ab5fcb7b3866b53fd6f7e4761443a3278710653f59f0de",
+    "figures/network-math/value_dense_d1.svg": "dbcc964d921821a52ec8b8879f369384ca3dcd7608caeea1dac1a128cc9d0819",
+    "figures/network-math/value_dense_eq.svg": "12e2a1646ee23a14504e67bdce1d7f5ce4cea0bd075a09714b9520186363d809",
+    "figures/network-math/value_out_d1.svg": "b7139227f5c6468bf71499e6a84f835a0430764ea37e7b9e0b9a307eafda7a07",
+    "figures/network-math/value_out_eq.svg": "64074ef7e4510d1dc3ee1cae06bb53685f667e40cb44a833b0da8dd0c20f3e28",
+    "figures/opening-performance.pdf": "7f114b2ecab0fd566fa3ee1518d57ee8da6203c5a463bb186c800174d6de6a38",
+    "figures/opening-performance.png": "0893f62785a248f9bf3ef1bd125b23493e25541e0d6f93d3ce0abf43ee1bde78",
+    "figures/optimization.pdf": "c35fb379d71d3c989cc17a6fc6dd25719a39fc5bc86b9f65dda889127bb2a239",
+    "figures/optimization.png": "8b79804fbd6b8e2b5a46fa06e5e9ccae15d49cf14d8f04f53cb56a42b577d03e",
+    "figures/paired-improvements.pdf": "9878005c95d310e8cd1b19bba2cc9fb3c2dee691a94a1d2d23a7bce8ac86acbb",
+    "figures/paired-improvements.png": "183cb468cacfac788e4f7cf2638fba0881be0a62c7f0b8307d6d31e810be1bd4",
+    "figures/persistent-self-play.pdf": "0a8fa11c11533e8b5555f01ee8cb807f76aa77e2780fbaa55f1781c229758ab9",
+    "figures/persistent-self-play.png": "e8c581c485bc0d3e3809859d9a2cd6a14fcf7bbac434dd2a354eff9d07c10e38",
+    "figures/persistent-self-play.svg": "c930475ee270717d299e136773b93cd0df8189039b1fc3e97d9fd6433d659124",
+    "figures/pilot-learning.pdf": "50f985d79315e32ddbd30033588a39f04cc9265817276b0302aaa87b97b29f5a",
+    "figures/pilot-learning.png": "56242c1209d47fa4286410c91ee923491445b57dc84b66bdc1cb615523ad06e7",
+    "figures/tactical-followup-inline.pdf": "4ae16608a2de93bc0de9fd4ab304e2de1955d3260534dc9589e65511dff11340",
+    "figures/tactical-followup-inline.png": "714cfba7f4a3931a9ae8e365f9b909a4ada6c1d4532091ec79e5905aa6a01038",
+    "figures/tactical-followup.pdf": "5599ed75f786f20f25d57658be7b24e180f7611f4a716bedbeb6c81276402e95",
+    "figures/tactical-followup.png": "7136f800fd6de7602e836182615a025ee763a02bf07a7e2a22558712697f721a",
+    "figures/training-math/adam_settings.svg": "0b7ca39bf949c36ef1037c9fe64a2dfe7e31da722d732432efcd7f3e39d41703",
+    "figures/training-math/candidate.svg": "31720de03242b1ec86521b89536a53a3cec75dffded8c0c554a7607b5a6b59e8",
+    "figures/training-math/champion.svg": "6263af8c6b53a5b28ce01bd6e5c1a50a1d43709de32c7fa129269454bd562789",
+    "figures/training-math/clip_norm.svg": "0ac2a416f68a2683bf2d91664e8a8cf9a088d54a263e73749f8d9b055ebdd18f",
+    "figures/training-math/learner_state.svg": "a870abc8223d44e3f3353893b985425674962db198646e8b366c560a18b76930",
+    "figures/training-math/manifest.json": "c5b2e9a568016d89cfb3bfcc618a759dc2dcda4492a183e8a9b59c0d5a805eee",
+    "figures/training-math/matchup.svg": "f85f199d92f512854b75c1c3559dd0f68e04b63f12fb123415fc92baf3479d04",
+    "figures/training-math/mean_loss.svg": "03af4f9bd8711889cd8ee248be6b95b96abe1c4dc89d3f51c0fc72d4e8e8f605",
+    "figures/training-math/policy_loss.svg": "61017379940c6e6ae1643a6f1360a86ead7a059c89d41d79dc868e57b24c87af",
+    "figures/training-math/promotion.svg": "48a9f075c70f49e591539d3de54aec8dee4b323b494cc1e0c09a16627321a8fc",
+    "figures/training-math/record.svg": "6e7f15fceacdcc5ad6e051ba84130d1ad37f71a79e6efb464db4c94ca4267a23",
+    "figures/training-math/root_noise.svg": "452737eb995cd8a7013c293c668fa54b87c103cad9362f952a971586d013e4da",
+    "figures/training-math/score.svg": "348abaff2fd96cbc4e46d3adae0a3a26a31d6efa25e45cf7dbd3b7784be21b99",
+    "figures/training-math/shared_weights.svg": "e9330ba4599da0eb4d3ecd6211eb2a505a4f70b120d6600ec31df4580f6c95d6",
+    "figures/training-math/temperature.svg": "cd163f9bb66c11a27a61a5b8e8879d36247f8f41d6f781700c2e2d22466fa19a",
+    "figures/training-math/terminal_values.svg": "44b355e2fc09971e98ffa118e80e48e63d2981d93609532065aeb605039e55c5",
+    "figures/training-math/training-math.tex": "561c0f67af6f0462e20b1dff0e743d5aa25a32439495bbf6c080bd77848528e9",
+    "figures/training-math/value_loss.svg": "1e5cbdb97e14e30b055f26520a609e48226f027b64bd8731c6e13cf56c9a40b2",
+    "figures/training-math/visit_target.svg": "3c64cf94b5a31038b39bd89812f8ecc83172b896d50fe25e62a2ae49e6808161",
+    "make_figures.py": "edc2813c90b7f0b3dc84e65e1be5d7a7acfa0ad79a5c6efbde90a1c70bcf5d7c",
+    "make_inline_figures.py": "59aa0cf692b02dee748d22d5036140283901b9191da984dc138f2ccdab7c3354",
+    "presentation-plan.md": "100fc65341615357aeced8c95a5008d3c003b8bb14c9b3a779d50d1d039884e8",
+    "references.bib": "6a3d1cfb76f65d4a72ea118423966e9b477e36009ae3116cb7724bc6150b0522",
+    "report.pdf": "ed7e6cb4812fb33db934bc7902d34e7df814980210fbf0a637755b3deec508f5",
+    "report.tex": "a21ca8213241a897360ed19da5c51c510936e4dc57ee327b0ecc7187517ad743",
+    "rl_project.sty": "ae239e478c8fe0a58f5b42707fbc547eb1921dd08dcbeeb730980e1d7817a181"
+  },
+  "limitations": [
+    "Group details, member reflections, individual disclosures, spoken presentation and contribution form require group input.",
+    "The three controls each use ten seed pairs on fixed evaluation sets. The five new blocks share a plain one-step training arm.",
+    "The retrospective common-board diagnosis conditions on defensive opportunities from the original networks.",
+    "Compact evidence excludes full production search-agent training histories and checkpoints.",
+    "The reported first-place Kaggle result still needs its exact score, account and submission record."
+  ],
+  "data_checks_utc": "2026-11-21T17:16:31.889742+00:00",
+  "inference_figure": {
+    "page": 3,
+    "width_mm": 139.7,
+    "height_mm": 69.85,
+    "format": "Vector PDF from outlined SVG",
+    "figma_url": "https://www.figma.com/design/hPdudsaS8YffnWtcW7PVI1?node-id=2-16"
+  },
+  "layout_notes": [
+    "The deployment plots appear on page 5.",
+    "The matched-control appendix begins on page 25.",
+    "The report builds from the Git-visible source tree."
+  ],
+  "template": {
+    "style_file": "rl_project.sty",
+    "source_directory": "/Users/maximiliannicholson/Downloads/Bath_RL_Project_LaTeX_Template",
+    "sha256": "ae239e478c8fe0a58f5b42707fbc547eb1921dd08dcbeeb730980e1d7817a181",
+    "style_unmodified": true,
+    "paper_size_pt": [
+      612,
+      792
+    ],
+    "text_width_mm": 139.7,
+    "required_section_order_verified": true,
+    "main_limit_pages": 7,
+    "main_limit_satisfied": true,
+    "appendices_referenced_from_main": true
+  },
+  "training_figure": {
+    "page": 29,
+    "width_mm": 139.7,
+    "height_mm": 69.85,
+    "format": "Vector PDF from outlined SVG",
+    "figma_url": "https://www.figma.com/design/hPdudsaS8YffnWtcW7PVI1?node-id=2-110",
+    "latex_assets": 17
+  },
+  "diagram_background": {
+    "fill": "#F3F4F6",
+    "corner_radius_in_source_pixels": 24,
+    "source_artboard_pixels": [
+      1600,
+      800
+    ],
+    "scope": [
+      "network-architecture",
+      "persistent-self-play"
+    ],
+    "plots_have_white_background": true
+  },
+  "mathematical_review": {
+    "checked_utc": "2026-11-17T22:15:10.436022+00:00",
+    "checks": [
+      "Network shapes, BN epsilon and exact trainable-parameter breakdown",
+      "Terminal return and alternating-sign backup on a legal seven-ply winning game",
+      "Encoding and reflection commute with 586 legal transitions; winners preserved",
+      "Softmax CE gradient, zero-target logit penalty and CE = entropy + KL",
+      "Tanh-MSE gradient, conditional-MSE decomposition and value-to-score identity",
+      "Raw visit targets and temperature-adjusted behaviour are correctly distinguished",
+      "Clipping then coupled weight decay and bias-corrected Adam match PyTorch over three updates",
+      "All five frozen benchmark pair means agree with W/D/L and mean-return identities",
+      "Replay example upper bound"
+    ],
+    "torch": "2.15.0",
+    "parameter_counts": {
+      "stem": 3712,
+      "tower": 1477120,
+      "policy_head": 13575,
+      "value_head": 348737
+    },
+    "implementation_sha256": {
+      "src/game/board.py": "7bd926b43cceb937d7682e8b1b0259bbcd6e650985192446f4cb244d7956950b",
+      "src/neural_net/model.py": "0c21821091b76b408108c4ec3352501c45cb14738184c83e299cee86ef605c07",
+      "src/mcts/search.py": "ec97179330a97e23a53770d2c0a448895120057f10c83d1b44c0585bbe75ac64",
+      "src/mcts/native_search.cpp": "840713061153ddac7304b6c04b5622896d6de71441c72bc4589fa7c856615ab7",
+      "src/training/self_play.py": "8a9dd644a6e31e151dd3365cde84f31565435adb2c704c5e0ff1ee9ebb5a87cb",
+      "src/utils/config.py": "c700fa9f95181b7f08c401aa04b2ecb5fce0f88bd409d00d50dfc7118d4596e2",
+      "iteration2.py": "0383bf15ceb2bacf0eeca0ad4cb4f6a141287383c9c9fd05513db900f39ba36d",
+      "selfplay_run.py": "82f6e7421aeeeba15764617e7ad6c96aac6a1dfbacf84e3fabab9874008af7ad",
+      "selfplay_worker.py": "d312818322cc00af349c76b88c13c72b2b1748137b09da9c46959634624a2cfc",
+      "finetune_20min.py": "cae64d5057a32d07bea6c388c08453310d4b82b94e86e714ae8240ee88e5d5b5",
+      "archive_benchmark.py": "33a967df0bdb5a5b296a82c3ee899751391738ea811dd555962c48eeb50c8fef"
+    },
+    "scope": "Numerical identities and local implementation consistency; not a convergence proof or a new training experiment.",
+    "appendix": "A",
+    "pages": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "subsections": 7,
+    "main_text_equations": 3,
+    "report_numbered_equations": 39,
+    "all_references_resolved": true,
+    "primary_references": [
+      "https://arxiv.org/html/1712.01815v1",
+      "https://arxiv.org/pdf/1412.6980",
+      "https://docs.pytorch.org/docs/2.15/generated/torch.optim.Adam.html",
+      "https://mitpress.mit.edu/9780262039246/reinforcement-learning/",
+      "https://doi.org/10.1214/aos/1176344552"
+    ]
+  },
+  "literature_review": {
+    "checked_utc": "2026-11-17T22:42:25.464968+00:00",
+    "references": 32,
+    "bibliography": "references.bib",
+    "style": "unsrtnat",
+    "main_section": "Background",
+    "appendix": "B",
+    "pages": [
+      14,
+      15
+    ],
+    "scope": "Scoped critical review of relevant primary research; not an exhaustive systematic review.",
+    "preprints_identified": true,
+    "all_citations_resolved": true,
+    "uncited_entries": 0,
+    "bibtex_warnings": [],
+    "topics": [
+      "Exact Connect Four solving and oracle diagnostics",
+      "TD learning, DQN, Double DQN and PPO",
+      "UCT, AlphaGo, AlphaGo Zero, AlphaZero and Expert Iteration",
+      "KataGo, Gumbel planning, Go-Exploit and MuZero",
+      "Auxiliary supervision, distillation, replay, resets and opponent populations",
+      "Uncertainty, training seeds, paired evaluation and checkpoint selection"
+    ]
+  },
+  "training_refresh": {
+    "source": "Weatherwax\u2019s completed persistent self-play run and committed arena records",
+    "source_snapshot": "training-evidence/gpu-split/connectx-final-20261121-0817.json",
+    "captured_utc": "2026-11-21T14:29:14.677065+00:00",
+    "original_first_iteration": 1,
+    "original_last_iteration": 2613,
+    "evaluated_candidates_all_phases": 2613,
+    "appended_candidates": 70,
+    "historical_rows_unchanged": 2543,
+    "candidate_zero_original_iteration": 183,
+    "displayed_range": [
+      0,
+      2430
+    ],
+    "displayed_candidates": 2431,
+    "displayed_promotions": [
+      3,
+      58,
+      97,
+      146,
+      150,
+      215,
+      270,
+      337,
+      397,
+      553,
+      583,
+      640,
+      712,
+      757,
+      855,
+      951,
+      1063,
+      1097,
+      1189,
+      1227,
+      1311,
+      1427,
+      1636,
+      1667,
+      1948,
+      1978,
+      1992,
+      2223,
+      2309,
+      2353
+    ],
+    "new_promotions": [],
+    "next_candidate_at_capture": null,
+    "phase_at_capture": "complete",
+    "alive_at_capture": false,
+    "completed_selfplay_games_all_phases": 1000000,
+    "completed_selfplay_games_through_last_evaluated_candidate": 1000000,
+    "completed_games_from_active_candidate": 0,
+    "benchmarks_captured_utc": "2026-11-21T05:59:45.832950+00:00",
+    "benchmark_data_unchanged_during_training_refresh": true,
+    "validation": "Recomputed the final 70 arena scores, paired intervals and promotion decisions. Verified the saved checkpoint hashes, Adam-step continuity and all five final shard counts.",
+    "scope": "Final panel A, optimisation diagnostics, and related report text.",
+    "previous_last_iteration": 2543,
+    "optimizer_steps_before": 687468,
+    "optimizer_steps_after": 707743,
+    "latest_champion": 2353,
+    "completed_utc": "2026-11-21T08:17:08.484036+00:00",
+    "final_batch_games": 320,
+    "final_learner_sha256": "dc5a94d959f2eb899cd60efd25f2d95df9211d3ea35989f1608ea61f3ea49528",
+    "retained_champion_sha256": "ae91efa873ab0acc265a84a43d6c36b7a4fc4594cc5bfb212adbfb8050909ece",
+    "stop_reason": "selfplay_game_limit",
+    "saved_shard_game_count": 1000000
+  },
+  "clean_source_build": {
+    "checked_utc": "2026-11-21T17:27:16.408921+00:00",
+    "passed": true,
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build report.tex",
+    "main_text_pages": 6,
+    "total_pages": 30,
+    "bibliography_entries": 34,
+    "missing_citations": 0,
+    "overfull_boxes": 0,
+    "bibtex_warnings": 0,
+    "source_files": 105
+  },
+  "benchmark_refresh": {
+    "checked_utc": "2026-11-21T06:00:20.625080+00:00",
+    "captured_utc": "2026-11-21T05:59:45.832950+00:00",
+    "candidate_zero_original_iteration": 183,
+    "displayed_candidates": [
+      58,
+      97,
+      146,
+      150,
+      215,
+      270,
+      337,
+      397,
+      553,
+      583,
+      640,
+      712,
+      757,
+      855,
+      951,
+      1063,
+      1097,
+      1189,
+      1227,
+      1311,
+      1427,
+      1636,
+      1667,
+      1948,
+      1978,
+      1992,
+      2223,
+      2309,
+      2353
+    ],
+    "new_candidates": [
+      2223,
+      2309,
+      2353
+    ],
+    "new_original_iterations": [
+      2406,
+      2492,
+      2536
+    ],
+    "games_per_candidate": 128,
+    "new_games": 384,
+    "total_games": 3712,
+    "distinct_openings_shared_by_all_models": 64,
+    "historical_benchmarks_unchanged": 26,
+    "training_data_unchanged": false,
+    "training_continued": true,
+    "training_cpu_affinity_restored": true,
+    "post_benchmark_check": {
+      "path": "training-evidence/connectx-cpu-benchmarks2536-20261121/post_benchmark_check.json",
+      "sha256": "4d840598c8e7049ef70974a642383536b6a94d12763437b937b4a84c12da9c8e"
+    },
+    "independent_result_checks": [
+      {
+        "checked_utc": "2026-11-17T23:05:55.994242+00:00",
+        "original_iteration": 453,
+        "candidate_iteration": 270,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-17T23:12:40.729855+00:00",
+        "original_iteration": 520,
+        "candidate_iteration": 337,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T01:44:27.373762+00:00",
+        "original_iteration": 580,
+        "candidate_iteration": 397,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T10:04:06.915300+00:00",
+        "original_iteration": 736,
+        "candidate_iteration": 553,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T10:16:07.847593+00:00",
+        "original_iteration": 766,
+        "candidate_iteration": 583,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T10:25:53.667288+00:00",
+        "original_iteration": 823,
+        "candidate_iteration": 640,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T15:05:09.400786+00:00",
+        "original_iteration": 895,
+        "candidate_iteration": 712,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T15:15:46.074997+00:00",
+        "original_iteration": 940,
+        "candidate_iteration": 757,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T20:39:07.752928+00:00",
+        "original_iteration": 1038,
+        "candidate_iteration": 855,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-18T20:50:20.716443+00:00",
+        "original_iteration": 1134,
+        "candidate_iteration": 951,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T11:03:20.061168+00:00",
+        "original_iteration": 1246,
+        "candidate_iteration": 1063,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T11:03:20.087453+00:00",
+        "original_iteration": 1280,
+        "candidate_iteration": 1097,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T11:03:20.123200+00:00",
+        "original_iteration": 1372,
+        "candidate_iteration": 1189,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T11:06:51.777063+00:00",
+        "original_iteration": 1410,
+        "candidate_iteration": 1227,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T11:17:18.082360+00:00",
+        "original_iteration": 1494,
+        "candidate_iteration": 1311,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T21:22:30.820573+00:00",
+        "original_iteration": 1610,
+        "candidate_iteration": 1427,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T21:33:48.734752+00:00",
+        "original_iteration": 1819,
+        "candidate_iteration": 1636,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-19T21:45:32.955631+00:00",
+        "original_iteration": 1850,
+        "candidate_iteration": 1667,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-20T22:06:10.441395+00:00",
+        "original_iteration": 2131,
+        "candidate_iteration": 1948,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-20T22:06:10.441395+00:00",
+        "original_iteration": 2161,
+        "candidate_iteration": 1978,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-20T22:06:10.441395+00:00",
+        "original_iteration": 2175,
+        "candidate_iteration": 1992,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-21T05:46:52.557769+00:00",
+        "original_iteration": 2406,
+        "candidate_iteration": 2223,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-21T05:46:52.557769+00:00",
+        "original_iteration": 2492,
+        "candidate_iteration": 2309,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      },
+      {
+        "checked_utc": "2026-11-21T05:59:45.832950+00:00",
+        "original_iteration": 2536,
+        "candidate_iteration": 2353,
+        "games_replayed": 128,
+        "opening_pairs": 64,
+        "legal_moves_and_terminal_rewards_verified": true,
+        "opening_sequences_identical_to_previous_benchmarks": true,
+        "wdl_pair_scores_and_bootstrap_recomputed": true,
+        "agent_source_hashes_identical_to_previous_benchmarks": true,
+        "export_checks_and_timings_verified": true
+      }
+    ],
+    "limitations": "Pointwise 95% intervals do not adjust for repeated checkpoint selection; no new Kaggle rating or independent confirmation set.",
+    "new_results": [
+      {
+        "iteration": 2406,
+        "wins": 69,
+        "draws": 13,
+        "losses": 46,
+        "score": 0.58984375,
+        "paired_ci95": [
+          0.5234375,
+          0.65625
+        ],
+        "candidate_archive_sha256": "a81b9d0e88e17c1158fe058cf140e0803c37e2c0d69e9117a7f075a9902156e9",
+        "timing": {
+          "reference": {
+            "max_seconds": 1.6974692419171333,
+            "moves_over_two_seconds": 0
+          },
+          "candidate": {
+            "max_seconds": 1.6898474339395761,
+            "moves_over_two_seconds": 0
+          }
+        },
+        "candidate_iteration": 2223
+      },
+      {
+        "iteration": 2492,
+        "wins": 67,
+        "draws": 13,
+        "losses": 48,
+        "score": 0.57421875,
+        "paired_ci95": [
+          0.515625,
+          0.6328125
+        ],
+        "candidate_archive_sha256": "5859a88787f455494463515973ba4381ac02d9be355ae7e8a6fbb8ce3314f79d",
+        "timing": {
+          "reference": {
+            "max_seconds": 1.6934910882264376,
+            "moves_over_two_seconds": 0
+          },
+          "candidate": {
+            "max_seconds": 1.7598701920360327,
+            "moves_over_two_seconds": 0
+          }
+        },
+        "candidate_iteration": 2309
+      },
+      {
+        "iteration": 2536,
+        "wins": 69,
+        "draws": 16,
+        "losses": 43,
+        "score": 0.6015625,
+        "paired_ci95": [
+          0.546875,
+          0.66015625
+        ],
+        "candidate_archive_sha256": "c401de328de9673caa273db5110ef9eae246838b2b8e5ff82a1764af5ab7bcc2",
+        "timing": {
+          "reference": {
+            "max_seconds": 1.6898668054491282,
+            "moves_over_two_seconds": 0
+          },
+          "candidate": {
+            "max_seconds": 1.7245645187795162,
+            "moves_over_two_seconds": 0
+          }
+        },
+        "candidate_iteration": 2353
+      }
+    ]
+  },
+  "additional_diagnostics": {
+    "checked_utc": "2026-11-21T06:00:20.625080+00:00",
+    "appendix": "G",
+    "pages": [
+      19,
+      20,
+      21,
+      22
+    ],
+    "figures": {
+      "6": "benchmark-outcomes",
+      "7": "opening-performance",
+      "8": "paired-improvements",
+      "9": "pilot-learning"
+    },
+    "new_figures": 0,
+    "main_text_plot_selection": {
+      "candidate_arena_dataset": "Figure 4(a): candidates against the retained champion",
+      "fixed_original_dataset": "Figure 4(b): scores, paired intervals and weighted absolute-error trend"
+    },
+    "one_main_plot_per_evaluation_dataset": true,
+    "games_replayed": 3712,
+    "worker_source_hashes_verified": 232,
+    "opening_pairs": 64,
+    "bootstrap_resamples": 50000,
+    "bootstrap_seed": 20261118,
+    "pairing_preserved": true,
+    "all_adjacent_difference_intervals_include_zero": false,
+    "data_file": "evidence/benchmark-details.json",
+    "data_sha256": "926535bd9182dd25e06112d55e108e6e35d0c22887df3457003174cfd5bd789e",
+    "derived_value_checks": {
+      "source_worker_hashes_verified": 232,
+      "paired_intervals_pp": [
+        [
+          -3.125,
+          8.984375
+        ],
+        [
+          -8.203125,
+          3.515625
+        ],
+        [
+          -3.90625,
+          7.03125
+        ],
+        [
+          -3.90625,
+          7.8125
+        ],
+        [
+          -1.5625,
+          8.984375
+        ],
+        [
+          -8.984375,
+          3.125
+        ],
+        [
+          -6.25,
+          7.03125
+        ],
+        [
+          -0.78125,
+          11.328125
+        ],
+        [
+          -10.546875,
+          0.390625
+        ],
+        [
+          -8.203125,
+          4.296875
+        ],
+        [
+          -9.765625,
+          5.46875
+        ],
+        [
+          -1.5625,
+          11.71875
+        ],
+        [
+          -2.34375,
+          11.71875
+        ],
+        [
+          -10.15625,
+          1.5625
+        ],
+        [
+          -4.296875,
+          6.640625
+        ],
+        [
+          -11.71875,
+          -0.390625
+        ],
+        [
+          -1.171875,
+          10.9375
+        ],
+        [
+          -5.46875,
+          5.859375
+        ],
+        [
+          -8.984375,
+          2.734375
+        ],
+        [
+          2.34375,
+          12.5
+        ],
+        [
+          -7.8125,
+          1.953125
+        ],
+        [
+          -0.78125,
+          8.59375
+        ],
+        [
+          -7.03125,
+          3.90625
+        ],
+        [
+          -9.765625,
+          0.78125
+        ],
+        [
+          -6.25,
+          3.125
+        ],
+        [
+          -1.5625,
+          10.546875
+        ],
+        [
+          -7.8125,
+          4.6875
+        ],
+        [
+          -2.734375,
+          8.59375
+        ]
+      ],
+      "paired_differences_pp": [
+        3.125,
+        -2.34375,
+        1.5625,
+        1.953125,
+        3.515625,
+        -2.734375,
+        0.390625,
+        5.078125,
+        -5.078125,
+        -1.953125,
+        -1.953125,
+        5.078125,
+        4.6875,
+        -4.296875,
+        1.171875,
+        -5.859375,
+        4.6875,
+        0.390625,
+        -3.125,
+        7.421875,
+        -2.734375,
+        3.90625,
+        -1.5625,
+        -4.296875,
+        -1.5625,
+        4.296875,
+        -1.5625,
+        2.734375
+      ],
+      "seat_scores_percent": [
+        [
+          60.15625,
+          38.28125
+        ],
+        [
+          61.71875,
+          42.96875
+        ],
+        [
+          57.8125,
+          42.1875
+        ],
+        [
+          60.9375,
+          42.1875
+        ],
+        [
+          64.0625,
+          42.96875
+        ],
+        [
+          67.96875,
+          46.09375
+        ],
+        [
+          60.9375,
+          47.65625
+        ],
+        [
+          67.96875,
+          41.40625
+        ],
+        [
+          69.53125,
+          50.0
+        ],
+        [
+          67.96875,
+          41.40625
+        ],
+        [
+          60.15625,
+          45.3125
+        ],
+        [
+          57.8125,
+          43.75
+        ],
+        [
+          60.9375,
+          50.78125
+        ],
+        [
+          71.875,
+          49.21875
+        ],
+        [
+          66.40625,
+          46.09375
+        ],
+        [
+          67.1875,
+          47.65625
+        ],
+        [
+          63.28125,
+          39.84375
+        ],
+        [
+          64.0625,
+          48.4375
+        ],
+        [
+          67.1875,
+          46.09375
+        ],
+        [
+          60.9375,
+          46.09375
+        ],
+        [
+          71.875,
+          50.0
+        ],
+        [
+          70.3125,
+          46.09375
+        ],
+        [
+          69.53125,
+          54.6875
+        ],
+        [
+          69.53125,
+          51.5625
+        ],
+        [
+          69.53125,
+          42.96875
+        ],
+        [
+          65.625,
+          43.75
+        ],
+        [
+          67.96875,
+          50.0
+        ],
+        [
+          69.53125,
+          45.3125
+        ],
+        [
+          71.09375,
+          49.21875
+        ]
+      ],
+      "seat_intervals_percent": [
+        [
+          [
+            48.4375,
+            71.09375
+          ],
+          [
+            27.34375,
+            49.21875
+          ]
+        ],
+        [
+          [
+            50.0,
+            73.4375
+          ],
+          [
+            32.03125,
+            53.90625
+          ]
+        ],
+        [
+          [
+            46.09375,
+            69.53125
+          ],
+          [
+            31.25,
+            53.90625
+          ]
+        ],
+        [
+          [
+            49.21875,
+            71.875
+          ],
+          [
+            31.25,
+            53.90625
+          ]
+        ],
+        [
+          [
+            52.34375,
+            75.0
+          ],
+          [
+            32.03125,
+            53.92578125000114
+          ]
+        ],
+        [
+          [
+            56.25,
+            78.90625
+          ],
+          [
+            35.15625,
+            57.8125
+          ]
+        ],
+        [
+          [
+            49.21875,
+            71.875
+          ],
+          [
+            36.71875,
+            59.375
+          ]
+        ],
+        [
+          [
+            57.03125,
+            78.125
+          ],
+          [
+            30.46875,
+            52.34375
+          ]
+        ],
+        [
+          [
+            58.59375,
+            79.6875
+          ],
+          [
+            38.28125,
+            60.9375
+          ]
+        ],
+        [
+          [
+            57.03125,
+            78.90625
+          ],
+          [
+            30.46875,
+            53.125
+          ]
+        ],
+        [
+          [
+            48.4375,
+            71.875
+          ],
+          [
+            34.375,
+            56.25
+          ]
+        ],
+        [
+          [
+            46.09375,
+            69.53125
+          ],
+          [
+            32.8125,
+            54.6875
+          ]
+        ],
+        [
+          [
+            49.21875,
+            71.875
+          ],
+          [
+            39.0625,
+            62.5
+          ]
+        ],
+        [
+          [
+            61.71875,
+            82.03125
+          ],
+          [
+            38.28125,
+            60.15625
+          ]
+        ],
+        [
+          [
+            54.6875,
+            77.34375
+          ],
+          [
+            35.15625,
+            57.8125
+          ]
+        ],
+        [
+          [
+            55.46875,
+            78.125
+          ],
+          [
+            35.9375,
+            59.375
+          ]
+        ],
+        [
+          [
+            52.34375,
+            74.21875
+          ],
+          [
+            28.90625,
+            51.5625
+          ]
+        ],
+        [
+          [
+            52.34375,
+            75.0
+          ],
+          [
+            36.71875,
+            60.15625
+          ]
+        ],
+        [
+          [
+            55.46875,
+            78.125
+          ],
+          [
+            35.15625,
+            57.03125
+          ]
+        ],
+        [
+          [
+            49.21875,
+            72.65625
+          ],
+          [
+            35.15625,
+            57.8125
+          ]
+        ],
+        [
+          [
+            60.9375,
+            82.03125
+          ],
+          [
+            38.28125,
+            61.71875
+          ]
+        ],
+        [
+          [
+            59.375,
+            80.46875
+          ],
+          [
+            34.375,
+            57.8125
+          ]
+        ],
+        [
+          [
+            58.59375,
+            79.6875
+          ],
+          [
+            43.75,
+            65.625
+          ]
+        ],
+        [
+          [
+            58.59375,
+            79.6875
+          ],
+          [
+            39.84375,
+            63.28125
+          ]
+        ],
+        [
+          [
+            58.59375,
+            80.46875
+          ],
+          [
+            32.8125,
+            53.90625
+          ]
+        ],
+        [
+          [
+            53.90625,
+            76.5625
+          ],
+          [
+            32.8125,
+            54.6875
+          ]
+        ],
+        [
+          [
+            57.03125,
+            78.90625
+          ],
+          [
+            38.28125,
+            61.71875
+          ]
+        ],
+        [
+          [
+            58.59375,
+            79.6875
+          ],
+          [
+            34.375,
+            57.03125
+          ]
+        ],
+        [
+          [
+            60.15625,
+            81.25
+          ],
+          [
+            38.28125,
+            60.9375
+          ]
+        ]
+      ],
+      "adjacent_intervals_including_zero": 26,
+      "all_adjacent_difference_intervals_include_zero": false,
+      "best_candidate": 1667,
+      "best_score": 0.62109375,
+      "comparison_with_previous_best": {
+        "candidate": 2353,
+        "previous_best": 1667,
+        "difference_pp": -1.953125,
+        "paired_ci95_pp": [
+          -8.59375,
+          4.6875
+        ]
+      },
+      "zero_subgradient_crosscheck_passed": true,
+      "moves_over_two_seconds": 0
+    },
+    "limitations": "Descriptive analysis of existing games and one pilot run per configuration; pointwise intervals do not adjust for repeated checkpoint comparisons.",
+    "updated_figures": [
+      "benchmark-outcomes",
+      "opening-performance",
+      "paired-improvements"
+    ]
+  },
+  "current_report_build": {
+    "checked_utc": "2026-11-21T17:27:16.408921+00:00",
+    "passed": true,
+    "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build report.tex",
+    "main_text_pages": 6,
+    "total_pages": 30,
+    "bibliography_entries": 34,
+    "missing_citations": 0,
+    "overfull_boxes": 0
+  },
+  "linear_trend": {
+    "method": "Weighted least absolute deviations with inverse opening-pair standard-error weights",
+    "candidates": [
+      58,
+      97,
+      146,
+      150,
+      215,
+      270,
+      337,
+      397,
+      553,
+      583,
+      640,
+      712,
+      757,
+      855,
+      951,
+      1063,
+      1097,
+      1189,
+      1227,
+      1311,
+      1427,
+      1636,
+      1667,
+      1948,
+      1978,
+      1992,
+      2223,
+      2309,
+      2353
+    ],
+    "intercept_percent": 52.8517168972332,
+    "slope_pp_per_100_candidates": 0.3087944664031621,
+    "slope_ci95_pp_per_100_candidates": [
+      0.08409354129773025,
+      0.5231584821428571
+    ],
+    "standard_errors_percent": [
+      2.609741057633271,
+      3.035358653888877,
+      2.946278254943948,
+      2.939694384693216,
+      2.543470494520826,
+      2.8099497917829903,
+      3.077752324148193,
+      3.2881517550571955,
+      2.4661138162928964,
+      2.939694384693216,
+      3.2522307810675755,
+      2.6684767619686456,
+      2.7130332102922754,
+      2.8827044531199686,
+      2.893187811789223,
+      2.9818236310048003,
+      2.939694384693216,
+      2.893187811789223,
+      2.684313558344831,
+      2.6037015953768314,
+      2.9919597117385566,
+      2.730829617633739,
+      3.049290607352031,
+      3.140077096248897,
+      2.6702914352568987,
+      2.7770026200180835,
+      3.3577596245384442,
+      2.9818236310048003,
+      2.8780796781758093
+    ],
+    "normalized_weights": [
+      0.03794180190415648,
+      0.03262160736854078,
+      0.033607918078921974,
+      0.03368318786655058,
+      0.038930382107113776,
+      0.035238451063937186,
+      0.03217226982592563,
+      0.03011365825119681,
+      0.04015154433492909,
+      0.03368318786655058,
+      0.030446264393746904,
+      0.037106666859941295,
+      0.03649725991345242,
+      0.034349091223242575,
+      0.03422462856589663,
+      0.03320728872099612,
+      0.03368318786655058,
+      0.03422462856589663,
+      0.036887746560770956,
+      0.03802981048430574,
+      0.033094789960366224,
+      0.036259412740537296,
+      0.03247256197593175,
+      0.03153370926725066,
+      0.03708144995804146,
+      0.03565653035978072,
+      0.029489388551295237,
+      0.03320728872099612,
+      0.03440428664317778
+    ],
+    "weighted_mae_percent": 2.156233819611009,
+    "bootstrap_seed": 20261118,
+    "bootstrap_resamples": 50000,
+    "bootstrap_weights_held_fixed": true,
+    "band": "Pointwise 95% percentile interval for the fitted line; not a prediction band",
+    "fit_range": [
+      58,
+      2353
+    ],
+    "limitations": "Descriptive trend over selected checkpoints; conditional on estimated weights and reused openings, without selection correction or extrapolation.",
+    "checked_utc": "2026-11-21T06:00:20.625080+00:00",
+    "data_file": "evidence/benchmark-linear-fit.json",
+    "data_sha256": "bec0d44973cd553ce5a1ca050b020d3e5ec2d8c4162f4caf1e0fe16483a2a2e7",
+    "zero_subgradient_crosscheck_passed": true
+  },
+  "concision": {
+    "checked_utc": "2026-11-18T10:27:26.835307+00:00",
+    "source_lexical_tokens_before": 9248,
+    "source_lexical_tokens_after": 5644,
+    "approximate_reduction_fraction": 0.3897058823529411,
+    "main_pages_before": 7,
+    "main_pages_after": 5,
+    "total_pages_before": 21,
+    "total_pages_after": 18,
+    "original_math_blocks_preserved": 31,
+    "added_math_blocks": 1,
+    "original_references_preserved": 30,
+    "added_references": 1,
+    "figures_preserved": 8,
+    "tables_preserved": 4
+  },
+  "training_continuation": {
+    "checked_utc": "2026-11-18T15:21:46.915708+00:00",
+    "previous_raw_limit": 1000,
+    "new_raw_limit": 2000,
+    "resumed_after_raw_iteration": 1000,
+    "first_resumed_candidate": 818,
+    "settings_changed": [
+      "iterations"
+    ],
+    "optimizer_steps_before": 244198,
+    "optimizer_steps_after": 244486,
+    "all_six_gpus_verified": true,
+    "watchdog_running": true,
+    "evidence": [
+      {
+        "path": "training-evidence/connectx-extension-20261118-2000/extension.json",
+        "sha256": "2d86a45c50fcd621c2ea53d002b14db0556aa005f5573c6a10bd9096b5602035"
+      },
+      {
+        "path": "training-evidence/connectx-extension-20261118-2000/health_check.json",
+        "sha256": "b22a71a31c0fb4e2468e55c26c3974f8d608f915d339a406334d7345e63750ed"
+      }
+    ],
+    "plotted_training_snapshot_unchanged": false,
+    "panel_a_includes_resumed_training": true,
+    "continuity_rechecked_utc": "2026-11-18T20:18:56.958106+00:00"
+  },
+  "optimization_snapshot": {
+    "captured_utc": "2026-11-21T14:29:14.677065+00:00",
+    "last_candidate": 2430,
+    "updated_with_panel_a": true
+  },
+  "kaggle_result": {
+    "reported_rank": 1,
+    "reported_date": "2026-11-19",
+    "score": null,
+    "leaderboard_url": null,
+    "account": null,
+    "submission_candidate": null,
+    "source": "User report in this conversation",
+    "verification_status": "Rank reported by user; numeric score and identifying leaderboard evidence pending",
+    "exact_score_recorded": false,
+    "draft_placeholder_visible": true
+  },
+  "double_dqn": {
+    "training_and_benchmark_runs": 13,
+    "passed_unit_checks": 4,
+    "passed_board_checks": 55,
+    "implementation_sha256": {
+      "src/training/double_dqn.py": "7abb0de7c1a66359d8ac9a71169b68f4c9d5bace57daed6a1c7fb63e1ace890e",
+      "scripts/double_dqn.py": "2610bf26cee7df2b8cbe08804ff85061d06f3f3d64d58fa2ca7289a25107370a",
+      "tests/test_double_dqn.py": "4f16b620dd8c2d30249c7c833e1b5ece18d42e827fd6d535d9fdbf51cbc8abc4"
+    },
+    "training_runs": 1,
+    "evaluation_jobs": 12,
+    "games_replayed": 768,
+    "summary": "evidence/ddqn-pilot-summary.json"
+  },
+  "dqn_study": {
+    "summary": "evidence/dqn-study-summary.json",
+    "training_runs": 6,
+    "new_training_runs": 5,
+    "evaluation_jobs": 122,
+    "games_replayed": 11008,
+    "balanced_player_assignments": true,
+    "matched_initialisation_verified": true,
+    "disjoint_held_out_confirmed": true,
+    "tactical_deterministic_tests_passed": 2,
+    "evaluation_implementation_sha256": "01a8daf41074872146845cae74107976cb90a8b089ed93cab31bedee2fb66c66"
+  },
+  "tactical_followup": {
+    "summary": "evidence/tactical-followup-summary.json",
+    "training_runs": 10,
+    "trained_moves": 800000,
+    "moves_per_run": 80000,
+    "updates_per_run": 19745,
+    "primary_seed_pairs": [
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "study_games_replayed": 10400,
+    "independent_oracle_positions_verified": 288,
+    "lookahead_games_replayed": 2496,
+    "same_scores_after_trace_recording_fix": true,
+    "implementation_sha256": {
+      "src/game/endgame.py": "61ad08784f31ab5aa85909075c129e9d5cb4af378b62029ea24dfa50df7f1235",
+      "src/training/tactical_dqn.py": "f3c51cf27271ec400c1d33a6b4462f634e8cb836fc21a3aa72cfe8cdea9d3068",
+      "scripts/tactical_dqn.py": "8b38094e5dd73c7e961ab26c81b46e6217e3d63016df01e724173b8da3b3a85e",
+      "scripts/tactical_study.py": "6387121c4f36dbc2c35da4483c352815b96f13c6071818be98d82348f977373a",
+      "scripts/oracle_reference.py": "68a187fc532c27df29a0da40d101095a2dcaf4a13265486aeb2a3c0b64062f29",
+      "scripts/verify_endgame_positions.py": "a08ccb18c283763f2e1c8ed11ed75ed640c530d9c9496037138b3dafa9ffe9e8",
+      "scripts/learned_lookahead.py": "b5a58353e128ff8bd625f4b17645520aa02463f372d10da9492d6ddc3ec77778",
+      "scripts/render_agent_demo.py": "3aafbfe70067e60e601b5a5244ee2979856e3a6b7477eff5b9998abd3491528a",
+      "tests/test_tactical_dqn.py": "606a68ccfd79773a65c1d162d3a33cac593d92baf9fe9d710ad92967add48050",
+      "tests/test_endgame.py": "2170878b8845428dbba9541b43d023bb6bb251056904a20e25a4a45f55a72c6c",
+      "tests/test_tactical_study.py": "6cff7361ea2605eb27d3dfa26192beb4facf970539f66291ea6902cbc7c956a4"
+    }
+  },
+  "agent_demo": {
+    "filename": "agent-performance-demo.mp4",
+    "duration_seconds": 64.583333,
+    "sha256": "f5bc05b73ae07dcc9f26060d50a8839fea441e75b5c99477b2fa9a07c5ac2ca1",
+    "replays": "Three-seed matched study, seed 51, fixed openings 2 and 7, player 1.",
+    "format": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "pix_fmt": "yuv420p"
+    },
+    "decoded_and_keyframes_reviewed": true
+  },
+  "inline_figures": {
+    "labels": [
+      "fig:q-study",
+      "fig:tactical-study"
+    ],
+    "page": 4,
+    "width_fraction": 0.482,
+    "panels_per_figure": 2,
+    "generator": "make_inline_figures.py"
+  },
+  "selfplay_axes": {
+    "candidate_zero_games": 66944,
+    "games_per_candidate": 384,
+    "source_snapshot": "training-evidence/gpu-split/connectx-final-20261121-0817.json",
+    "last_completed_candidate_games": 1000000,
+    "page": 5,
+    "final_batch_games": 320
+  },
+  "matched_controls": {
+    "checked_utc": "2026-11-21T17:16:31.889742+00:00",
+    "horizon_training_runs": 20,
+    "moves_per_run": 80000,
+    "updates_per_run": 19745,
+    "paired_initial_weights_bitwise_equal": true,
+    "opening_pairs": 128,
+    "replayed_games": 13056,
+    "defensive_match_positions": 1797,
+    "defensive_network_choices_recomputed": 71880,
+    "summary_sha256": "8d44d4690413fe24872856a957ea11aa560e2492f20341050f93c8d1843cced8",
+    "tests": {
+      "target_and_search": "9 passed",
+      "archive_benchmark": "3 passed on Weatherwax",
+      "slow_legacy_search_integration": "interrupted after remaining local suite passed"
+    },
+    "one_step_regression": "At 1,352 CPU moves and 83 updates, prior and revised trainers had identical weights and logged statistics, apart from time and the new horizon counts.",
+    "added_three_arm_training_runs": 15,
+    "added_seeds": [
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "training_seeds_per_control": 10,
+    "sample_standard_deviations_independently_verified": true,
+    "original_five_seed_estimates_reproduced": true
+  },
+  "gitignore": {
+    "generated_paths_tested_ignored": 15,
+    "source_and_evidence_paths_tested_visible": 10
+  }
+}

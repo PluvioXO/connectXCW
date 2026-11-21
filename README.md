@@ -4,6 +4,22 @@ Connect Four self-play training, Kaggle submission export, and comparisons betwe
 
 This project builds on [Eugene Peng's connect4-alphazero](https://github.com/eugeneyp/connect4-alphazero), upstream commit `a936aadd74a6a6dd9035e576b89aeb5a3ea7ef73`. The reference weights were downloaded from that project; they were not trained from scratch here. See [NOTICE](NOTICE) and the retained [MIT license](LICENSE).
 
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| [`src/`](src) and [`tests/`](tests) | Game, search, models, learning code and tests |
+| [`scripts/`](scripts) and [`configs/`](configs) | Training, evaluation and export commands and configurations |
+| [`models/`](models), [`data/`](data) and [`reports/`](reports) | Reference weights, iteration-2 training data and archive benchmarks |
+| [`coursework/`](coursework) | LaTeX report, figures, compact evidence and presentation material |
+| [`study-evidence/`](study-evidence) and [`pilot-evidence/`](pilot-evidence) | Frozen study packs, checksums, summaries and replay scripts |
+| [`docs/experiments.md`](docs/experiments.md) | Training history and experiment commands |
+
+The report and submission packages are generated locally. The code and evidence
+archive at `coursework/connectx-code-and-evidence.zip` includes the full study
+checkpoints and match traces needed for offline replay. The repository keeps the
+compact evidence in `coursework/evidence/` and the reference weights in `models/`.
+
 ## Included checkpoints
 
 | File | Origin and status |
@@ -33,9 +49,12 @@ An earlier independent comparison at fixed simulation counts produced 22 wins, 2
 
 ## Setup and training
 
-Use Python 3.11 or newer. Fine-tuning requires a CUDA GPU.
+Run the commands from the repository root with Python 3.11 or newer.
+Fine-tuning requires a CUDA GPU.
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install '.[dev,kaggle]'
 CUDA_VISIBLE_DEVICES=0 python iteration2.py train \
   --data data/iteration2 --output checkpoints/iteration2 \
@@ -45,6 +64,11 @@ CUDA_VISIBLE_DEVICES=0 python iteration2.py train \
 This repeats the selected fine-tuning procedure from the saved data, starting at `models/large.pt`. GPU kernels and software versions can affect exact results. The provided checkpoint preserves the model that was evaluated.
 
 `iteration2.py generate` produces new self-play data; `scripts/train.py` retains the upstream full-training workflow. `finetune_20min.py` contains the earlier bounded experiment and paired fixed-simulation evaluation.
+
+For shared-GPU persistent self-play, use
+`python -m scripts.selfplay_run --help`. The [experiment guide](docs/experiments.md#persistent-learner-17-november)
+gives the full run and resume commands. The separate [Double DQN workflow](docs/experiments.md#separate-double-dqn-implementation)
+trains from fresh weights.
 
 ## Build Kaggle submissions
 
@@ -81,3 +105,15 @@ python -m pytest tests/test_board.py tests/test_model.py tests/test_mcts.py \
 ```
 
 The upstream `tests/test_training.py` also contains training and benchmarking integration tests that take longer to run.
+
+## Coursework
+
+The [coursework guide](coursework/README.md) links the report sources and
+ten-seed study results. To build the report locally:
+
+```bash
+cd coursework
+latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build report.tex
+```
+
+The compiled report is written to `coursework/build/report.pdf`.

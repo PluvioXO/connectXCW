@@ -1,6 +1,7 @@
 """Generate deeper self-play targets and conservatively fine-tune the large model."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import random
@@ -44,59 +45,91 @@ def generate(args):
               "elapsed", time.monotonic() - started, flush=True)
 
 
-def train(args):
-    paths = sorted(args.data.glob("selfplay_*.npz"))
-    assert len(paths) >= 5, "Need at least one complete shard from each generation worker"
+def train(args, checkpoint="models/large.pt", epochs=6, shard_paths=None, persistent=False):
+    paths = sorted(args.data.glob("selfplay_*.npz")) if shard_paths is None else shard_paths
+    assert len(paths) >= (5 if shard_paths is None else 1), "Not enough complete self-play shards"
     chunks = []
     for path in paths:
         with np.load(path) as data:
             chunks.append({key: data[key] for key in ("states", "policies", "outcomes")})
     data = {key: torch.from_numpy(np.concatenate([c[key] for c in chunks])).cuda()
             for key in ("states", "policies", "outcomes")}
-    baseline = load_model("models/large.pt")
-    policy_targets, value_targets = [], []
-    with torch.no_grad():
-        for start in range(0, len(data["states"]), 512):
-            batch = slice(start, start + 512)
-            logits, values = baseline(data["states"][batch])
-            policy, value = training_targets(data["states"][batch], data["policies"][batch],
-                                             data["outcomes"][batch], logits, values[:, 0])
-            policy_targets.append(policy)
-            value_targets.append(value)
-    policies, values = torch.cat(policy_targets), torch.cat(value_targets)
-    del baseline
-    model = load_model("models/large.pt")
+    if persistent:
+        policies, values = data['policies'], data['outcomes']
+        assert torch.isfinite(policies).all() and (policies >= 0).all()
+        assert torch.allclose(policies.sum(1), torch.ones_like(values))
+        assert ((values == -1) | (values == 0) | (values == 1)).all()
+    else:
+        baseline = load_model(checkpoint)
+        policy_targets, value_targets = [], []
+        with torch.no_grad():
+            for start in range(0, len(data["states"]), 512):
+                batch = slice(start, start + 512)
+                logits, values = baseline(data["states"][batch])
+                policy, value = training_targets(data["states"][batch], data["policies"][batch],
+                                                 data["outcomes"][batch], logits, values[:, 0])
+                policy_targets.append(policy)
+                value_targets.append(value)
+        policies, values = torch.cat(policy_targets), torch.cat(value_targets)
+        del baseline
+    model = load_model(checkpoint)
     original_stats = {name: value.clone() for name, value in model.named_buffers()}
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=1e-5)
+    updates = 0
+    if persistent:
+        saved = torch.load(checkpoint, map_location='cpu', weights_only=False)
+        updates = saved.get('optimizer_steps', 0)
+        if 'optimizer_state_dict' in saved:
+            assert saved.get('training_mode') == 'persistent_raw_v1', 'Start the new objective with a clean optimizer'
+            optimizer.load_state_dict(saved['optimizer_state_dict'])
+            assert all(group['lr'] == args.lr for group in optimizer.param_groups)
+            torch.set_rng_state(saved['torch_rng_state'])
+            if policies.is_cuda:
+                torch.cuda.set_rng_state(saved['cuda_rng_state'], device=policies.device)
+        del saved
     report = {"learning_rate": args.lr, "seed": args.seed,
               "shards": [str(p) for p in paths], "samples": len(policies),
-              "selfplay_simulations": 512, "frozen_batchnorm_statistics": True, "epochs": []}
+              "selfplay_simulations": 512, "frozen_batchnorm_statistics": True, "epochs": [],
+              "training_mode": 'persistent_raw_v1' if persistent else 'champion_blend',
+              "parent_checkpoint": str(checkpoint),
+              "parent_sha256": hashlib.sha256(Path(checkpoint).read_bytes()).hexdigest(),
+              "optimizer_steps_before": updates}
     started = time.monotonic()
     # eval() freezes BatchNorm statistics; autograd still updates the weights.
     model.eval()
-    for epoch in range(1, 7):
-        order = torch.randperm(len(policies), device="cuda")
+    for epoch in range(1, epochs + 1):
+        order = torch.randperm(len(policies), device=policies.device)
         losses = []
         for indices in order.split(512):
             logits, value = model(data["states"][indices])
-            loss = -(policies[indices] * F.log_softmax(logits, -1)).sum(-1).mean()
-            loss += F.mse_loss(value[:, 0], values[indices])
+            policy_loss = -(policies[indices] * F.log_softmax(logits, -1)).sum(-1).mean()
+            value_loss = F.mse_loss(value[:, 0], values[indices])
+            loss = policy_loss + value_loss
             assert torch.isfinite(loss)
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0, error_if_nonfinite=True)
             optimizer.step()
-            losses.append(float(loss.detach()))
+            updates += 1
+            losses.append([float(policy_loss.detach()), float(value_loss.detach())])
         for name, value in model.named_buffers():
             assert torch.equal(value, original_stats[name]), name
-        result = {"epoch": epoch, "loss": float(np.mean(losses)),
+        means = np.mean(losses, axis=0)
+        result = {"epoch": epoch, "loss": float(means.sum()),
+                  "policy_loss": float(means[0]), "value_loss": float(means[1]),
+                  "optimizer_steps": updates,
                   "elapsed_seconds": time.monotonic() - started}
         report["epochs"].append(result)
         print("TRAIN", json.dumps(result), flush=True)
-        if epoch in (3, 6):
+        if epoch == 3 or epoch == epochs:
+            recovery = dict(training_mode=report['training_mode'], optimizer_steps=updates,
+                            parent_sha256=report['parent_sha256'], torch_rng_state=torch.get_rng_state(),
+                            cuda_rng_state=torch.cuda.get_rng_state(policies.device) if policies.is_cuda else None)
             save_checkpoint(model, args.output / f"candidate_{epoch}.pt", epoch=epoch,
-                            learning_rate=args.lr, optimizer_state_dict=optimizer.state_dict())
+                            learning_rate=args.lr, optimizer_state_dict=optimizer.state_dict(), **recovery)
+        report['optimizer_steps_after'] = updates
         (args.output / "report.json").write_text(json.dumps(report, indent=2))
+    return report
 
 
 def main():

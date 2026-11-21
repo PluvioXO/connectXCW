@@ -24,8 +24,8 @@ from src.utils.config import MCTSConfig, TrainingConfig
 def save_checkpoint(model, path, **metadata):
     payload = {
         "model_state_dict": {k: v.detach().cpu() for k, v in model.state_dict().items()},
-        "num_blocks": 5,
-        "num_filters": 128,
+        "num_blocks": len(model.tower),
+        "num_filters": model.stem[0].out_channels,
         **metadata,
     }
     temporary = path.with_suffix(".tmp")
@@ -60,38 +60,44 @@ def opening_boards(count, seed):
     return boards
 
 
-def arena(candidate, baseline, pairs, sims, seed, deadline, baseline_sims=None):
+def arena(candidate, baseline, pairs, sims, seed, deadline, baseline_sims=None, boards=None):
     """Play both sides of every opening, batching independent game trees."""
     searches = [BatchedMCTS(baseline, MCTSConfig(num_simulations=baseline_sims or sims)),
                 BatchedMCTS(candidate, MCTSConfig(num_simulations=sims))]
-    games = [(board, side) for board in opening_boards(pairs, seed) for side in (1, 2)]
+    boards = opening_boards(pairs, seed) if boards is None else boards
+    assert len(boards) == pairs and all(not b.is_terminal() for b in boards)
+    games = [(board, side, pair) for pair, board in enumerate(boards) for side in (1, 2)]
+    pair_scores = [0.] * pairs
     wins = losses = draws = 0
     while games:
         if time.monotonic() >= deadline:
             raise TimeoutError("Experiment time budget reached")
         moves = {}
         for owner in (0, 1):
-            indices = [i for i, (b, side) in enumerate(games)
+            indices = [i for i, (b, side, _) in enumerate(games)
                        if int(b.current_player == side) == owner]
             if indices:
                 policies = searches[owner].search_batch([games[i][0] for i in indices])
                 moves.update({i: int(np.argmax(p)) for i, p in zip(indices, policies)})
         active = []
-        for index, (board, side) in enumerate(games):
+        for index, (board, side, pair) in enumerate(games):
             board = board.make_move(moves[index])
             if board.is_terminal():
                 winner = board.get_winner()
+                pair_scores[pair] += (int(winner == side) + .5 * int(winner is None)) / 2
                 draws += int(winner is None)
                 wins += int(winner == side)
                 losses += int(winner is not None and winner != side)
             else:
-                active.append((board, side))
+                active.append((board, side, pair))
         games = active
     assert wins + losses + draws == pairs * 2
     return {"wins": wins, "losses": losses, "draws": draws,
             "score": (wins + draws / 2) / (pairs * 2), "games": pairs * 2,
             "simulations": sims, "baseline_simulations": baseline_sims or sims,
-            "opening_seed": seed}
+            "opening_seed": seed, "pair_scores": pair_scores,
+            "opening_keys": [(b._mask, b._position) for b in boards],
+            "search": {"baseline": searches[0].stats, "candidate": searches[1].stats}}
 
 
 def main():

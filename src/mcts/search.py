@@ -8,15 +8,22 @@ distribution used as a training policy target.
 from __future__ import annotations
 
 import math
+import os
+import time
 
 import numpy as np
 import torch
 import torch.nn.functional as F
 
 from src.game.board import Connect4Board
-from src.game.constants import COLS
+from src.game.constants import BITS_PER_COL, COLS, ROWS
 from src.neural_net.model import Connect4Net, get_policy
 from src.utils.config import MCTSConfig
+
+_ENCODING_BITS = np.left_shift(
+    np.uint64(1), np.arange(ROWS, dtype=np.uint64)[:, None]
+    + BITS_PER_COL * np.arange(COLS, dtype=np.uint64)[None, :]
+)
 
 
 class MCTSNode:
@@ -149,11 +156,16 @@ class MCTS:
             The selected leaf or terminal node.
         """
         current = node
-        while not current.is_leaf and not current.is_terminal:
+        c_puct = self.config.c_puct
+        # Terminal nodes are never expanded; only nodes with children need traversal.
+        while current.children:
             best_score = -float("inf")
             best_child = None
+            sqrt_visits = math.sqrt(current.visit_count)
             for child in current.children.values():
-                score = self._puct_score(current, child)
+                visits = child.visit_count
+                q = child.value_sum / visits if visits else 0.0
+                score = -q + c_puct * child.prior * sqrt_visits / (1 + visits)
                 if score > best_score:
                     best_score = score
                     best_child = child
@@ -379,6 +391,8 @@ class BatchedMCTS(MCTS):
         super().__init__(model, config)
         self._batch_size = batch_size
         self._device = next(model.parameters()).device
+        self.stats = dict(search_seconds=0., searched_positions=0, simulations=0,
+                          network_batches=0, network_positions=0)
 
     def search_batch(
         self, boards: list[Connect4Board], add_dirichlet_noise: bool = False
@@ -401,6 +415,11 @@ class BatchedMCTS(MCTS):
         if not boards:
             return []
 
+        if os.environ.get('CONNECTX_NATIVE_MCTS') == '1':
+            from src.mcts.native import search_batch
+            return search_batch(self, boards, add_dirichlet_noise)
+
+        started = time.perf_counter()
         roots = [MCTSNode(board=b) for b in boards]
 
         # Initial expansion of all roots (one batched NN call)
@@ -415,7 +434,11 @@ class BatchedMCTS(MCTS):
             for leaf in leaves:
                 self._backup(leaf, values[id(leaf)])
 
-        return [_visit_distribution(root, board) for root, board in zip(roots, boards)]
+        distributions = [_visit_distribution(root, board) for root, board in zip(roots, boards)]
+        self.stats['search_seconds'] += time.perf_counter() - started
+        self.stats['searched_positions'] += len(boards)
+        self.stats['simulations'] += len(boards) * self.config.num_simulations
+        return distributions
 
     def _batch_expand_and_evaluate(
         self, nodes: list[MCTSNode], add_noise: bool = False
@@ -455,7 +478,14 @@ class BatchedMCTS(MCTS):
                 legal_masks.append(legal_mask)
 
         if to_eval:
-            states = np.stack([n.board.encode() for n in to_eval])
+            self.stats['network_batches'] += 1
+            self.stats['network_positions'] += len(to_eval)
+            # Encode every board together, avoiding a Python loop over each cell.
+            positions = np.array([(n.board._position, n.board._mask ^ n.board._position)
+                                  for n in to_eval], dtype=np.uint64)
+            states = np.empty((len(to_eval), 3, ROWS, COLS), dtype=np.float32)
+            states[:, :2] = (positions[:, :, None, None] & _ENCODING_BITS) != 0
+            states[:, 2] = np.array([n.board.current_player == 1 for n in to_eval])[:, None, None]
             batch_tensor = torch.from_numpy(states).to(self._device)
             mask_tensor = torch.from_numpy(np.stack(legal_masks)).to(self._device)
 

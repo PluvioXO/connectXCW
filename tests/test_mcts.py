@@ -106,6 +106,22 @@ class TestPUCTScore:
         cfg = MCTSConfig(num_simulations=10, **cfg_kwargs)
         return MCTS(model=tiny_model, config=cfg)
 
+    def test_selection_matches_reference_scores_and_tie_order(self, tiny_model):
+        mcts = self._mcts(tiny_model)
+        rng = np.random.default_rng(171126)
+        root = MCTSNode(Connect4Board())
+        for action in root.board.get_legal_moves():
+            root.children[action] = MCTSNode(root.board.make_move(action), parent=root)
+        assert mcts._select(root) is root.children[0]
+        for _ in range(100):
+            root.visit_count = int(rng.integers(0, 1000))
+            for child in root.children.values():
+                child.visit_count = int(rng.integers(0, 100))
+                child.value_sum = float(rng.uniform(-1, 1)) * child.visit_count
+                child.prior = float(rng.random())
+            expected = max(root.children.values(), key=lambda child: mcts._puct_score(root, child))
+            assert mcts._select(root) is expected
+
     def test_puct_favors_higher_prior(self, tiny_model):
         mcts = self._mcts(tiny_model, c_puct=2.0)
         board = Connect4Board()
@@ -544,12 +560,35 @@ class TestBatchedMCTS:
         config = MCTSConfig(num_simulations=num_simulations)
         return BatchedMCTS(model, config, batch_size=batch_size)
 
+    def test_batch_encoding_matches_board_reference(self, tiny_model):
+        rng = np.random.default_rng(171126)
+        boards = [Connect4Board()]
+        for _ in range(60):
+            board = Connect4Board()
+            for _ in range(int(rng.integers(1, 40))):
+                board = board.make_move(int(rng.choice(board.get_legal_moves())))
+                if board.is_terminal():
+                    break
+            if not board.is_terminal():
+                boards.append(board)
+        observed = []
+        hook = tiny_model.register_forward_pre_hook(lambda model, args: observed.append(args[0].tolist()))
+        try:
+            self._make_batched_mcts(tiny_model)._batch_expand_and_evaluate([MCTSNode(b) for b in boards])
+        finally:
+            hook.remove()
+        assert len(observed) == 1
+        np.testing.assert_array_equal(observed[0], np.stack([board.encode() for board in boards]))
+
     def test_search_batch_returns_correct_count(self, tiny_model, empty_board):
         """search_batch returns one distribution per input board."""
         boards = [empty_board, empty_board.make_move(3)]
         mcts = self._make_batched_mcts(tiny_model)
         results = mcts.search_batch(boards)
         assert len(results) == len(boards)
+        assert mcts.stats['searched_positions'] == len(boards)
+        assert mcts.stats['simulations'] == len(boards) * mcts.config.num_simulations
+        assert mcts.stats['network_batches'] > 0 and mcts.stats['search_seconds'] > 0
 
     def test_search_batch_distributions_sum_to_one(self, tiny_model):
         """Each returned distribution sums to 1.0."""
