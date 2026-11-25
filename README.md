@@ -1,6 +1,12 @@
-# Connect X training and model source
+# Connect Four: Deep Reinforcement Learning Coursework
+
+[![Report PDF](https://img.shields.io/badge/Report-PDF-red.svg)](report.pdf)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](pyproject.toml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Connect Four self-play training, Kaggle submission export, and comparisons between a pretrained reference model and an experimental fine-tune.
+
+> 📄 **Academic Report:** The full coursework paper is available at [`report.pdf`](report.pdf) (compiled with LaTeX using the Bath RL project template).
 
 This project builds on [Eugene Peng's connect4-alphazero](https://github.com/eugeneyp/connect4-alphazero), upstream commit `a936aadd74a6a6dd9035e576b89aeb5a3ea7ef73`. The reference weights were downloaded from that project; they were not trained from scratch here. See [NOTICE](NOTICE) and the retained [MIT license](LICENSE).
 
@@ -8,6 +14,7 @@ This project builds on [Eugene Peng's connect4-alphazero](https://github.com/eug
 
 | Path | Contents |
 |---|---|
+| [`report.pdf`](report.pdf) | **Compiled academic report** (University of Bath RL coursework template) |
 | [`src/`](src) and [`tests/`](tests) | Game, search, models, learning code and tests |
 | [`scripts/`](scripts) and [`configs/`](configs) | Training, evaluation and export commands and configurations |
 | [`models/`](models), [`data/`](data) and [`reports/`](reports) | Reference weights, iteration-2 training data and archive benchmarks |
