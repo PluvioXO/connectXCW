@@ -85,3 +85,9 @@ logs/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Cluster runtime metadata and host checksum dumps
+*-utc
+*exit-code
+weatherwax-*.txt
+
